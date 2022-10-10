@@ -1,0 +1,7 @@
+export const HOME_PAGE_ROUTE: string = '/home-page'
+export const ABOUT_US_ROUTE: string = '/about-us-page'
+export const BLOG_ROUTE: string = '/blog-page'
+export const CONTACTS_ROUTE: string = '/contacts-page'
+export const FAQS_ROUTE: string = '/faqs-page'
+export const OUR_TEAM_ROUTE: string = '/out-team-page'
+export const SOLUTIONS_ROUTE: string = '/out-team-page'
