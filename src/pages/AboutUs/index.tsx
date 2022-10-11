@@ -1,5 +1,7 @@
-export const HomePage: React.FC = () => (
-	<div>
-		<p>HomePage</p>
-	</div>
+import { MainLayout } from '@layouts/MainLayout'
+
+export const AboutUsPage: React.FC = () => (
+	<MainLayout>
+		<p>AboutUsPage</p>
+	</MainLayout>
 )

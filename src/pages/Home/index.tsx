@@ -1,8 +1,7 @@
-import { Header } from '@components/Header'
+import { MainLayout } from '@layouts/MainLayout'
 
 export const HomePage: React.FC = () => (
-	<div>
-		<Header />
+	<MainLayout>
 		<p>HomePage</p>
-	</div>
+	</MainLayout>
 )

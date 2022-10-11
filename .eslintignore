@@ -1,4 +1,5 @@
 .config
+craco.config.js
 node_modules/*
 config/*
 public/*

@@ -1,7 +1,7 @@
 import { MainLayout } from '@layouts/MainLayout'
 
-export const SolutionsPage: React.FC = () => (
+export const OurTeamPage: React.FC = () => (
 	<MainLayout>
-		<p>SolutionsPage</p>
+		<p>OurTeamPage</p>
 	</MainLayout>
 )

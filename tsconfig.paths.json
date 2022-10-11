@@ -31,6 +31,9 @@
 			],
 			"@layouts/*": [
 				"layouts/*"
+			],
+			"@assets/*": [
+				"assets/*"
 			]
 		}
 	}

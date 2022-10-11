@@ -7,15 +7,16 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Open Sans', 'Manrope', sans-serif;
   }
   html, body {
-    width: 100%;
+		width: 100%;
     height: 100%;
+		font-size: 62.5%;
   }
-   body {
-    & > #root {
-      width: 100%;
+	body {
+		& > #root {
+			width: 100%;
       height: 100%;
     }
   }

@@ -1,0 +1,12 @@
+import styled from 'styled-components'
+
+export const PagesDropdownStyled = styled.select`
+	font-size: ${({ theme }) => theme.fontSizes.medium};
+	color: ${({ theme }) => theme.colors.grey};
+	border: none;
+	background: none;
+	cursor: pointer;
+	text-align: center;
+`
+
+export const OptionStyled = styled.option``

@@ -1,25 +1,38 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.div`
+	width: 100vw;
+	height: 10vh;
+	max-height: 12.6rem;
+	background-color: ${({ theme }) => theme.colors.background};
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 126px;
-	background: #f1f6fa;
+	align-content: center;
+	justify-content: space-around;
+
+	& > * {
+		${({ theme }) => theme.headlines.headline7}
+		cursor: pointer;
+	}
 `
+
 export const LogoStyled = styled.img`
-	/* background-image: url('../../assets/icons/logo_blue.jpg'); */
-	background-size: cover;
-	height: 46px;
-	width: 141px;
+	width: 14.1rem;
+	height: 4.6rem;
+	display: flex;
+	justify-self: center;
+	align-self: center;
 `
 
 export const LinksContainerStyled = styled.div`
+	gap: 5%;
 	display: flex;
+	justify-self: center;
+	align-self: center;
 `
 
-export const LinkStyled = styled.div``
-
-export const PagesDropdownStyled = styled.select`
-	height: 20px;
+export const LinkStyled = styled.div`
+	& > * {
+		color: ${({ theme }) => theme.colors.grey};
+		text-decoration: none;
+	}
 `
