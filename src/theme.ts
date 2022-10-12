@@ -9,7 +9,7 @@ const shadows = {
 
 const colors = {
 	primary: '#185CFF',
-	secondary: '#9497A1',
+	secondary: '#002B4E',
 	tertiary: '#F0F9FF',
 	helperBlue: '#194060',
 	helperBlue2: '#607D94',
