@@ -12,10 +12,6 @@ export const ButtonWatchTheDemoStyled = styled.button`
 	border-radius: 0.6rem;
 	border: none;
 	padding: 10px 14px;
-
-	& :hover {
-		transform: scale(1.05);
-	}
 `
 
 export const VectorStyled = styled.img``
