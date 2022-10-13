@@ -36,7 +36,7 @@ const fontSizes = {
 }
 
 const headlinesCommon = `
-// font-family: 'Manrope';
+font-family: 'Manrope';
 font-style: normal;
 letter-spacing: -0.015em;
 `
@@ -87,8 +87,9 @@ const headlines = {
 }
 
 const paragraphsCommon = `
-// font-family: 'Open Sans';
+font-family: 'Open Sans';
 font-style: normal;
+letter-spacing: -0.015em;
 `
 const paragraphs = {
 	paragraph1: `

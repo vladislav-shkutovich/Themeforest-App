@@ -6,25 +6,18 @@ export const FooterContainerStyled = styled.div`
 	background-color: ${({ theme }) => theme.colors.secondary};
 	display: flex;
 	flex-direction: column;
-
-	& > * {
-		display: flex;
-	}
 `
 
 export const FooterTopPartStyled = styled.div`
-	justify-content: center;
-	column-gap: 5vw;
-
-	& > * {
-		display: flex;
-		margin: 5rem;
-	}
+	display: flex;
+	justify-content: space-between;
 `
 
 export const InfoContainerStyled = styled.div`
+	display: flex;
 	flex-direction: column;
 	max-width: 28.5rem;
+	margin: 5rem 0;
 
 	& > * {
 		display: flex;
@@ -78,8 +71,10 @@ export const ParagraphStyled = styled.div`
 `
 
 export const LineSeparatorStyled = styled.div`
-	width: 80vw;
+	display: flex;
+	width: 70vw;
 	height: 0px;
+	margin-top: 3.8rem;
 
 	align-self: center;
 
@@ -88,23 +83,26 @@ export const LineSeparatorStyled = styled.div`
 `
 
 export const RightsContainerStyled = styled.div`
+	display: flex;
 	align-items: center;
 	justify-content: center;
+	align-self: center;
 	margin-top: 3rem;
-
-	& > * {
-		display: flex;
-		${({ theme }) => theme.paragraphs.paragraph3}
-		color: ${({ theme }) => theme.colors.helperBlue2};
-	}
+	width: 70vw;
 `
 
 export const RightsTextStyled = styled.div`
-	margin-left: 10vw;
+	display: flex;
 	margin-right: auto;
+
+	${({ theme }) => theme.paragraphs.paragraph3}
+	color: ${({ theme }) => theme.colors.helperBlue2};
 `
 
 export const PrivacyTextStyled = styled.div`
-	margin-left: 3rem;
-	margin-right: 10vw;
+	display: flex;
+	margin-left: 9.5rem;
+
+	${({ theme }) => theme.paragraphs.paragraph3}
+	color: ${({ theme }) => theme.colors.helperBlue2};
 `

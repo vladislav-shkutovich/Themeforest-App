@@ -7,7 +7,8 @@ export const HeaderStyled = styled.div`
 	background-color: ${({ theme }) => theme.colors.background};
 	display: flex;
 	align-content: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0 15vw;
 
 	& > * {
 		${({ theme }) => theme.headlines.headline7}

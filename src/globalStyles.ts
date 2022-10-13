@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-
-// import { theme } from './theme'
+import theme from './theme'
 
 export default createGlobalStyle`
   * {
@@ -18,6 +17,7 @@ export default createGlobalStyle`
 		& > #root {
 			width: 100%;
       height: 100%;
+			${theme.paragraphs.paragraph3}
     }
   }
 `
