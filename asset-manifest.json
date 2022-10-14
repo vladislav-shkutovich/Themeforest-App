@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/Themeforest-App/static/js/main.25c51f30.js",
+    "static/js/787.6216e487.chunk.js": "/Themeforest-App/static/js/787.6216e487.chunk.js",
+    "static/media/home1.png": "/Themeforest-App/static/media/home1.8effa75238c64c911ec9.png",
+    "static/media/logo_blue.svg": "/Themeforest-App/static/media/logo_blue.7faa926775e34503646bd75d657fda39.svg",
+    "static/media/logo_white.svg": "/Themeforest-App/static/media/logo_white.691ddacae8e1e8745a3349a4168a9d0b.svg",
+    "static/media/icon_behance.svg": "/Themeforest-App/static/media/icon_behance.1ca30da0fbb42c541aaf4aeaf297a16d.svg",
+    "static/media/icon_play.svg": "/Themeforest-App/static/media/icon_play.0a954b338e6004cfa42a3e604ff79c28.svg",
+    "static/media/icon_facebook.svg": "/Themeforest-App/static/media/icon_facebook.152932848b0542f2101c758c12738ca7.svg",
+    "static/media/icon_twitter.svg": "/Themeforest-App/static/media/icon_twitter.9ed2681d7d2b097fcb395c9cbeb04ffe.svg",
+    "static/media/icon_linkedin.svg": "/Themeforest-App/static/media/icon_linkedin.9a42b20b558558b08f2de2a597e34ef9.svg",
+    "index.html": "/Themeforest-App/index.html",
+    "static/media/icon_youtube.svg": "/Themeforest-App/static/media/icon_youtube.c97621c07df839fea7ea011664566aa1.svg",
+    "main.25c51f30.js.map": "/Themeforest-App/static/js/main.25c51f30.js.map",
+    "787.6216e487.chunk.js.map": "/Themeforest-App/static/js/787.6216e487.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.25c51f30.js"
+  ]
+}
