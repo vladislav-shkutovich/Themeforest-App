@@ -8,7 +8,6 @@ export const HeaderStyled = styled.div`
 	display: flex;
 	align-content: center;
 	justify-content: space-between;
-	padding: 0 15vw;
 
 	& > * {
 		${({ theme }) => theme.headlines.headline7}
@@ -25,7 +24,7 @@ export const LogoStyled = styled.img`
 `
 
 export const LinksContainerStyled = styled.div`
-	gap: 5%;
+	column-gap: 4rem;
 	display: flex;
 	justify-self: center;
 	align-self: center;

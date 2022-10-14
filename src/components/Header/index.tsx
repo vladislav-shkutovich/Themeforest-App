@@ -1,8 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { HOME_PAGE_ROUTE, BLOG_ROUTE, CONTACTS_ROUTE, SOLUTIONS_ROUTE } from '@constants/router'
 import logo from '@assets/icons/logo_blue.svg'
-import { ButtonWatchTheDemo } from './ButtonWatchTheDemo'
-import { PagesDropdown } from './PagesDropdown'
+import { ButtonWatchTheDemo } from '@components/Buttons/ButtonWatchTheDemo'
+import { PagesDropdown } from '@components/Header/PagesDropdown'
 import { HeaderStyled, LogoStyled, LinksContainerStyled, LinkStyled } from './styled'
 
 export const Header: React.FC = () => {
