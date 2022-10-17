@@ -20,6 +20,6 @@ root.render(
 		</ThemeProvider>
 		{/* </PersistGate>
 	</Provider> */}
-	</React.StrictMode>
+	</React.StrictMode>,
 )
 reportWebVitals()

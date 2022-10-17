@@ -12,6 +12,14 @@ export const ButtonWatchTheDemoStyled = styled.button`
 	border-radius: 0.6rem;
 	border: none;
 	padding: 10px 14px;
+
+	:hover {
+		background-color: ${({ theme }) => theme.colors.hover};
+	}
+
+	:active {
+		background-color: ${({ theme }) => theme.colors.primary};
+	}
 `
 
 export const VectorStyled = styled.img``

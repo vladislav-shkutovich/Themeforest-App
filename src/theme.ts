@@ -9,6 +9,7 @@ const shadows = {
 
 const colors = {
 	primary: '#185CFF',
+	hover: '#467DFF',
 	secondary: '#002B4E',
 	tertiary: '#F0F9FF',
 	helperBlue: '#194060',

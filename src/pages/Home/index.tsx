@@ -1,10 +1,20 @@
+/* eslint-disable no-irregular-whitespace */
+import imageEnsome from '@assets/images/home1.png'
+import imageSolutions from '@assets/images/home2.png'
 import { MainLayout } from '@layouts/MainLayout'
-import imageFirst from '@assets/images/home1.png'
+import { ButtonCircle } from '@components/ButtonCircle'
+import { ButtonDefault } from '@components/ButtonDefault'
 import {
 	SetcionIntroduction,
-	HeadingFirst,
-	ParagraphFirst,
-	ImageFirst,
+	HeadingEnsome,
+	ParagraphEnsome,
+	ImageEnsome,
+	HeadingNewest,
+	ParagraphNewest,
+	HeadingSolutions,
+	ParagraphSolutions,
+	ImageSolutions,
+	BackgroundWrapperSolutions,
 	SetcionServices,
 	SetcionBenefits,
 	SetcionSliders,
@@ -14,14 +24,35 @@ import {
 export const HomePage: React.FC = () => (
 	<MainLayout>
 		<SetcionIntroduction>
-			<HeadingFirst>
+			<HeadingEnsome>
 				Find true power in your data with <span>Ensome</span>
-			</HeadingFirst>
-			<ParagraphFirst>
+			</HeadingEnsome>
+			<ParagraphEnsome>
 				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda,
 				totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-			</ParagraphFirst>
-			<ImageFirst alt="People" src={imageFirst} />
+				<ButtonCircle text="Learn More" />
+			</ParagraphEnsome>
+			<ImageEnsome alt="People" src={imageEnsome} />
+
+			<HeadingNewest>
+				The <span>newest</span> business analytics platform
+			</HeadingNewest>
+			<ParagraphNewest>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+				architecto beatae vitae dicta sunt explicabo.
+				<ButtonDefault text="Discover more" />
+			</ParagraphNewest>
+
+			<HeadingSolutions>Radically new solutions for data</HeadingSolutions>
+			<ParagraphSolutions>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+				architecto beatae vitae dicta sunt explicabo.
+				<ButtonDefault text="Learn more" />
+			</ParagraphSolutions>
+			<ImageSolutions alt="People" src={imageSolutions} />
+			<BackgroundWrapperSolutions />
 		</SetcionIntroduction>
 
 		<SetcionServices>SetcionServices</SetcionServices>
