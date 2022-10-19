@@ -5,7 +5,7 @@ export const SubscribeSectionStyled = styled.div`
 	justify-content: space-between;
 	align-items: center;
 
-	width: 100vw;
+	min-width: 100vw;
 	height: 30.6rem;
 	padding: 0 15vw;
 

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const SetcionIntroduction = styled.section`
-	height: 207rem;
+	height: max-content;
 	display: grid;
 	grid-template-rows:
-		[section-start text1-start] 28rem [text1-end image-start] minmax(10rem, 59rem)
-		[image-end text2-start] 46rem [text2-end half-image-start] 74rem [half-image-end section-end];
+		[section-start text1-start] 28rem [text1-end image-start] max-content
+		[image-end text2-start] max-content [text2-end half-image-start] max-content [half-image-end section-end];
 	grid-template-columns: [start] 50% [middle] 50% [end];
 `
 
@@ -17,7 +17,8 @@ export const HeadingEnsome = styled.p`
 
 	justify-self: end;
 	margin-top: 7rem;
-	width: 54rem;
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
 
 	& > span {
 		color: ${({ theme }) => theme.colors.primary};
@@ -31,9 +32,11 @@ export const ParagraphEnsome = styled.p`
 	grid-column: middle / end;
 
 	justify-self: start;
-	width: 35rem;
+	width: minmax(min-content, 35rem);
+	max-width: 35rem;
+	height: 100%;
 	margin-top: 7rem;
-	margin-left: 22rem;
+	margin-left: 15%;
 `
 
 export const ImageEnsome = styled.img`
@@ -56,9 +59,10 @@ export const HeadingNewest = styled.p`
 	grid-row: text2-start / text2-end;
 	grid-column: start / middle;
 
+	align-self: center;
 	justify-self: end;
-	margin-top: 10%;
-	width: 54rem;
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
 
 	& > span {
 		color: ${({ theme }) => theme.colors.primary};
@@ -70,69 +74,156 @@ export const ParagraphNewest = styled.p`
 	color: ${({ theme }) => theme.colors.grey};
 	grid-row: text2-start / text2-end;
 	grid-column: middle / end;
-
 	justify-self: start;
-	width: 35rem;
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
 	margin-top: 10%;
 	margin-left: 3rem;
 `
 
 export const HeadingSolutions = styled.p`
 	${({ theme }) => theme.headlines.headline2}
-	display: -ms-inline-grid;
+	display: grid;
 	grid-row: half-image-start / half-image-end;
 	grid-column: middle / end;
-
 	justify-self: start;
-	margin-top: 16rem;
-	width: 54rem;
+	align-self: center;
+	width: minmax(min-content, 54rem);
+	padding: 3rem 3rem 0 0;
 	margin-left: 3rem;
-`
 
-export const ParagraphSolutions = styled.p`
-	${({ theme }) => theme.paragraphs.paragraph1}
-	color: ${({ theme }) => theme.colors.grey};
-	grid-row: half-image-start / half-image-end;
-	grid-column: middle / end;
-
-	justify-self: start;
-	width: 35rem;
-	margin-top: 30rem;
-	margin-left: 3rem;
+	& > span {
+		${({ theme }) => theme.paragraphs.paragraph1}
+		color: ${({ theme }) => theme.colors.grey};
+		margin-top: 3rem;
+	}
 `
 
 export const ImageSolutions = styled.img`
 	grid-row: half-image-start / half-image-end;
 	grid-column: start / middle;
+	align-self: center;
 
 	background-size: cover;
 	width: 100%;
-	height: 100%;
 `
 
 export const BackgroundWrapperSolutions = styled.div`
-	grid-row: half-image-start / half-image-end;
+	grid-row: half-image-start;
 	grid-column: start / end;
 	z-index: -1;
 	background-color: ${({ theme }) => theme.colors.background};
 `
 
 export const SetcionServices = styled.section`
-	height: 62rem;
-	border-top: 0.3rem solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+
+	height: max-content;
+	margin: 8rem 0;
+
+	& > div {
+		display: flex;
+		flex-direction: row;
+	}
 `
 
-export const SetcionBenefits = styled.section`
-	height: 82rem;
-	border-top: 0.3rem solid green;
+export const HeadingServices = styled.p`
+	${({ theme }) => theme.headlines.headline2}
+	margin-bottom: 5rem;
+	width: minmax(min-content, 92rem);
+	max-width: 92rem;
+`
+
+export const ParagraphServices = styled.p`
+	${({ theme }) => theme.paragraphs.paragraph1}
+	color: ${({ theme }) => theme.colors.grey};
+	margin: 0 0 5rem 5rem;
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
+`
+
+export const AchivementsServices = styled.p`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	${({ theme }) => theme.paragraphs.paragraph2}
+	color: ${({ theme }) => theme.colors.grey};
+	margin: 3rem;
+	max-width: 16rem;
+	max-height: 10rem;
+
+	& > span {
+		font-weight: 800;
+		color: ${({ theme }) => theme.colors.primary};
+		font-size: ${({ theme }) => theme.fontSizes.achivements};
+		padding: 1rem;
+	}
+`
+
+export const LogosContainer = styled.div`
+	display: flex;
+	max-width: min-content;
+`
+
+export const Logo = styled.img`
+	width: 18.5rem;
+	height: 13.2rem;
+`
+
+export const SectionBenefits = styled.section`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: max-content;
+	padding: 12rem 0;
+	background-color: ${({ theme }) => theme.colors.background};
+
+	& > div {
+		display: flex;
+	}
+`
+
+export const BenefitsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+`
+
+export const HeadingBenefits = styled.p`
+	${({ theme }) => theme.headlines.headline2}
+	margin-bottom: 3rem;
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
+`
+
+export const ParagraphBenefits = styled.p`
+	${({ theme }) => theme.paragraphs.paragraph1}
+	color: ${({ theme }) => theme.colors.grey};
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
+`
+
+export const FirstColumnCard = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`
+
+export const SecondColumnCard = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
 `
 
 export const SetcionSliders = styled.section`
-	height: 221rem;
+	height: max-content;
 	border-top: 0.3rem solid blue;
 `
 
 export const SetcionHelp = styled.section`
-	height: 42rem;
+	height: max-content;
 	border-top: 0.3rem solid lightcoral;
 `

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const PageLayout = styled.div``
 export const Card = styled.div`
 	& > * {
-		padding: 0 15vw;
+		width: 100vw;
+		padding: 0 10vw;
 	}
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.div`
-	width: 100vw;
+	min-width: 100vw;
 	height: 10vh;
 	max-height: 12.6rem;
 	background-color: ${({ theme }) => theme.colors.background};

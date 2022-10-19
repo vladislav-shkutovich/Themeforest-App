@@ -9,4 +9,7 @@ export const PagesDropdownStyled = styled.select`
 	text-align: center;
 `
 
-export const OptionStyled = styled.option``
+export const OptionStyled = styled.option`
+	border: none;
+	background: none;
+`

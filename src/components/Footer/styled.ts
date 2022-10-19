@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainerStyled = styled.div`
-	width: 100vw;
+	min-width: 100vw;
 	height: 53rem;
 	background-color: ${({ theme }) => theme.colors.secondary};
 	display: flex;
@@ -72,7 +72,7 @@ export const ParagraphStyled = styled.div`
 
 export const LineSeparatorStyled = styled.div`
 	display: flex;
-	width: 70vw;
+	width: 100%;
 	height: 0px;
 	margin-top: 3.8rem;
 
@@ -88,7 +88,7 @@ export const RightsContainerStyled = styled.div`
 	justify-content: center;
 	align-self: center;
 	margin-top: 3rem;
-	width: 70vw;
+	width: 100%;
 `
 
 export const RightsTextStyled = styled.div`
