@@ -13,6 +13,7 @@ export const ButtonDefaultStyled = styled.button`
 	border: none;
 	padding: 15px 0;
 	margin: 3rem 0;
+	cursor: pointer;
 
 	:hover {
 		background-color: ${({ theme }) => theme.colors.hover};

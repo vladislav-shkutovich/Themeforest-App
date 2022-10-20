@@ -21,3 +21,10 @@ export interface ITestimonials {
 	text: string
 	key: string
 }
+
+export interface IHomepagePriceCard {
+	title: string
+	cost: string
+	description: string[]
+	key: string
+}

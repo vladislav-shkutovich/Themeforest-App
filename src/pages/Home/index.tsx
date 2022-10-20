@@ -4,6 +4,7 @@ import { HomePageIntroduction } from '@components/HomePageIntroduction'
 import { HomePageServices } from '@components/HomePageServices'
 import { HomePageBenefits } from '@components/HomePageBenefits'
 import { Testimonials } from '@components/Testimonials'
+import { HomePageOurPricing } from '@components/HomePageOurPricing'
 
 import {
 	SetcionIntroduction,
@@ -29,6 +30,7 @@ export const HomePage: React.FC = () => (
 
 		<SectionSliders>
 			<Testimonials />
+			<HomePageOurPricing />
 		</SectionSliders>
 
 		<SetcionHelp>SetcionHelp</SetcionHelp>

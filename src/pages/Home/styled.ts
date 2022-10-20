@@ -29,7 +29,7 @@ export const SectionBenefits = styled.section`
 	justify-content: center;
 	align-items: center;
 	height: max-content;
-	padding: 12rem 0;
+	padding: 10rem 0;
 	background-color: ${({ theme }) => theme.colors.background};
 
 	& > div {

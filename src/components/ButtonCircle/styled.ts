@@ -12,6 +12,7 @@ export const ButtonCircleStyled = styled.button`
 	border-radius: 50%;
 	border: none;
 	margin-top: 3rem;
+	cursor: pointer;
 
 	position: absolute;
 	z-index: 2;

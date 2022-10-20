@@ -70,6 +70,7 @@ export const ParagraphNewest = styled.p`
 	max-width: 54rem;
 	margin-top: 10%;
 	margin-left: 3rem;
+	margin-bottom: 3rem;
 `
 
 export const HeadingSolutions = styled.p`

@@ -35,6 +35,7 @@ const fontSizes = {
 	xxxlarge: '3.8rem',
 	xxxxlarge: '6rem',
 	achivements: '5rem',
+	prices: '2.6rem',
 }
 
 const headlinesCommon = `
