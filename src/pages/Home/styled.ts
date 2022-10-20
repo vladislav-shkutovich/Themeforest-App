@@ -218,9 +218,39 @@ export const SecondColumnCard = styled.div`
 	margin-top: 5rem;
 `
 
-export const SetcionSliders = styled.section`
-	height: max-content;
-	border-top: 0.3rem solid blue;
+export const SectionSliders = styled.section`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	column-gap: 12rem;
+	height: minmax(min-content, max-content);
+	padding: 12rem 0;
+`
+
+export const Testimonials = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+`
+
+export const HeadingTestimonials = styled.div`
+	display: flex;
+	justify-content: space-between;
+
+	& > h2 {
+		${({ theme }) => theme.headlines.headline2}
+		width: minmax(min-content, 25rem);
+	}
+`
+
+export const TestimonialsCardsContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	height: minmax(min-content, 37rem);
+	max-height: 37rem;
 `
 
 export const SetcionHelp = styled.section`

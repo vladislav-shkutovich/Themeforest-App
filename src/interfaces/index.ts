@@ -7,9 +7,17 @@ export interface ILinkItems {
 	route: string
 }
 
-export interface IHomepageBenefitsCards {
+export interface IHomepageBenefitsCard {
 	icon: string
 	heading: string
+	text: string
+	key: string
+}
+
+export interface ITestimonials {
+	photo: string
+	name: string
+	position: string
 	text: string
 	key: string
 }

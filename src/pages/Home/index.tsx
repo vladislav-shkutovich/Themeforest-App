@@ -3,10 +3,13 @@ import imageEnsome from '@assets/images/home1.png'
 import imageSolutions from '@assets/images/home2.png'
 import { HOMEPAGE_LOGOS } from '@constants/homepageLogos'
 import { HOMEPAGE_BENEFITS_CARDS } from '@constants/homepageBenefitsCards'
+import { TESTIMONIALS_ITEMS } from '@constants/testimonialsItems'
 import { MainLayout } from '@layouts/MainLayout'
 import { ButtonCircle } from '@components/ButtonCircle'
 import { ButtonDefault } from '@components/ButtonDefault'
-import { CardHomePage } from '@components/CardHomePage'
+import { HomePageBenefitsCard } from '@components/HomePageBenefitsCard'
+import { ButtonsSliderDefault } from '@components/ButtonsSliderDefault'
+import { TestimonialsCard } from '@components/TestimonialsCard'
 
 import {
 	SetcionIntroduction,
@@ -23,7 +26,7 @@ import {
 	ParagraphServices,
 	AchivementsServices,
 	SectionBenefits,
-	SetcionSliders,
+	SectionSliders,
 	SetcionHelp,
 	LogosContainer,
 	Logo,
@@ -32,6 +35,9 @@ import {
 	BenefitsContainer,
 	FirstColumnCard,
 	SecondColumnCard,
+	Testimonials,
+	HeadingTestimonials,
+	TestimonialsCardsContainer,
 } from './styled'
 
 export const HomePage: React.FC = () => (
@@ -111,18 +117,31 @@ export const HomePage: React.FC = () => (
 			<div>
 				<FirstColumnCard>
 					{HOMEPAGE_BENEFITS_CARDS.slice(0, 2).map((item) => (
-						<CardHomePage {...item} />
+						<HomePageBenefitsCard {...item} />
 					))}
 				</FirstColumnCard>
 				<SecondColumnCard>
 					{HOMEPAGE_BENEFITS_CARDS.slice(2).map((item) => (
-						<CardHomePage {...item} />
+						<HomePageBenefitsCard {...item} />
 					))}
 				</SecondColumnCard>
 			</div>
 		</SectionBenefits>
 
-		<SetcionSliders>SetcionSliders</SetcionSliders>
+		<SectionSliders>
+			<Testimonials>
+				<HeadingTestimonials>
+					<h2>Testimonials </h2>
+					<ButtonsSliderDefault />
+				</HeadingTestimonials>
+				<TestimonialsCardsContainer>
+					{TESTIMONIALS_ITEMS.map((item) => (
+						// <HomePageBenefitsCard {...item} />
+						<TestimonialsCard {...item} />
+					))}
+				</TestimonialsCardsContainer>
+			</Testimonials>
+		</SectionSliders>
 
 		<SetcionHelp>SetcionHelp</SetcionHelp>
 	</MainLayout>

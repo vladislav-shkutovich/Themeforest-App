@@ -1,7 +1,12 @@
-import { IHomepageBenefitsCards } from '@interfaces/index'
+import { IHomepageBenefitsCard } from '@interfaces/index'
 import { CardStyled } from './styled'
 
-export const CardHomePage: React.FC<IHomepageBenefitsCards> = ({ icon, heading, text, key }) => {
+export const HomePageBenefitsCard: React.FC<IHomepageBenefitsCard> = ({
+	icon,
+	heading,
+	text,
+	key,
+}) => {
 	return (
 		<CardStyled key={key}>
 			<img alt={key} src={icon} />

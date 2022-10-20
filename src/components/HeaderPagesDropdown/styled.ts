@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PagesDropdownStyled = styled.select`
+export const HeaderPagesDropdownStyled = styled.select`
 	font-size: ${({ theme }) => theme.fontSizes.medium};
 	color: ${({ theme }) => theme.colors.grey};
 	border: none;

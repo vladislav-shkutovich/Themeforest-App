@@ -1,15 +1,15 @@
 import { useNavigate } from 'react-router-dom'
 import { PAGES_DROPDOWN_ITEMS } from '@constants/pagesDropdownItems'
-import { PagesDropdownStyled, OptionStyled } from './styled'
+import { HeaderPagesDropdownStyled, OptionStyled } from './styled'
 
-export const PagesDropdown: React.FC = () => {
+export const HeaderPagesDropdown: React.FC = () => {
 	const navigate = useNavigate()
 	const handleNavigate: React.ChangeEventHandler<HTMLSelectElement> = (e) => {
 		navigate(e.target.value)
 	}
 
 	return (
-		<PagesDropdownStyled defaultValue="Pages" onChange={handleNavigate}>
+		<HeaderPagesDropdownStyled defaultValue="Pages" onChange={handleNavigate}>
 			<option hidden disabled value="Pages">
 				Pages
 			</option>
@@ -18,6 +18,6 @@ export const PagesDropdown: React.FC = () => {
 					{item.name}
 				</OptionStyled>
 			))}
-		</PagesDropdownStyled>
+		</HeaderPagesDropdownStyled>
 	)
 }

@@ -2,9 +2,9 @@ import vector from '@assets/icons/vector.svg'
 import vector1 from '@assets/icons/vector-1.svg'
 import vector2 from '@assets/icons/vector-2.svg'
 import vector3 from '@assets/icons/vector-3.svg'
-import { IHomepageBenefitsCards } from '@interfaces/index'
+import { IHomepageBenefitsCard } from '@interfaces/index'
 
-export const HOMEPAGE_BENEFITS_CARDS: IHomepageBenefitsCards[] = [
+export const HOMEPAGE_BENEFITS_CARDS: IHomepageBenefitsCard[] = [
 	{
 		icon: vector,
 		heading: 'Machine learning',

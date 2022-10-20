@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { HOME_PAGE_ROUTE, BLOG_ROUTE, CONTACTS_ROUTE, SOLUTIONS_ROUTE } from '@constants/router'
 import logo from '@assets/icons/logo_blue.svg'
 import { ButtonWatchTheDemo } from '@components/ButtonWatchTheDemo'
-import { PagesDropdown } from '@components/PagesDropdown'
+import { HeaderPagesDropdown } from '@components/HeaderPagesDropdown'
 import { HeaderStyled, LogoStyled, LinksContainerStyled, LinkStyled } from './styled'
 
 export const Header: React.FC = () => {
@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
 				<LinkStyled>
 					<Link to={SOLUTIONS_ROUTE}>Solutions</Link>
 				</LinkStyled>
-				<PagesDropdown />
+				<HeaderPagesDropdown />
 				<LinkStyled>
 					<Link to={BLOG_ROUTE}>Blog</Link>
 				</LinkStyled>
