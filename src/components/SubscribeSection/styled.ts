@@ -64,4 +64,13 @@ export const ButtonStyled = styled.button`
 	border: none;
 	width: 12.5rem;
 	padding: 1.5rem 2rem;
+	cursor: pointer;
+
+	:hover {
+		background-color: ${({ theme }) => theme.colors.background};
+	}
+
+	:active {
+		background-color: ${({ theme }) => theme.colors.white};
+	}
 `

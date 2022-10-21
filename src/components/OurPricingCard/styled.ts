@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PriceCard = styled.div`
+export const OurPricingCardStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-content: center;

@@ -46,7 +46,3 @@ export const SectionSliders = styled.section`
 	height: minmax(min-content, max-content);
 	padding: 12rem 0;
 `
-export const SetcionHelp = styled.section`
-	height: max-content;
-	border-top: 0.3rem solid lightcoral;
-`

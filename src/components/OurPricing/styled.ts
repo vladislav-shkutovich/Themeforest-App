@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const OurPricing = styled.div`
+export const OurPricingStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 12rem 0;

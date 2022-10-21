@@ -22,9 +22,17 @@ export interface ITestimonials {
 	key: string
 }
 
-export interface IHomepagePriceCard {
+export interface IOurPricingCard {
 	title: string
 	cost: string
 	description: string[]
+	key: string
+}
+
+export interface IOurBlogCard {
+	image: string
+	date: string
+	title: string
+	text: string
 	key: string
 }

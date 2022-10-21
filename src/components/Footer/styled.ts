@@ -6,6 +6,7 @@ export const FooterContainerStyled = styled.div`
 	background-color: ${({ theme }) => theme.colors.secondary};
 	display: flex;
 	flex-direction: column;
+	padding-top: 5rem;
 `
 
 export const FooterTopPartStyled = styled.div`
@@ -17,7 +18,6 @@ export const InfoContainerStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	max-width: 28.5rem;
-	margin: 5rem 0;
 
 	& > * {
 		display: flex;

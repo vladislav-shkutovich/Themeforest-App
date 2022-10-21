@@ -4,15 +4,10 @@ import { HomePageIntroduction } from '@components/HomePageIntroduction'
 import { HomePageServices } from '@components/HomePageServices'
 import { HomePageBenefits } from '@components/HomePageBenefits'
 import { Testimonials } from '@components/Testimonials'
-import { HomePageOurPricing } from '@components/HomePageOurPricing'
-
-import {
-	SetcionIntroduction,
-	SetcionServices,
-	SectionBenefits,
-	SectionSliders,
-	SetcionHelp,
-} from './styled'
+import { OurPricing } from '@components/OurPricing'
+import { OurBlog } from '@components/OurBlog'
+import { HelpSection } from '@components/HelpSection'
+import { SetcionIntroduction, SetcionServices, SectionBenefits, SectionSliders } from './styled'
 
 export const HomePage: React.FC = () => (
 	<MainLayout>
@@ -30,9 +25,10 @@ export const HomePage: React.FC = () => (
 
 		<SectionSliders>
 			<Testimonials />
-			<HomePageOurPricing />
+			<OurPricing />
+			<OurBlog />
 		</SectionSliders>
 
-		<SetcionHelp>SetcionHelp</SetcionHelp>
+		<HelpSection />
 	</MainLayout>
 )

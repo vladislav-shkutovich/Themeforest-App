@@ -1,6 +1,6 @@
-import { IHomepagePriceCard } from '@interfaces/index'
+import { IOurPricingCard } from '@interfaces/index'
 
-export const HOMEPAGE_PRICE_CARDS: IHomepagePriceCard[] = [
+export const OUR_PRICING_CARDS: IOurPricingCard[] = [
 	{
 		title: 'Free trial',
 		cost: '$0',

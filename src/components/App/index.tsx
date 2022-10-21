@@ -19,9 +19,11 @@ import {
 	SERVICES_ROUTE,
 	SOLUTIONS_ROUTE,
 } from '@constants/router'
+import { ScrollToTop } from '@components/ScrollToTop'
 
 export const App: React.FC = () => (
 	<BrowserRouter>
+		<ScrollToTop />
 		<Routes>
 			<Route path={HOME_PAGE_ROUTE} element={<HomePage />} />
 			<Route path={ABOUT_US_ROUTE} element={<AboutUsPage />} />
