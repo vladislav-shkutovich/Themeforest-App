@@ -8,7 +8,7 @@ export const OurPricing: React.FC = () => {
 			<h2>Our Pricing</h2>
 			<div>
 				{OUR_PRICING_CARDS.map((item) => (
-					<OurPricingCard {...item} />
+					<OurPricingCard {...item} key={item.key} />
 				))}
 			</div>
 		</OurPricingStyled>

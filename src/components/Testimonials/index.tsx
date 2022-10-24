@@ -35,7 +35,7 @@ export const Testimonials: React.FC = () => {
 			</HeadingTestimonials>
 			<TestimonialsCardsContainer>
 				{TESTIMONIALS_ITEMS.slice(cardIndex, cardIndex + 3).map((item) => (
-					<TestimonialsCard {...item} />
+					<TestimonialsCard {...item} key={item.key} />
 				))}
 			</TestimonialsCardsContainer>
 		</TestimonialsStyled>

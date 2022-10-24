@@ -35,7 +35,7 @@ export const OurBlog: React.FC = () => {
 			</HeadingOurBlog>
 			<OurBlogCardsContainer>
 				{OUR_BLOG_CARDS.slice(cardIndex, cardIndex + 3).map((item) => (
-					<OurBlogCard {...item} />
+					<OurBlogCard {...item} key={item.key} />
 				))}
 			</OurBlogCardsContainer>
 		</OurBlogStyled>

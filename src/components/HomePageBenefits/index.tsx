@@ -23,7 +23,7 @@ export const HomePageBenefits: React.FC = () => (
 		<div>
 			<FirstColumnCard>
 				{HOMEPAGE_BENEFITS_CARDS.slice(0, 2).map((item) => (
-					<HomePageBenefitsCard {...item} />
+					<HomePageBenefitsCard {...item} key={item.key} />
 				))}
 			</FirstColumnCard>
 			<SecondColumnCard>

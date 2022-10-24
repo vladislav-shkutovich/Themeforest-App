@@ -5,14 +5,14 @@ import { ReactComponent as CheckMark } from '@assets/icons/check_mark.svg'
 import { ButtonsSwitch } from '@components/ButtonsSwitch'
 import { Wrapper, OurPricingCardStyled } from './styled'
 
-export const OurPricingCard: React.FC<IOurPricingCard> = ({ title, cost, description, key }) => {
+export const OurPricingCard: React.FC<IOurPricingCard> = ({ title, cost, description }) => {
 	const [buttonStates, setButtonStates] = useState([true, false])
 	const handleActivity = () => {
 		setButtonStates(() => [!buttonStates[0], !buttonStates[1]])
 	}
 
 	return (
-		<OurPricingCardStyled key={key}>
+		<OurPricingCardStyled>
 			<h6>{title}</h6>
 			<div>
 				<p>{cost}</p>
@@ -22,7 +22,7 @@ export const OurPricingCard: React.FC<IOurPricingCard> = ({ title, cost, descrip
 				<ButtonDefault text="Choose plan" />
 				<ul>
 					{description.map((item) => (
-						<li>
+						<li key={item}>
 							<CheckMark />
 							{item}
 						</li>
