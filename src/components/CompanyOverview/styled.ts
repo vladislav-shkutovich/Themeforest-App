@@ -1,5 +1,20 @@
 import styled from 'styled-components'
 
+export const OvervirewStyled = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+
+	height: max-content;
+	margin: 12rem 0;
+
+	& > div {
+		display: flex;
+		flex-direction: row;
+	}
+`
+
 export const HeadingOverview = styled.p`
 	${({ theme }) => theme.headlines.headline2}
 	margin-bottom: 5rem;

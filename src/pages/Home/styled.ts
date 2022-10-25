@@ -9,21 +9,6 @@ export const SetcionIntroduction = styled.section`
 	grid-template-columns: [start] 50% [middle] 50% [end];
 `
 
-export const SetcionServices = styled.section`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
-
-	height: max-content;
-	margin: 8rem 0;
-
-	& > div {
-		display: flex;
-		flex-direction: row;
-	}
-`
-
 export const SectionBenefits = styled.section`
 	display: flex;
 	justify-content: center;

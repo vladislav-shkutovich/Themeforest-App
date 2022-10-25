@@ -1,5 +1,4 @@
-import arrowRight from '@assets/icons/arrow_right.svg'
-import { Link } from 'react-router-dom'
+import { ButtonReadMore } from '@components/ButtonReadMore'
 import { BLOG_ROUTE } from '@constants/router'
 import { IOurBlogCard } from '@interfaces/index'
 import { OurBlogCardStyled } from './styled'
@@ -11,11 +10,7 @@ export const OurBlogCard: React.FC<IOurBlogCard> = ({ image, date, title, text }
 			<h6>{date}</h6>
 			<h4>{title}</h4>
 			<p>{text}</p>
-			<button type="button">
-				<Link to={BLOG_ROUTE}>
-					Read more <img src={arrowRight} alt="arrow" />
-				</Link>
-			</button>
+			<ButtonReadMore text="Read more" route={BLOG_ROUTE} />
 		</OurBlogCardStyled>
 	)
 }

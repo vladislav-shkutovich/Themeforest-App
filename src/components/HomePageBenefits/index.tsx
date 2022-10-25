@@ -1,5 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
-import { HOMEPAGE_BENEFITS_CARDS } from '@constants/homepageBenefitsCards'
+import { HOMEPAGE_BENEFITS_CARDS } from '@constants/homePageBenefitsCards'
 import { HomePageBenefitsCard } from '@components/HomePageBenefitsCard'
 
 import {

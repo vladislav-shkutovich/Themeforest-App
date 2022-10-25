@@ -36,3 +36,10 @@ export interface IOurBlogCard {
 	text: string
 	key: string
 }
+
+export interface IServicesContentCard {
+	image: string
+	title: string
+	text: string
+	key: string
+}

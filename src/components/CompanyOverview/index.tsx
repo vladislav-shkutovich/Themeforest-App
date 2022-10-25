@@ -1,6 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
-import { HOMEPAGE_LOGOS } from '@constants/homepageLogos'
+import { HOMEPAGE_LOGOS } from '@constants/homePageLogos'
 import {
+	OvervirewStyled,
 	HeadingOverview,
 	ParagraphOverview,
 	AchivementsOverview,
@@ -9,7 +10,7 @@ import {
 } from './styled'
 
 export const CompanyOverview: React.FC = () => (
-	<>
+	<OvervirewStyled>
 		<HeadingOverview>We provide services that guarantee your success</HeadingOverview>
 		<div>
 			<AchivementsOverview>
@@ -35,5 +36,5 @@ export const CompanyOverview: React.FC = () => (
 				<Logo src={item} key={item} />
 			))}
 		</LogosContainer>
-	</>
+	</OvervirewStyled>
 )

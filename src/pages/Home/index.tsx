@@ -5,9 +5,9 @@ import { CompanyOverview } from '@components/CompanyOverview'
 import { HomePageBenefits } from '@components/HomePageBenefits'
 import { Testimonials } from '@components/Testimonials'
 import { OurPricing } from '@components/OurPricing'
-import { OurBlog } from '@components/OurBlog'
+import { OurBlog } from '@components/HomePageOurBlog'
 import { HelpSection } from '@components/HelpSection'
-import { SetcionIntroduction, SetcionServices, SectionBenefits, SectionSliders } from './styled'
+import { SetcionIntroduction, SectionBenefits, SectionSliders } from './styled'
 
 export const HomePage: React.FC = () => (
 	<MainLayout>
@@ -15,9 +15,7 @@ export const HomePage: React.FC = () => (
 			<HomePageIntroduction />
 		</SetcionIntroduction>
 
-		<SetcionServices>
-			<CompanyOverview />
-		</SetcionServices>
+		<CompanyOverview />
 
 		<SectionBenefits>
 			<HomePageBenefits />
