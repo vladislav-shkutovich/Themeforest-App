@@ -10,7 +10,7 @@ export const Card = styled.div`
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 		& > * {
-			padding: 0 2vw;
+			padding: 0 3vw;
 		}
 	}
 `

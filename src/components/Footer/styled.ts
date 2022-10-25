@@ -2,16 +2,20 @@ import styled from 'styled-components'
 
 export const FooterContainerStyled = styled.div`
 	min-width: 100vw;
-	height: 53rem;
+	min-height: 53rem;
 	background-color: ${({ theme }) => theme.colors.secondary};
 	display: flex;
 	flex-direction: column;
-	padding-top: 5rem;
 `
 
 export const FooterTopPartStyled = styled.div`
 	display: flex;
 	justify-content: space-between;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		flex-direction: column;
+		align-items: center;
+	}
 `
 
 export const InfoContainerStyled = styled.div`
@@ -22,6 +26,15 @@ export const InfoContainerStyled = styled.div`
 	& > * {
 		display: flex;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		margin-bottom: 5rem;
+
+		& > * {
+			align-self: center;
+			text-align: center;
+		}
+	}
 `
 
 export const LogoStyled = styled.img`
@@ -30,6 +43,10 @@ export const LogoStyled = styled.img`
 	color: ${({ theme }) => theme.colors.white};
 	margin-bottom: 2rem;
 	cursor: pointer;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		align-self: center;
+	}
 `
 
 export const IconContainerStyled = styled.div`
@@ -44,12 +61,26 @@ export const IconStyled = styled.img`
 `
 
 export const LinksContainerStyled = styled.div`
+	display: flex;
 	flex-direction: column;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		margin-bottom: 5rem;
+		align-items: center;
+	}
 `
 
 export const ContactsContainerStyled = styled.div`
+	display: flex;
 	flex-direction: column;
 	max-width: 23.3rem;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		& > * {
+			align-self: center;
+			text-align: center;
+		}
+	}
 `
 
 export const HeadingStyled = styled.div`
@@ -80,6 +111,10 @@ export const LineSeparatorStyled = styled.div`
 
 	border: 0.1rem solid ${({ theme }) => theme.colors.helperBlue2};
 	transform: rotate(180deg);
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		width: 80%;
+	}
 `
 
 export const RightsContainerStyled = styled.div`
@@ -89,6 +124,12 @@ export const RightsContainerStyled = styled.div`
 	align-self: center;
 	margin-top: 3rem;
 	width: 100%;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 5rem;
+	}
 `
 
 export const RightsTextStyled = styled.div`
@@ -97,6 +138,10 @@ export const RightsTextStyled = styled.div`
 
 	${({ theme }) => theme.paragraphs.paragraph3}
 	color: ${({ theme }) => theme.colors.helperBlue2};
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		margin-right: 0;
+	}
 `
 
 export const PrivacyTextStyled = styled.div`
@@ -105,4 +150,8 @@ export const PrivacyTextStyled = styled.div`
 
 	${({ theme }) => theme.paragraphs.paragraph3}
 	color: ${({ theme }) => theme.colors.helperBlue2};
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.footerFirst}) {
+		margin-left: 0;
+	}
 `

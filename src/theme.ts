@@ -3,6 +3,10 @@ const breakpoints = {
 	headerFirst: '930px',
 	headerSecond: '770px',
 	headerThird: '340px',
+	subscribeFirst: '960px',
+	subscribeSecond: '540px',
+	subscribeThird: '440px',
+	footerFirst: '760px',
 }
 
 const shadows = {

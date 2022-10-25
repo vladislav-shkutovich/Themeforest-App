@@ -20,7 +20,7 @@ export const HeaderStyled = styled.div`
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.headerThird}) {
 		justify-content: center;
-		height: 15vh;
+		height: 20vh;
 	}
 `
 
