@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const HeadingServices = styled.p`
+export const HeadingOverview = styled.p`
 	${({ theme }) => theme.headlines.headline2}
 	margin-bottom: 5rem;
 	width: minmax(min-content, 92rem);
 	max-width: 92rem;
 `
 
-export const ParagraphServices = styled.p`
+export const ParagraphOverview = styled.p`
 	${({ theme }) => theme.paragraphs.paragraph1}
 	color: ${({ theme }) => theme.colors.grey};
 	margin: 0 0 5rem 5rem;
@@ -15,7 +15,7 @@ export const ParagraphServices = styled.p`
 	max-width: 54rem;
 `
 
-export const AchivementsServices = styled.p`
+export const AchivementsOverview = styled.p`
 	display: flex;
 	flex-direction: column;
 	align-items: center;

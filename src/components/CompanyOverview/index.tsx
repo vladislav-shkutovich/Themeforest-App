@@ -1,34 +1,34 @@
 /* eslint-disable no-irregular-whitespace */
 import { HOMEPAGE_LOGOS } from '@constants/homepageLogos'
 import {
-	HeadingServices,
-	ParagraphServices,
-	AchivementsServices,
+	HeadingOverview,
+	ParagraphOverview,
+	AchivementsOverview,
 	LogosContainer,
 	Logo,
 } from './styled'
 
-export const HomePageServices: React.FC = () => (
+export const CompanyOverview: React.FC = () => (
 	<>
-		<HeadingServices>We provide services that guarantee your success</HeadingServices>
+		<HeadingOverview>We provide services that guarantee your success</HeadingOverview>
 		<div>
-			<AchivementsServices>
+			<AchivementsOverview>
 				<span>1830+</span>
 				Project executed
-			</AchivementsServices>
-			<AchivementsServices>
+			</AchivementsOverview>
+			<AchivementsOverview>
 				<span>834+</span>
 				Satisfied customers
-			</AchivementsServices>
-			<AchivementsServices>
+			</AchivementsOverview>
+			<AchivementsOverview>
 				<span>390</span>
 				Data management
-			</AchivementsServices>
-			<ParagraphServices>
+			</AchivementsOverview>
+			<ParagraphOverview>
 				Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
 				laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor
 				quam, non mollis quam finibus nec.
-			</ParagraphServices>
+			</ParagraphOverview>
 		</div>
 		<LogosContainer>
 			{HOMEPAGE_LOGOS.map((item) => (

@@ -1,7 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 import { MainLayout } from '@layouts/MainLayout'
 import { HomePageIntroduction } from '@components/HomePageIntroduction'
-import { HomePageServices } from '@components/HomePageServices'
+import { CompanyOverview } from '@components/CompanyOverview'
 import { HomePageBenefits } from '@components/HomePageBenefits'
 import { Testimonials } from '@components/Testimonials'
 import { OurPricing } from '@components/OurPricing'
@@ -16,7 +16,7 @@ export const HomePage: React.FC = () => (
 		</SetcionIntroduction>
 
 		<SetcionServices>
-			<HomePageServices />
+			<CompanyOverview />
 		</SetcionServices>
 
 		<SectionBenefits>
