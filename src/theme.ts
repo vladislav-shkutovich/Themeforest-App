@@ -1,3 +1,10 @@
+const breakpoints = {
+	layoutFirst: '930px',
+	headerFirst: '930px',
+	headerSecond: '770px',
+	headerThird: '340px',
+}
+
 const shadows = {
 	shadowButton: 'box-shadow: 0px 1.2rem 3rem rgba(24, 92, 255, 0.18);',
 	shadowCard1: 'box-shadow: 0 0.2rem 2rem 1.7rem rgba(24, 92, 255, 0.04);',
@@ -21,10 +28,6 @@ const colors = {
 	background: '#F1F6FA',
 	red: '#C14040',
 }
-
-const paddings = {}
-
-const margins = {}
 
 const fontSizes = {
 	medium: '1.4rem',
@@ -123,11 +126,10 @@ const paragraphs = {
 }
 
 export default {
+	breakpoints,
 	shadows,
 	colors,
 	fontSizes,
-	paddings,
-	margins,
 	headlines,
 	paragraphs,
 }

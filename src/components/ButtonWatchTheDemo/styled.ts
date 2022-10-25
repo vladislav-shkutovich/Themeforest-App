@@ -20,6 +20,10 @@ export const ButtonWatchTheDemoStyled = styled.button`
 	:active {
 		background-color: ${({ theme }) => theme.colors.primary};
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.headerSecond}) {
+		display: none;
+	}
 `
 
 export const VectorStyled = styled.img``

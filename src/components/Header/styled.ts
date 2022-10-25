@@ -13,6 +13,15 @@ export const HeaderStyled = styled.div`
 		${({ theme }) => theme.headlines.headline7}
 		cursor: pointer;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.headerSecond}) {
+		justify-content: center;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.headerThird}) {
+		justify-content: center;
+		height: 15vh;
+	}
 `
 
 export const LogoStyled = styled.img`
@@ -21,18 +30,24 @@ export const LogoStyled = styled.img`
 	display: flex;
 	justify-self: center;
 	align-self: center;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.headerSecond}) {
+		transform: scale(0.6);
+	}
 `
 
 export const LinksContainerStyled = styled.div`
-	column-gap: 4rem;
 	display: flex;
-	justify-self: center;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-self: center;
+	justify-self: center;
 `
 
 export const LinkStyled = styled.div`
 	& > * {
 		color: ${({ theme }) => theme.colors.grey};
 		text-decoration: none;
+		margin: 0 2rem;
 	}
 `
