@@ -26,4 +26,12 @@ export const ContentCardStyled = styled.div`
 		width: minmax(min-content, 47rem);
 		margin-bottom: 2rem;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesFirst}) {
+		align-items: center;
+
+		& > * {
+			text-align: center;
+		}
+	}
 `

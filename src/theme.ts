@@ -7,6 +7,7 @@ const breakpoints = {
 	subscribeSecond: '540px',
 	subscribeThird: '440px',
 	footerFirst: '760px',
+	servicesFirst: '550px',
 }
 
 const shadows = {
