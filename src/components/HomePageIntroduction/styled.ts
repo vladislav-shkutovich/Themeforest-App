@@ -14,6 +14,16 @@ export const HeadingEnsome = styled.p`
 	& > span {
 		color: ${({ theme }) => theme.colors.primary};
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		${({ theme }) => theme.headlines.headline3}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFourth}) {
+		grid-row: text1-start / additional-first;
+		grid-column: start / end;
+		text-align: center;
+	}
 `
 
 export const ParagraphEnsome = styled.p`
@@ -28,6 +38,25 @@ export const ParagraphEnsome = styled.p`
 	height: 100%;
 	margin-top: 7rem;
 	margin-left: 15%;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		${({ theme }) => theme.paragraphs.paragraph3}
+		margin-bottom: 8rem;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFourth}) {
+		grid-row: additional-first / text1-end;
+		grid-column: start / end;
+		justify-self: center;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFifth}) {
+		& > button {
+			transform: scale(0.8);
+		}
+	}
 `
 
 export const ImageEnsome = styled.img`
@@ -42,6 +71,10 @@ export const ImageEnsome = styled.img`
 	height: 100%;
 	margin: 0 -15vw;
 	overflow: hidden;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFourth}) {
+		display: none;
+	}
 `
 
 export const HeadingNewest = styled.p`
@@ -58,9 +91,19 @@ export const HeadingNewest = styled.p`
 	& > span {
 		color: ${({ theme }) => theme.colors.primary};
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		${({ theme }) => theme.headlines.headline3}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFourth}) {
+		text-align: center;
+	}
 `
 
 export const ParagraphNewest = styled.p`
+	display: flex;
+	flex-direction: column;
 	${({ theme }) => theme.paragraphs.paragraph1}
 	color: ${({ theme }) => theme.colors.grey};
 	grid-row: text2-start / text2-end;
@@ -71,6 +114,21 @@ export const ParagraphNewest = styled.p`
 	margin-top: 10%;
 	margin-left: 3rem;
 	margin-bottom: 3rem;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		${({ theme }) => theme.paragraphs.paragraph3}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFourth}) {
+		margin-left: 1rem;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFifth}) {
+		& > button {
+			transform: scale(0.7);
+			margin-left: -3rem;
+		}
+	}
 `
 
 export const HeadingSolutions = styled.p`
@@ -89,6 +147,18 @@ export const HeadingSolutions = styled.p`
 		color: ${({ theme }) => theme.colors.grey};
 		margin-top: 3rem;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		${({ theme }) => theme.headlines.headline3}
+		grid-row: additional-start / additional-end;
+		grid-column: start / end;
+		justify-items: center;
+		text-align: center;
+
+		& > span {
+			${({ theme }) => theme.paragraphs.paragraph3}
+		}
+	}
 `
 
 export const ImageSolutions = styled.img`
@@ -98,6 +168,11 @@ export const ImageSolutions = styled.img`
 
 	background-size: cover;
 	width: 100%;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		grid-row: half-image-start / half-image-end;
+		grid-column: start / end;
+	}
 `
 
 export const BackgroundWrapperSolutions = styled.div`

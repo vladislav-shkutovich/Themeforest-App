@@ -3,14 +3,15 @@ import styled from 'styled-components'
 export const TestimonialsCardStyled = styled.div`
 	display: flex;
 	flex-direction: column;
+	min-width: 35rem;
 	width: minmax(min-content, 35rem);
 	max-width: 35rem;
 	height: minmax(min-content, 37rem);
-	max-height: 37rem;
+	max-height: min-content;
 	padding: 3.5rem;
 	gap: 2.5rem;
 	background-color: ${({ theme }) => theme.colors.white};
-	${({ theme }) => theme.shadows.shadowCard3}
+	/* ${({ theme }) => theme.shadows.shadowCard3} */
 
 	& > div {
 		display: flex;
@@ -44,5 +45,9 @@ export const TestimonialsCardStyled = styled.div`
 		${({ theme }) => theme.paragraphs.paragraph2}
 		color: ${({ theme }) => theme.colors.grey};
 		width: minmax(min-content, 20rem);
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.slidersFirst}) {
+			${({ theme }) => theme.paragraphs.paragraph3}
+		}
 	}
 `

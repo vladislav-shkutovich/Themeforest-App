@@ -12,6 +12,10 @@ export const HelpSectionStyled = styled.div`
 	& > h2 {
 		${({ theme }) => theme.headlines.headline2};
 		margin-bottom: 3rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+			${({ theme }) => theme.headlines.headline3};
+		}
 	}
 
 	& > p {
@@ -19,5 +23,9 @@ export const HelpSectionStyled = styled.div`
 		color: ${({ theme }) => theme.colors.grey};
 		max-width: 54rem;
 		text-align: center;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+			${({ theme }) => theme.paragraphs.paragraph2};
+		}
 	}
 `

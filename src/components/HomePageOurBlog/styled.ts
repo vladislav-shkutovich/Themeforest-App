@@ -14,13 +14,33 @@ export const HeadingOurBlog = styled.div`
 		${({ theme }) => theme.headlines.headline2}
 		width: minmax(min-content, 25rem);
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.slidersFirst}) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 5rem;
+
+		& > h2 {
+			${({ theme }) => theme.headlines.headline3}
+			margin-right: 0;
+		}
+	}
 `
 
 export const OurBlogCardsContainer = styled.div`
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	gap: 3rem;
 	height: minmax(min-content, 49rem);
 	max-height: 49rem;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.slidersFirst}) {
+		max-width: 75rem;
+		overflow: hidden;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.slidersSecond}) {
+		max-width: 35rem;
+	}
 `

@@ -7,6 +7,10 @@ export const HeaderPagesDropdownStyled = styled.select`
 	background: none;
 	cursor: pointer;
 	text-align: center;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFifth}) {
+		font-size: ${({ theme }) => theme.fontSizes.small};
+	}
 `
 
 export const OptionStyled = styled.option`

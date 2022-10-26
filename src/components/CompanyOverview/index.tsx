@@ -4,6 +4,7 @@ import {
 	OvervirewStyled,
 	HeadingOverview,
 	ParagraphOverview,
+	AchivementsWrapper,
 	AchivementsOverview,
 	LogosContainer,
 	Logo,
@@ -12,7 +13,7 @@ import {
 export const CompanyOverview: React.FC = () => (
 	<OvervirewStyled>
 		<HeadingOverview>We provide services that guarantee your success</HeadingOverview>
-		<div>
+		<AchivementsWrapper>
 			<AchivementsOverview>
 				<span>1830+</span>
 				Project executed
@@ -30,7 +31,7 @@ export const CompanyOverview: React.FC = () => (
 				laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor
 				quam, non mollis quam finibus nec.
 			</ParagraphOverview>
-		</div>
+		</AchivementsWrapper>
 		<LogosContainer>
 			{HOMEPAGE_LOGOS.map((item) => (
 				<Logo src={item} key={item} />

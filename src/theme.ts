@@ -3,11 +3,20 @@ const breakpoints = {
 	headerFirst: '930px',
 	headerSecond: '770px',
 	headerThird: '340px',
+	homeFirst: '1400px',
+	homeSecond: '1160px',
+	homeThird: '990px',
+	homeFourth: '500px',
+	homeFifth: '440px',
 	subscribeFirst: '960px',
 	subscribeSecond: '540px',
 	subscribeThird: '440px',
 	footerFirst: '760px',
 	servicesFirst: '550px',
+	slidersFirst: '1160px',
+	slidersSecond: '790px',
+	slidersThird: '560px',
+	pricingFirst: '1160px',
 }
 
 const shadows = {
@@ -35,6 +44,7 @@ const colors = {
 }
 
 const fontSizes = {
+	small: '1.2rem',
 	medium: '1.4rem',
 	regular: '1.6rem',
 	large: '2.0rem',
@@ -43,6 +53,7 @@ const fontSizes = {
 	xxxlarge: '3.8rem',
 	xxxxlarge: '6rem',
 	achivements: '5rem',
+	achivementsAdaptive: '4rem',
 	prices: '2.6rem',
 }
 

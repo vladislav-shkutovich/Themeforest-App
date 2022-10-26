@@ -22,6 +22,12 @@ export const HeaderStyled = styled.div`
 		justify-content: center;
 		height: 20vh;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeFifth}) {
+		& > * {
+			font-size: ${({ theme }) => theme.fontSizes.small};
+		}
+	}
 `
 
 export const LogoStyled = styled.img`

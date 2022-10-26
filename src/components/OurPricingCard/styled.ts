@@ -4,6 +4,7 @@ export const OurPricingCardStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	min-width: 25.5rem;
 	width: 25.5rem;
 	border-radius: 0.6rem;
 	${({ theme }) => theme.shadows.shadowCard3}

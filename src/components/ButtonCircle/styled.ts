@@ -38,6 +38,10 @@ export const ButtonCircleStyled = styled.button`
 	:active {
 		background-color: ${({ theme }) => theme.colors.primary};
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
+		margin-top: 2rem;
+	}
 `
 
 export const TextStyled = styled.p`

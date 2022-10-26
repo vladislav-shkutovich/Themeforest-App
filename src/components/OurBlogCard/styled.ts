@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const OurBlogCardStyled = styled.div`
 	display: flex;
 	flex-direction: column;
+	min-width: 35rem;
 	width: minmax(min-content, 35rem);
 	max-width: 35rem;
 	height: minmax(min-content, 48rem);

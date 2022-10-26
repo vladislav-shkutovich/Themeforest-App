@@ -6,12 +6,13 @@ import {
 	HeadingBenefits,
 	ParagraphBenefits,
 	BenefitsContainer,
+	CardsContainer,
 	FirstColumnCard,
 	SecondColumnCard,
 } from './styled'
 
 export const HomePageBenefits: React.FC = () => (
-	<>
+	<div>
 		<BenefitsContainer>
 			<HeadingBenefits>The benefits of Ensome </HeadingBenefits>
 			<ParagraphBenefits>
@@ -20,7 +21,7 @@ export const HomePageBenefits: React.FC = () => (
 				architecto beatae vitae dicta sunt explicabo.
 			</ParagraphBenefits>
 		</BenefitsContainer>
-		<div>
+		<CardsContainer>
 			<FirstColumnCard>
 				{HOMEPAGE_BENEFITS_CARDS.slice(0, 2).map((item) => (
 					<HomePageBenefitsCard {...item} key={item.key} />
@@ -31,6 +32,6 @@ export const HomePageBenefits: React.FC = () => (
 					<HomePageBenefitsCard {...item} />
 				))}
 			</SecondColumnCard>
-		</div>
-	</>
+		</CardsContainer>
+	</div>
 )
