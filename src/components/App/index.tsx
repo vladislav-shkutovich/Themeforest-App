@@ -7,6 +7,7 @@ import {
 	FAQsPage,
 	OurTeamPage,
 	ServicesPage,
+	ServicesPageSingle,
 	SolutionsPage,
 } from '@pages/index'
 import {
@@ -18,6 +19,7 @@ import {
 	OUR_TEAM_ROUTE,
 	SERVICES_ROUTE,
 	SOLUTIONS_ROUTE,
+	SERVICES_SINGLE_ROUTE,
 } from '@constants/router'
 import { ScrollToTop } from '@components/ScrollToTop'
 
@@ -32,6 +34,7 @@ export const App: React.FC = () => (
 			<Route path={FAQS_ROUTE} element={<FAQsPage />} />
 			<Route path={OUR_TEAM_ROUTE} element={<OurTeamPage />} />
 			<Route path={SERVICES_ROUTE} element={<ServicesPage />} />
+			<Route path={SERVICES_SINGLE_ROUTE} element={<ServicesPageSingle />} />
 			<Route path={SOLUTIONS_ROUTE} element={<SolutionsPage />} />
 		</Routes>
 	</BrowserRouter>

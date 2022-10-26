@@ -38,8 +38,16 @@ export interface IOurBlogCard {
 }
 
 export interface IServicesContentCard {
+	id: string
 	image: string
 	title: string
 	text: string
+	key: string
+}
+
+export interface IServicesSingleItem {
+	id: string
+	title: string
+	subtitle: string
 	key: string
 }
