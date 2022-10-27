@@ -5,10 +5,20 @@ export const CategoriesListStyled = styled.ul`
 	flex-direction: column;
 
 	& > li {
-		display: flex;
-		justify-content: space-between;
-		border-bottom: 0.1rem solid ${({ theme }) => theme.colors.grey};
-		padding: 2rem 0;
-		${({ theme }) => theme.paragraphs.paragraph1}
+		list-style: none;
+
+		& > a {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 0.1rem solid ${({ theme }) => theme.colors.grey};
+			padding: 2rem 0;
+			${({ theme }) => theme.paragraphs.paragraph1}
+			color: ${({ theme }) => theme.colors.black};
+			text-decoration: none;
+
+			&:visited {
+				color: ${({ theme }) => theme.colors.black};
+			}
+		}
 	}
 `

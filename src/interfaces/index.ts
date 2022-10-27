@@ -57,6 +57,7 @@ export interface IServicesContentCard {
 
 export interface IServicesSingleItem {
 	id: string
+	baseRoute: string
 	title: string
 	subtitle: string
 	key: string
