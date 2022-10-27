@@ -5,13 +5,13 @@ import { servicesSingleList } from '@constants/servicesSingleList'
 import { CategoriesList } from '@components/CategoriesList'
 import { SearchBar } from '@components/SearchBar'
 import { IServicesSingleItem } from '@interfaces/index'
-import { ServicesSingleStyled, DummyContentStyled, NavigationStyled } from './styled'
+import { ServicesSingleContentStyled, DummyContentStyled, NavigationStyled } from './styled'
 
 export const ServicesSingleContent: React.FC<{ remainingServices: IServicesSingleItem[] }> = ({
 	remainingServices,
 }) => {
 	return (
-		<ServicesSingleStyled>
+		<ServicesSingleContentStyled>
 			<DummyContentStyled>
 				<h3>Customer</h3>
 				<p>
@@ -69,6 +69,6 @@ export const ServicesSingleContent: React.FC<{ remainingServices: IServicesSingl
 				<h4>Services</h4>
 				<CategoriesList list={remainingServices} />
 			</NavigationStyled>
-		</ServicesSingleStyled>
+		</ServicesSingleContentStyled>
 	)
 }

@@ -2,8 +2,10 @@ import styled from 'styled-components'
 
 export const IntroductionStyled = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	row-gap: 5rem;
+	column-gap: 15rem;
 	min-width: 100vw;
 	border-top: 6rem solid ${({ theme }) => theme.colors.background};
 	background-color: ${({ theme }) => theme.colors.background};

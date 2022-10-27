@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
-export const ServicesSingleStyled = styled.div`
+export const ServicesSingleContentStyled = styled.div`
 	display: flex;
-	/* justify-content: center; */
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
-	gap: 3rem;
+	column-gap: 5rem;
 `
 
 export const DummyContentStyled = styled.div`
@@ -14,7 +13,7 @@ export const DummyContentStyled = styled.div`
 	width: max-content;
 	max-width: 63.5rem;
 	gap: 3rem;
-	margin: 6rem 0;
+	margin: 12rem 0;
 
 	& > h3 {
 		${({ theme }) => theme.headlines.headline3}
@@ -59,7 +58,7 @@ export const NavigationStyled = styled.div`
 	width: max-content;
 	max-width: 44.5rem;
 	gap: 5rem;
-	margin: 6rem 0;
+	margin: 12rem 0;
 
 	& > h4 {
 		${({ theme }) => theme.headlines.headline4}

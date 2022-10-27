@@ -106,6 +106,13 @@ const headlines = {
 	line-height: 2.4rem;
 	letter-spacing: -0.01em;
 	`,
+	headline8: `
+	${headlinesCommon}
+	font-weight: 600;
+	font-size: 1.2rem;
+	line-height: 2.4rem;
+	letter-spacing: -0.015em;
+	`,
 }
 
 const paragraphsCommon = `

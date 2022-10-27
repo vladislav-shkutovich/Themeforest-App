@@ -48,7 +48,7 @@ export const ParagraphStyled = styled.p`
 	}
 `
 
-export const InputContainerStyled = styled.div`
+export const InputContainerStyled = styled.form`
 	display: flex;
 	max-width: 44.5rem;
 	height: 5.4rem;
@@ -70,6 +70,7 @@ export const InputContainerStyled = styled.div`
 export const InputStyled = styled.input`
 	display: flex;
 	align-items: center;
+	outline: none;
 
 	background-color: ${({ theme }) => theme.colors.helperBlue3};
 	${({ theme }) => theme.paragraphs.paragraph3}

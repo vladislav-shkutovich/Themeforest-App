@@ -25,6 +25,9 @@ export const ButtonDefaultStyled = styled.button`
 `
 
 export const TextStyled = styled.p`
+	display: flex;
+	align-self: center;
+	justify-self: center;
 	${({ theme }) => theme.headlines.headline6}
 	color: ${({ theme }) => theme.colors.white};
 `
