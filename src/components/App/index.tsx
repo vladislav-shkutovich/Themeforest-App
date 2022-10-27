@@ -9,6 +9,7 @@ import {
 	ServicesPage,
 	ServicesPageSingle,
 	SolutionsPage,
+	NotFoundPage,
 } from '@pages/index'
 import {
 	HOME_PAGE_ROUTE,
@@ -20,6 +21,7 @@ import {
 	SERVICES_ROUTE,
 	SOLUTIONS_ROUTE,
 	SERVICES_SINGLE_ROUTE,
+	NOT_FOUND_ROUTE,
 } from '@constants/router'
 import { ScrollToTop } from '@components/ScrollToTop'
 
@@ -36,6 +38,7 @@ export const App: React.FC = () => (
 			<Route path={SERVICES_ROUTE} element={<ServicesPage />} />
 			<Route path={SERVICES_SINGLE_ROUTE} element={<ServicesPageSingle />} />
 			<Route path={SOLUTIONS_ROUTE} element={<SolutionsPage />} />
+			<Route path={NOT_FOUND_ROUTE} element={<NotFoundPage />} />
 		</Routes>
 	</BrowserRouter>
 )
