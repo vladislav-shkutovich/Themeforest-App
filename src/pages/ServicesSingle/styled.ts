@@ -14,6 +14,8 @@ export const IntroductionStyled = styled.div`
 	& > h2 {
 		${({ theme }) => theme.headlines.headline2}
 		color: ${({ theme }) => theme.colors.primary};
+		margin: 0 2rem;
+		text-align: center;
 	}
 
 	& > p {
@@ -21,5 +23,15 @@ export const IntroductionStyled = styled.div`
 		color: ${({ theme }) => theme.colors.grey};
 		width: minmax(min-content, 35rem);
 		max-width: 35rem;
+		margin: 0 2rem;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleFirst}) {
+		flex-direction: column;
+
+		& > p {
+			width: minmax(min-content, 63.5rem);
+			max-width: 63.5rem;
+		}
 	}
 `

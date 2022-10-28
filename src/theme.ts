@@ -17,6 +17,9 @@ const breakpoints = {
 	slidersSecond: '790px',
 	slidersThird: '560px',
 	pricingFirst: '1160px',
+	servicesSingleFirst: '1420px',
+	servicesSingleSecond: '540px',
+	contactUsFirst: '540px',
 }
 
 const shadows = {

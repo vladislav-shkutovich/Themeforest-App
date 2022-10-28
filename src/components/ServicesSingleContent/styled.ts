@@ -17,11 +17,13 @@ export const DummyContentStyled = styled.div`
 
 	& > h3 {
 		${({ theme }) => theme.headlines.headline3}
+		margin: 0 2rem;
 	}
 
 	& > p {
 		${({ theme }) => theme.paragraphs.paragraph2}
 		color: ${({ theme }) => theme.colors.grey};
+		margin: 0 1rem;
 	}
 
 	& > img {
@@ -37,18 +39,31 @@ export const DummyContentStyled = styled.div`
 		& > img {
 			width: 60%;
 			border-radius: 0.6rem;
-			// todo медиа запрос на ширину 100% + flex-wrap для участка выше
 		}
 
 		& > ul {
 			& > li {
 				display: flex;
+				margin: 0 2rem 1.5rem 2rem;
 				margin-bottom: 1.5rem;
 				gap: 1rem;
 				list-style: none;
 				max-width: 100%;
 			}
 		}
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
+			flex-direction: column;
+			align-items: flex-start;
+
+			& > img {
+				width: 100%;
+			}
+		}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
+		margin: 6rem 0;
 	}
 `
 
@@ -62,5 +77,13 @@ export const NavigationStyled = styled.div`
 
 	& > h4 {
 		${({ theme }) => theme.headlines.headline4}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleFirst}) {
+		margin: 0 0 12rem 0;
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
+		margin: 6rem 0;
 	}
 `

@@ -27,4 +27,9 @@ export const SearchBarStyled = styled.form`
 		height: 5.4rem;
 		margin: 0;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
+		max-width: 90vw;
+		transform: scale(0.9);
+	}
 `

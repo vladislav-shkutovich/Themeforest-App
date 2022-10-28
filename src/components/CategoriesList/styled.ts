@@ -21,4 +21,8 @@ export const CategoriesListStyled = styled.ul`
 			}
 		}
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
+		margin: 0 1.5rem;
+	}
 `

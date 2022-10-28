@@ -10,15 +10,21 @@ export const ContactUsStyled = styled.div`
 	border-top: 12rem solid ${({ theme }) => theme.colors.background};
 	background-color: ${({ theme }) => theme.colors.background};
 	border-bottom: 12rem solid ${({ theme }) => theme.colors.background};
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {
+		border-top: 6rem solid ${({ theme }) => theme.colors.background};
+		border-bottom: 6rem solid ${({ theme }) => theme.colors.background};
+	}
 `
 
 export const ContactsStyled = styled.div`
 	display: flex;
 	flex-direction: column;
+	max-width: 54rem;
 
 	& > h2 {
 		${({ theme }) => theme.headlines.headline2}
-		width: max-content;
+		width: minmax(min-content, 54rem);
 		max-width: 54rem;
 		margin-bottom: 2.4rem;
 	}
@@ -26,7 +32,7 @@ export const ContactsStyled = styled.div`
 	& > p {
 		${({ theme }) => theme.paragraphs.paragraph2}
 		color: ${({ theme }) => theme.colors.grey};
-		width: max-content;
+		width: minmax(min-content, 54rem);
 		max-width: 54rem;
 		margin-bottom: 6rem;
 	}
@@ -42,6 +48,12 @@ export const ContactsStyled = styled.div`
 			color: ${({ theme }) => theme.colors.black};
 			margin-bottom: 2.4rem;
 		}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {
+		margin: 0 2rem;
+		align-items: center;
+		text-align: center;
 	}
 `
 
