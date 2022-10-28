@@ -1,4 +1,5 @@
-import { ReactNode } from 'react'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ChangeEventHandler, ReactNode } from 'react'
 
 export interface IErrorBoundaryProps {
 	children: ReactNode
@@ -61,4 +62,9 @@ export interface IServicesSingleItem {
 	title: string
 	subtitle: string
 	key: string
+}
+
+export interface ISearchBarProps {
+	data?: any
+	callback?: ChangeEventHandler<HTMLInputElement>
 }

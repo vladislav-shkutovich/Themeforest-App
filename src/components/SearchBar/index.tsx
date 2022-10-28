@@ -1,47 +1,27 @@
+import { useNavigate } from 'react-router-dom'
+import { useFormik } from 'formik'
 import { ButtonDefault } from '@components/ButtonDefault'
+import { ISearchBarProps } from '@interfaces/index'
 import { SearchBarStyled } from './styled'
 
-export const SearchBar: React.FC = () => {
-	return (
-		<SearchBarStyled>
-			<input type="text" />
-			<ButtonDefault text="Search" />
-		</SearchBarStyled>
-	)
-}
-
-/*
-const dispatch = useDispatch()
+export const SearchBar: React.FC<ISearchBarProps> = ({ callback, data }) => {
+	const navigate = useNavigate()
+	const firstPageRoute = `${data.baseRoute}/${data.id}`
 
 	const formik = useFormik({
 		initialValues: {
 			input: '',
 		},
-
-		onSubmit: (values, { resetForm }) => {
-			resetForm({ input: '' })
-
-			dispatch(
-				addTodo({
-					text: values.input,
-					id: uuidv4(),
-					isEditing: false,
-				}),
-			)
+		enableReinitialize: false,
+		onSubmit: () => {
+			navigate(firstPageRoute)
 		},
 	})
 
 	return (
-		<Form onSubmit={formik.handleSubmit} autoComplete="off">
-			<Input
-				id="input"
-				name="input"
-				placeholder="Type your task..."
-				onChange={formik.handleChange}
-				onBlur={formik.handleBlur}
-				value={formik.values.input}
-			/>
-			<InputButton type="submit">Add</InputButton>
-		</Form>
+		<SearchBarStyled onSubmit={formik.handleSubmit}>
+			<input type="text" onChange={callback} />
+			<ButtonDefault text="Search" type="submit" />
+		</SearchBarStyled>
 	)
-*/
+}

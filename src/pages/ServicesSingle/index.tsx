@@ -10,7 +10,7 @@ export const ServicesPageSingle: React.FC = () => {
 	const { id: servicesSingleId } = useParams()
 	const servicesSingleItem = SERVICES_SINGLE_ITEMS.find((item) => item.id === servicesSingleId)
 	if (!servicesSingleItem) return <NotFoundPage />
-	const { id, title, subtitle, key } = servicesSingleItem
+	const { title, subtitle } = servicesSingleItem
 	const remainingServices = SERVICES_SINGLE_ITEMS.filter((item) => item !== servicesSingleItem)
 
 	return (

@@ -1,3 +1,4 @@
+import { useState, ChangeEventHandler } from 'react'
 import serviceSingleImage1 from '@assets/images/services_single1.png'
 import serviceSingleImage2 from '@assets/images/services_single2.png'
 import checkMark from '@assets/icons/check_mark.svg'
@@ -10,6 +11,18 @@ import { ServicesSingleContentStyled, DummyContentStyled, NavigationStyled } fro
 export const ServicesSingleContent: React.FC<{ remainingServices: IServicesSingleItem[] }> = ({
 	remainingServices,
 }) => {
+	const [filteredList, setFilteredList] = useState(remainingServices)
+
+	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
+		e.preventDefault()
+
+		return setFilteredList(
+			remainingServices.filter((item) =>
+				item.title.toLowerCase().includes(e.target.value.toLowerCase()),
+			),
+		)
+	}
+
 	return (
 		<ServicesSingleContentStyled>
 			<DummyContentStyled>
@@ -65,9 +78,9 @@ export const ServicesSingleContent: React.FC<{ remainingServices: IServicesSingl
 			</DummyContentStyled>
 
 			<NavigationStyled>
-				<SearchBar />
+				<SearchBar callback={handleSearch} data={filteredList[0]} />
 				<h4>Services</h4>
-				<CategoriesList list={remainingServices} />
+				<CategoriesList list={filteredList} />
 			</NavigationStyled>
 		</ServicesSingleContentStyled>
 	)
