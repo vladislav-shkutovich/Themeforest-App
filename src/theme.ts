@@ -20,6 +20,8 @@ const breakpoints = {
 	servicesSingleFirst: '1420px',
 	servicesSingleSecond: '540px',
 	contactUsFirst: '540px',
+	aboutUsFirst: '1400px',
+	aboutUsSecond: '750px',
 }
 
 const shadows = {

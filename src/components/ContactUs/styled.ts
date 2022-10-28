@@ -27,6 +27,10 @@ export const ContactsStyled = styled.div`
 		width: minmax(min-content, 54rem);
 		max-width: 54rem;
 		margin-bottom: 2.4rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {
+			${({ theme }) => theme.headlines.headline3}
+		}
 	}
 
 	& > p {
@@ -35,6 +39,10 @@ export const ContactsStyled = styled.div`
 		width: minmax(min-content, 54rem);
 		max-width: 54rem;
 		margin-bottom: 6rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {
+			${({ theme }) => theme.paragraphs.paragraph3}
+		}
 	}
 
 	& > div {
