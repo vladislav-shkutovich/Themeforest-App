@@ -6,7 +6,7 @@ import { SearchBarStyled } from './styled'
 
 export const SearchBar: React.FC<ISearchBarProps> = ({ callback, data }) => {
 	const navigate = useNavigate()
-	const firstPageRoute = `${data.baseRoute}/${data.id}`
+	const firstPageRoute = `${data?.baseRoute}/${data?.id}`
 
 	const formik = useFormik({
 		initialValues: {
