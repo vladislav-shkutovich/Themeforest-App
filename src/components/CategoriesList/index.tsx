@@ -7,7 +7,7 @@ export const CategoriesList: React.FC<{ list: any[] }> = ({ list }) => {
 	return (
 		<CategoriesListStyled>
 			{list.map((item) => (
-				<li key={item.key}>
+				<li key={item.id}>
 					<Link to={`${item.baseRoute}/${item.id}`}>
 						{item.title}
 						<img alt="chevron" src={listChevronRight} />

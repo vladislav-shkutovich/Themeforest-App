@@ -11,7 +11,6 @@ export const ServicesPageSingle: React.FC = () => {
 	const servicesSingleItem = SERVICES_SINGLE_ITEMS.find((item) => item.id === servicesSingleId)
 	if (!servicesSingleItem) return <NotFoundPage />
 	const { title, subtitle } = servicesSingleItem
-	const remainingServices = SERVICES_SINGLE_ITEMS.filter((item) => item !== servicesSingleItem)
 
 	return (
 		<MainLayout>
@@ -19,7 +18,7 @@ export const ServicesPageSingle: React.FC = () => {
 				<h2>{title}</h2>
 				<p>{subtitle}</p>
 			</IntroductionStyled>
-			<ServicesSingleContent remainingServices={remainingServices} />
+			<ServicesSingleContent services={SERVICES_SINGLE_ITEMS} />
 			<ContactUs />
 		</MainLayout>
 	)

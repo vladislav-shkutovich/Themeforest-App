@@ -1,5 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { HOME_PAGE_ROUTE, BLOG_ROUTE, CONTACTS_ROUTE, SOLUTIONS_ROUTE } from '@constants/router'
+import {
+	HOME_PAGE_ROUTE,
+	BLOG_SINGLE_ROUTE,
+	CONTACTS_ROUTE,
+	SOLUTIONS_ROUTE,
+} from '@constants/router'
 import logo from '@assets/icons/logo_blue.svg'
 import { ButtonWatchTheDemo } from '@components/ButtonWatchTheDemo'
 import { HeaderPagesDropdown } from '@components/HeaderPagesDropdown'
@@ -23,7 +28,7 @@ export const Header: React.FC = () => {
 				</LinkStyled>
 				<HeaderPagesDropdown />
 				<LinkStyled>
-					<Link to={BLOG_ROUTE}>Blog</Link>
+					<Link to={BLOG_SINGLE_ROUTE}>Blog</Link>
 				</LinkStyled>
 				<LinkStyled>
 					<Link to={CONTACTS_ROUTE}>Contacts</Link>

@@ -5,6 +5,7 @@ import { IOurBlogCard } from '@interfaces/index'
 
 export const OUR_BLOG_CARDS: IOurBlogCard[] = [
 	{
+		id: 'blog-1',
 		image: blogImage1,
 		date: '22 June 2022',
 		title: 'ISO 13485 compliance of medical devices',
@@ -12,6 +13,7 @@ export const OUR_BLOG_CARDS: IOurBlogCard[] = [
 		key: 'blog-1',
 	},
 	{
+		id: 'blog-2',
 		image: blogImage2,
 		date: '23 June 2022',
 		title: 'Business analysis helps you  in finance',
@@ -19,6 +21,7 @@ export const OUR_BLOG_CARDS: IOurBlogCard[] = [
 		key: 'blog-2',
 	},
 	{
+		id: 'blog-3',
 		image: blogImage3,
 		date: '24 June 2022',
 		title: '5 web portal examples your business can learn from',
@@ -26,6 +29,7 @@ export const OUR_BLOG_CARDS: IOurBlogCard[] = [
 		key: 'blog-3',
 	},
 	{
+		id: 'blog-4',
 		image: blogImage1,
 		date: '25 June 2022',
 		title: 'ISO 13485 compliance of medical devices',
@@ -33,6 +37,7 @@ export const OUR_BLOG_CARDS: IOurBlogCard[] = [
 		key: 'blog-4',
 	},
 	{
+		id: 'blog-5',
 		image: blogImage2,
 		date: '26 June 2022',
 		title: 'Business analysis helps you  in finance',
@@ -40,6 +45,7 @@ export const OUR_BLOG_CARDS: IOurBlogCard[] = [
 		key: 'blog-5',
 	},
 	{
+		id: 'blog-6',
 		image: blogImage3,
 		date: '27 June 2022',
 		title: '5 web portal examples your business can learn from',

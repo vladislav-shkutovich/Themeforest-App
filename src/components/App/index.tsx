@@ -25,6 +25,7 @@ import {
 } from '@constants/router'
 import { ScrollToTop } from '@components/ScrollToTop'
 
+// todo рендерить массив с роутами
 export const App: React.FC = () => (
 	<BrowserRouter>
 		<ScrollToTop />

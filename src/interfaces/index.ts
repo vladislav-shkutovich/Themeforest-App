@@ -41,6 +41,7 @@ export interface IOurPricingCard {
 }
 
 export interface IOurBlogCard {
+	id: string
 	image: string
 	date: string
 	title: string
@@ -67,4 +68,19 @@ export interface IServicesSingleItem {
 export interface ISearchBarProps {
 	data?: any
 	callback?: ChangeEventHandler<HTMLInputElement>
+}
+
+export interface IBlogPost {
+	id: string
+	title: string
+	previewText: string
+	text: string
+	date: string
+	image: string
+	imagePreview: string
+	author: string
+	category: string
+	tags: string[]
+	viewsCount: number
+	baseRoute: string
 }

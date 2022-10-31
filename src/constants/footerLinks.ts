@@ -2,7 +2,7 @@ import { ILinkItems } from '@interfaces/index'
 import {
 	HOME_PAGE_ROUTE,
 	SOLUTIONS_ROUTE,
-	BLOG_ROUTE,
+	BLOG_SINGLE_ROUTE,
 	CONTACTS_ROUTE,
 	OUR_TEAM_ROUTE,
 	ABOUT_US_ROUTE,
@@ -13,7 +13,7 @@ import {
 export const FOOTER_LINKS: ILinkItems[] = [
 	{ name: 'Home', route: HOME_PAGE_ROUTE },
 	{ name: 'Solutions', route: SOLUTIONS_ROUTE },
-	{ name: 'Blog', route: BLOG_ROUTE },
+	{ name: 'Blog', route: BLOG_SINGLE_ROUTE },
 	{ name: 'Contacts', route: CONTACTS_ROUTE },
 	{ name: 'Our Team', route: OUR_TEAM_ROUTE },
 	{ name: 'About Us', route: ABOUT_US_ROUTE },

@@ -8,18 +8,16 @@ import { SearchBar } from '@components/SearchBar'
 import { IServicesSingleItem } from '@interfaces/index'
 import { ServicesSingleContentStyled, DummyContentStyled, NavigationStyled } from './styled'
 
-export const ServicesSingleContent: React.FC<{ remainingServices: IServicesSingleItem[] }> = ({
-	remainingServices,
+export const ServicesSingleContent: React.FC<{ services: IServicesSingleItem[] }> = ({
+	services,
 }) => {
-	const [filteredList, setFilteredList] = useState(remainingServices)
+	const [filteredList, setFilteredList] = useState(services)
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()
 
 		return setFilteredList(
-			remainingServices.filter((item) =>
-				item.title.toLowerCase().includes(e.target.value.toLowerCase()),
-			),
+			services.filter((item) => item.title.toLowerCase().includes(e.target.value.toLowerCase())),
 		)
 	}
 
