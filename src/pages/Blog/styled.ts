@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const IntroductionStyled = styled.div`
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: 5rem;
+	row-gap: 3rem;
 	column-gap: 15rem;
 	min-width: 100vw;
 	border-top: 6rem solid ${({ theme }) => theme.colors.background};
@@ -18,9 +19,8 @@ export const IntroductionStyled = styled.div`
 		text-align: center;
 	}
 
-	& > p {
-		${({ theme }) => theme.paragraphs.paragraph3}
-		color: ${({ theme }) => theme.colors.grey};
+	& > h6 {
+		${({ theme }) => theme.headlines.headline6}
 		width: minmax(min-content, 35rem);
 		max-width: 35rem;
 		margin: 0 2rem;

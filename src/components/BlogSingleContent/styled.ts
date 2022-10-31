@@ -72,11 +72,12 @@ export const NavigationStyled = styled.div`
 	flex-direction: column;
 	width: max-content;
 	max-width: 44.5rem;
-	gap: 5rem;
+	gap: 2rem;
 	margin: 12rem 0;
 
 	& > h4 {
 		${({ theme }) => theme.headlines.headline4}
+		margin: 2rem 0 0 0;
 	}
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleFirst}) {

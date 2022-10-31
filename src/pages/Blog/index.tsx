@@ -16,9 +16,9 @@ export const BlogPage: React.FC = () => {
 		<MainLayout>
 			<IntroductionStyled>
 				<h2>{title}</h2>
-				<p>{category}</p>
+				<h6>{category}</h6>
 			</IntroductionStyled>
-			<BlogSingleContent posts={BLOG_PAGE_POSTS} currentPost={blogSingleItem} />
+			<BlogSingleContent currentPost={blogSingleItem} />
 		</MainLayout>
 	)
 }

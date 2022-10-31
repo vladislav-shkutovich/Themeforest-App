@@ -1,62 +1,52 @@
-import serviceSingleImage1 from '@assets/images/services_single1.png'
-import serviceSingleImage2 from '@assets/images/services_single2.png'
-import checkMark from '@assets/icons/check_mark.svg'
-import { servicesSingleList } from '@constants/servicesSingleList'
+import calendar from '@assets/icons/blog_icon_calendar.svg'
+import dataLine from '@assets/icons/blog_icon_data_line.svg'
+import person from '@assets/icons/blog_icon_person.svg'
+import share from '@assets/icons/blog_icon_share.svg'
+import tag from '@assets/icons/blog_icon_tag.svg'
+import { BLOG_ICONS } from '@constants/blogIcons'
 import { IBlogPost } from '@interfaces/index'
-import { DummyContentStyled } from './styled'
+import { BlogItemStyled, IconsWrapper } from './styled'
 
 export const BlogSingleItem: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
+	const { title, text, date, image, author, tags, viewsCount } = currentPost
+
 	return (
-		<DummyContentStyled>
-			<h3>Customer</h3>
-			<p>
-				Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat felis
-				vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, consequat et
-				dolor vel.
-			</p>
-			<img src={serviceSingleImage1} alt="Services Single 1" />
+		<BlogItemStyled>
+			<img src={image} alt="Large post" />
+			<IconsWrapper>
+				<div>
+					<img src={calendar} alt="Calendar" />
+					<p>{date}</p>
+				</div>
+				<div>
+					<img src={person} alt="Author" />
+					<p>{author}</p>
+				</div>
+			</IconsWrapper>
 
-			<h3>Challenge</h3>
-			<p>
-				Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat felis
-				vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, consequat et
-				dolor vel. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim
-				elit, tincidunt aliquam ligula id, lacinia auctor orci.
-			</p>
+			<h3>{title}</h3>
+			<p>{text}</p>
 
-			<h3>Solution</h3>
-			<p>
-				Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat felis
-				vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, consequat et
-				dolor vel.
-			</p>
-
-			<div>
-				<img src={serviceSingleImage2} alt="Services Single 2" />
-				<ul>
-					{servicesSingleList.map((item) => (
-						<li key={item}>
-							<img src={checkMark} alt="check" />
-							{item}
-						</li>
+			<IconsWrapper>
+				<div>
+					<img src={dataLine} alt="Data line" />
+					<p>{viewsCount} Views</p>
+				</div>
+				<div>
+					<img src={share} alt="Share" />
+					<p>Share: </p>
+					{BLOG_ICONS.map((item) => (
+						<img src={item} alt={item} key={item} />
 					))}
-				</ul>
-			</div>
-
-			<h3>Results</h3>
-			<p>
-				Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat felis
-				vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, consequat et
-				dolor vel. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim
-				elit, tincidunt aliquam ligula id, lacinia auctor orci.
-			</p>
-
-			<h3>Technologies</h3>
-			<p>
-				Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat felis
-				vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, consequat et
-				dolor vel.
-			</p>
-		</DummyContentStyled>
+				</div>
+				<div>
+					<img src={tag} alt="Tag" />
+					<p>Tags: </p>
+					{tags.map((item) => (
+						<span key={item}>{item}</span>
+					))}
+				</div>
+			</IconsWrapper>
+		</BlogItemStyled>
 	)
 }
