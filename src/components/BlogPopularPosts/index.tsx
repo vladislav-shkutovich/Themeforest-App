@@ -11,7 +11,7 @@ export const BlogPopularPosts: React.FC<{ list: IBlogPost[] }> = ({ list }) => {
 			<ul>
 				{list.map((item) => (
 					<li key={item.id}>
-						<img src={item.imagePreview} alt="Post" />
+						<img src={item.image} alt="Post" />
 						<div>
 							<p>{item.date}</p>
 							<h6>{item.title}</h6>

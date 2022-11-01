@@ -40,15 +40,6 @@ export interface IOurPricingCard {
 	key: string
 }
 
-export interface IOurBlogCard {
-	id: string
-	image: string
-	date: string
-	title: string
-	text: string
-	key: string
-}
-
 export interface IServicesContentCard {
 	id: string
 	image: string
@@ -77,7 +68,6 @@ export interface IBlogPost {
 	text: string
 	date: string
 	image: string
-	imagePreview: string
 	author: string
 	category: string
 	tags: string[]

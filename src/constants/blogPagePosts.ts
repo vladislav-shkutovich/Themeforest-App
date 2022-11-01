@@ -1,13 +1,18 @@
-import blogSingleLargeImage1 from '@assets/images/blog_single_large1.png'
-import blogSingleLargeImage2 from '@assets/images/blog_single_large2.png'
-import blogSingleLargeImage3 from '@assets/images/blog_single_large3.png'
-import blogSingleLargeImageG from '@assets/images/blog_single_largeG.png'
-import blogSingleLargeImageK from '@assets/images/blog_single_largeK.png'
-import blogSingleLargeImageW from '@assets/images/blog_single_largeW.png'
-import blogSingleImage1 from '@assets/images/blog_single1.png'
-import blogSingleImage2 from '@assets/images/blog_single2.png'
-import blogSingleImage3 from '@assets/images/blog_single3.png'
-import blogSingleImage4 from '@assets/images/blog_single4.png'
+import blogSingleImage1 from '@assets/images/blog_single_1.png'
+import blogSingleImage2 from '@assets/images/blog_single_2.png'
+import blogSingleImage3 from '@assets/images/blog_single_3.png'
+import blogSingleImage4 from '@assets/images/blog_single_4.png'
+import blogSingleImage5 from '@assets/images/blog_single_5.png'
+import blogSingleImage6 from '@assets/images/blog_single_6.png'
+import blogSingleImage7 from '@assets/images/blog_single_7.png'
+import blogSingleImage8 from '@assets/images/blog_single_8.png'
+import blogSingleImage9 from '@assets/images/blog_single_9.png'
+import blogSingleImage10 from '@assets/images/blog_single_10.png'
+import blogSingleImage11 from '@assets/images/blog_single_11.png'
+import blogSingleImage12 from '@assets/images/blog_single_12.png'
+import blogSingleImage13 from '@assets/images/blog_single_13.png'
+import blogSingleImage14 from '@assets/images/blog_single_14.png'
+import blogSingleImage15 from '@assets/images/blog_single_15.png'
 import { IBlogPost } from '@interfaces/index'
 import { BLOG_BASE_ROUTE } from './router'
 
@@ -21,13 +26,12 @@ Ut nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Se
 export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	{
 		id: 'blog-1',
-		title: '2022 software development trends explained with benefits',
+		title: 'When we lose our principles, we invite chaos.',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '22 June 2022',
-		image: blogSingleLargeImage1,
-		imagePreview: blogSingleImage1,
-		author: 'William Pond',
+		image: blogSingleImage1,
+		author: 'Elliot Alderson',
 		category: 'Software development',
 		tags: ['Data', 'Future', 'Information security'],
 		viewsCount: 125,
@@ -35,13 +39,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-2',
-		title: 'ISO 13485 compliance of medical devices',
+		title: 'It was perfect. Perfect. Everything. Down to the last minute details.',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '23 June 2022',
-		image: blogSingleLargeImageK,
-		imagePreview: blogSingleLargeImageK,
-		author: 'Kazimir Zalubenko',
+		image: blogSingleImage2,
+		author: 'Homelander',
 		category: 'Information security',
 		tags: ['Management', 'Information security', 'CMR'],
 		viewsCount: 4890,
@@ -49,13 +52,13 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-3',
-		title: 'Business analysis helps you  in finance',
+		title:
+			'A dog who bites every owner he had can only be disciplined with a firm hand or... put down.',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '24 June 2022',
-		image: blogSingleLargeImageK,
-		imagePreview: blogSingleImage3,
-		author: 'Kazimir Zalubenko',
+		image: blogSingleImage3,
+		author: 'Gustavo Fring',
 		category: 'Internet of things',
 		tags: ['Proxy', 'CMR'],
 		viewsCount: 135,
@@ -63,13 +66,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-4',
-		title: 'Benefits of telemedicine in nursing homes',
+		title: 'And what will you do when this is all turned off around the world?',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '25 June 2022',
-		image: blogSingleLargeImageG,
-		imagePreview: blogSingleLargeImageG,
-		author: 'Gustavo Fring',
+		image: blogSingleImage4,
+		author: 'Kazimir Zalupenko',
 		category: 'Digital transformation',
 		tags: ['App', 'Media'],
 		viewsCount: 985,
@@ -81,9 +83,8 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '26 June 2022',
-		image: blogSingleLargeImageW,
-		imagePreview: blogSingleLargeImageW,
-		author: 'Walter Hartwell White',
+		image: blogSingleImage5,
+		author: 'Vought Inc.',
 		category: 'Healthcare it',
 		tags: ['App', 'Big data', 'CMR', 'Media'],
 		viewsCount: 1175,
@@ -91,13 +92,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-6',
-		title: '2022 software development trends explained with benefits',
+		title: 'Surprise meeting with fans',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '27 June 2022',
-		image: blogSingleLargeImageW,
-		imagePreview: blogSingleImage3,
-		author: 'Walter Hartwell White',
+		image: blogSingleImage6,
+		author: 'Homelander',
 		category: 'Healthcare it',
 		tags: ['CIO', 'Team', 'Media'],
 		viewsCount: 1365,
@@ -105,13 +105,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-7',
-		title: 'ISO 13485 compliance of medical devices',
+		title: 'The best work is done in silence',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '28 June 2022',
-		image: blogSingleLargeImageK,
-		imagePreview: blogSingleImage2,
-		author: 'Kazimir Zalubenko',
+		image: blogSingleImage7,
+		author: 'Salamanca Brothers',
 		category: 'Information security',
 		tags: ['Future', 'Media'],
 		viewsCount: 5980,
@@ -123,9 +122,8 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '24 June 2022',
-		image: blogSingleLargeImageK,
-		imagePreview: blogSingleLargeImageK,
-		author: 'Kazimir Zalubenko',
+		image: blogSingleImage8,
+		author: 'Elliot Alderson',
 		category: 'Digital transformation',
 		tags: ['Startup', 'Data', 'Media'],
 		viewsCount: 78,
@@ -133,13 +131,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-9',
-		title: 'Benefits of telemedicine in nursing homes',
+		title: 'Benefits of chemistry',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '25 June 2022',
-		image: blogSingleLargeImageG,
-		imagePreview: blogSingleImage4,
-		author: 'Gustavo Fring',
+		image: blogSingleImage9,
+		author: 'Walter White',
 		category: 'Digital transformation',
 		tags: ['CIO', 'Data analytics'],
 		viewsCount: 784,
@@ -147,13 +144,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-10',
-		title: '5 web portal examples your business can learn from',
+		title: 'The only way to solving modern problems',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '29 June 2022',
-		image: blogSingleLargeImageW,
-		imagePreview: blogSingleLargeImageW,
-		author: 'Walter Hartwell White',
+		image: blogSingleImage10,
+		author: 'Ted Mosby',
 		category: 'Healthcare it',
 		tags: ['App', 'Big data'],
 		viewsCount: 7815,
@@ -161,13 +157,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-11',
-		title: '2022 software development trends explained with benefits',
+		title: '2022 chemistry trends explained with benefits',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '31 June 2022',
-		image: blogSingleLargeImage1,
-		imagePreview: blogSingleImage1,
-		author: 'William Pond',
+		image: blogSingleImage11,
+		author: 'Walter White',
 		category: 'Software development',
 		tags: ['Data', 'Future'],
 		viewsCount: 135,
@@ -175,13 +170,12 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-12',
-		title: 'ISO 13485 compliance of medical devices',
+		title: 'Lorenzo von Matterhorn',
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '30 June 2022',
-		image: blogSingleLargeImage2,
-		imagePreview: blogSingleImage2,
-		author: 'Kazimir Zalubenko',
+		image: blogSingleImage12,
+		author: 'Lorenzo von Matterhorn',
 		category: 'Information security',
 		tags: ['Management', 'Information security'],
 		viewsCount: 1484,
@@ -193,9 +187,8 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 		previewText: commonPreviewText,
 		text: commonText,
 		date: '28 June 2022',
-		image: blogSingleLargeImage3,
-		imagePreview: blogSingleImage3,
-		author: 'Kazimir Zalubenko',
+		image: blogSingleImage13,
+		author: 'Lorenzo von Matterhorn',
 		category: 'Internet of things',
 		tags: ['App', 'Management'],
 		viewsCount: 889,
@@ -203,30 +196,28 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 	},
 	{
 		id: 'blog-14',
-		title: 'Benefits of telemedicine in nursing homes',
+		title: 'New Vought headquatters',
 		previewText: commonPreviewText,
 		text: commonText,
-		date: '25 June 2022',
-		image: blogSingleLargeImageG,
-		imagePreview: blogSingleImage4,
-		author: 'Gustavo Fring',
-		category: 'Digital transformation',
-		tags: ['App', 'Media'],
-		viewsCount: 9568,
+		date: '26 June 2022',
+		image: blogSingleImage14,
+		author: 'Vought Inc.',
+		category: 'Healthcare it',
+		tags: ['CMR', 'Proxy'],
+		viewsCount: 12053,
 		baseRoute: BLOG_BASE_ROUTE,
 	},
 	{
 		id: 'blog-15',
-		title: '5 web portal examples your business can learn from',
+		title: 'Better gifts from close relatives',
 		previewText: commonPreviewText,
 		text: commonText,
-		date: '26 June 2022',
-		image: blogSingleLargeImageW,
-		imagePreview: blogSingleLargeImageW,
-		author: 'Walter Hartwell White',
-		category: 'Healthcare it',
-		tags: ['CMR', 'Proxy'],
-		viewsCount: 12053,
+		date: '25 June 2022',
+		image: blogSingleImage15,
+		author: 'Lalo Salamanca',
+		category: 'Digital transformation',
+		tags: ['App', 'Media'],
+		viewsCount: 9568,
 		baseRoute: BLOG_BASE_ROUTE,
 	},
 ]

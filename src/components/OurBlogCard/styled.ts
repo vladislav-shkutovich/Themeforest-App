@@ -6,8 +6,8 @@ export const OurBlogCardStyled = styled.div`
 	min-width: 35rem;
 	width: minmax(min-content, 35rem);
 	max-width: 35rem;
-	height: minmax(min-content, 48rem);
-	max-height: 48rem;
+	height: minmax(min-content, 52rem);
+	max-height: 52rem;
 	background-color: ${({ theme }) => theme.colors.white};
 
 	& > img {
@@ -26,6 +26,7 @@ export const OurBlogCardStyled = styled.div`
 		${({ theme }) => theme.headlines.headline4}
 		width: minmax(min-content, 100%);
 		max-width: 100%;
+		height: 11rem;
 	}
 
 	& > p {

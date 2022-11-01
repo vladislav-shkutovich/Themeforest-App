@@ -30,10 +30,7 @@ export const HeadingOurBlog = styled.div`
 
 export const OurBlogCardsContainer = styled.div`
 	display: flex;
-	align-items: center;
 	gap: 3rem;
-	height: minmax(min-content, 49rem);
-	max-height: 49rem;
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.slidersFirst}) {
 		max-width: 75rem;

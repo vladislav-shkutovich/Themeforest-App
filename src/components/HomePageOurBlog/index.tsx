@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { OUR_BLOG_CARDS } from '@constants/ourBlogCards'
+import { BLOG_PAGE_POSTS } from '@constants/blogPagePosts'
 import { ButtonsSliderDefault } from '@components/ButtonsSliderDefault'
 import { OurBlogCard } from '@components/OurBlogCard'
 import { OurBlogStyled, HeadingOurBlog, OurBlogCardsContainer } from './styled'
@@ -34,8 +34,8 @@ export const OurBlog: React.FC = () => {
 				/>
 			</HeadingOurBlog>
 			<OurBlogCardsContainer>
-				{OUR_BLOG_CARDS.slice(cardIndex, cardIndex + 3).map((item) => (
-					<OurBlogCard {...item} key={item.key} />
+				{BLOG_PAGE_POSTS.slice(cardIndex, cardIndex + 3).map((item) => (
+					<OurBlogCard {...item} key={item.id} />
 				))}
 			</OurBlogCardsContainer>
 		</OurBlogStyled>
