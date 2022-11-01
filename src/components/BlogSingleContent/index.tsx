@@ -40,7 +40,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 				{/* // todo убрать slice в логику */}
 				<BlogPopularPosts list={BLOG_PAGE_POSTS.slice(0, 4)} />
 
-				<h4>Services</h4>
+				<h4>All posts</h4>
 				<CategoriesList list={filteredList} />
 
 				<h4>Tags</h4>
