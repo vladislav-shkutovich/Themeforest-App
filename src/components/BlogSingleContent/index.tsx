@@ -6,6 +6,7 @@ import { SearchBar } from '@components/SearchBar'
 import { BlogSingleItem } from '@components/BlogSingleItem'
 import { BlogPopularPosts } from '@components/BlogPopularPosts'
 import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
+import { ButtonWithTag } from '@components/ButtonWithTag'
 import { IBlogPost } from '@interfaces/index'
 import {
 	ServicesSingleContentStyled,
@@ -45,9 +46,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 				<h4>Tags</h4>
 				<TagsContainerStyled>
 					{BLOG_PAGE_TAGS.map((item) => (
-						<button key={item} type="button">
-							{item}
-						</button>
+						<ButtonWithTag key={item} text={item} isSelected={false} />
 					))}
 				</TagsContainerStyled>
 			</NavigationStyled>

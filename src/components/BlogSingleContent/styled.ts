@@ -42,25 +42,4 @@ export const TagsContainerStyled = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
-
-	& > button {
-		cursor: pointer;
-		font-size: ${({ theme }) => theme.fontSizes.medium};
-		font-weight: 800;
-		border-radius: 0.6rem;
-		color: ${({ theme }) => theme.colors.primary};
-		border: 0.1rem solid ${({ theme }) => theme.colors.background};
-		background-color: ${({ theme }) => theme.colors.white};
-		padding: 0.3rem 1.1rem;
-
-		&:hover {
-			background-color: ${({ theme }) => theme.colors.background};
-		}
-
-		&:active {
-			color: ${({ theme }) => theme.colors.white};
-			border: 0.1rem solid ${({ theme }) => theme.colors.primary};
-			background-color: ${({ theme }) => theme.colors.primary};
-		}
-	}
 `
