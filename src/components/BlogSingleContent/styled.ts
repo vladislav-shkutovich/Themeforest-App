@@ -7,64 +7,13 @@ export const ServicesSingleContentStyled = styled.div`
 	column-gap: 5rem;
 `
 
-export const DummyContentStyled = styled.div`
+export const ContentStyled = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
-	width: max-content;
 	max-width: 63.5rem;
-	gap: 3rem;
+	gap: 6rem;
 	margin: 12rem 0;
-
-	& > h3 {
-		${({ theme }) => theme.headlines.headline3}
-		margin: 0 2rem;
-	}
-
-	& > p {
-		${({ theme }) => theme.paragraphs.paragraph2}
-		color: ${({ theme }) => theme.colors.grey};
-		margin: 0 1rem;
-	}
-
-	& > img {
-		width: 100%;
-		border-radius: 0.6rem;
-	}
-
-	& > div {
-		display: flex;
-		align-items: center;
-		gap: 3rem;
-
-		& > img {
-			width: 60%;
-			border-radius: 0.6rem;
-		}
-
-		& > ul {
-			& > li {
-				display: flex;
-				margin: 0 2rem 1.5rem 2rem;
-				margin-bottom: 1.5rem;
-				gap: 1rem;
-				list-style: none;
-				max-width: 100%;
-			}
-		}
-
-		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
-			flex-direction: column;
-			align-items: flex-start;
-
-			& > img {
-				width: 100%;
-			}
-		}
-	}
-
-	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
-		margin: 6rem 0;
-	}
 `
 
 export const NavigationStyled = styled.div`
@@ -76,8 +25,8 @@ export const NavigationStyled = styled.div`
 	margin: 12rem 0;
 
 	& > h4 {
-		${({ theme }) => theme.headlines.headline4}
-		margin: 2rem 0 0 0;
+		${({ theme }) => theme.headlines.headline4};
+		margin: 0 2rem;
 	}
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleFirst}) {
@@ -86,5 +35,32 @@ export const NavigationStyled = styled.div`
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
 		margin: 6rem 0;
+	}
+`
+
+export const TagsContainerStyled = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	& > button {
+		cursor: pointer;
+		font-size: ${({ theme }) => theme.fontSizes.medium};
+		font-weight: 800;
+		border-radius: 0.6rem;
+		color: ${({ theme }) => theme.colors.primary};
+		border: 0.1rem solid ${({ theme }) => theme.colors.background};
+		background-color: ${({ theme }) => theme.colors.white};
+		padding: 0.3rem 1.1rem;
+
+		&:hover {
+			background-color: ${({ theme }) => theme.colors.background};
+		}
+
+		&:active {
+			color: ${({ theme }) => theme.colors.white};
+			border: 0.1rem solid ${({ theme }) => theme.colors.primary};
+			background-color: ${({ theme }) => theme.colors.primary};
+		}
 	}
 `

@@ -1,0 +1,15 @@
+export const BLOG_PAGE_TAGS: string[] = [
+	'All topics',
+	'App',
+	'Management',
+	'CMR',
+	'Big data',
+	'Media',
+	'Future',
+	'CIO',
+	'Startup',
+	'Team',
+	'Data analytics',
+	'Information security',
+	'Proxy',
+]

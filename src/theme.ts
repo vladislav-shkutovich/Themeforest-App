@@ -22,6 +22,7 @@ const breakpoints = {
 	contactUsFirst: '540px',
 	aboutUsFirst: '1400px',
 	aboutUsSecond: '750px',
+	blogSingleFirst: '680px',
 }
 
 const shadows = {
@@ -153,6 +154,39 @@ const paragraphs = {
 	line-height: 2.4rem;`,
 }
 
+const scrollbars = {
+	blue: `
+	::-webkit-scrollbar {
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 6px;
+		border: 1px solid ${colors.white};
+		background-color: ${colors.primary};
+	}
+	::-webkit-scrollbar-track {
+		border-radius: 6px;
+		border: 1px solid ${colors.white};
+		background-color: ${colors.background};
+	}`,
+	grey: `
+	::-webkit-scrollbar {
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 6px;
+		border: 1px solid ${colors.white};
+		background-color: ${colors.helperBlue2};
+	}
+	::-webkit-scrollbar-track {
+		border-radius: 6px;
+		border: 1px solid ${colors.white};
+		background-color: ${colors.background};
+	}`,
+}
+
 export default {
 	breakpoints,
 	shadows,
@@ -160,4 +194,5 @@ export default {
 	fontSizes,
 	headlines,
 	paragraphs,
+	scrollbars,
 }

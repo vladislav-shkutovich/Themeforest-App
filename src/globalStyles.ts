@@ -19,5 +19,6 @@ export default createGlobalStyle`
       height: 100%;
 			${theme.paragraphs.paragraph3}
     }
+		${theme.scrollbars.blue}
   }
 `
