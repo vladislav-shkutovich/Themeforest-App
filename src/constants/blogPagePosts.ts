@@ -197,7 +197,7 @@ export const BLOG_PAGE_POSTS: IBlogPost[] = [
 		imagePreview: blogSingleImage3,
 		author: 'Kazimir Zalubenko',
 		category: 'Internet of things',
-		tags: ['App', 'App'],
+		tags: ['App', 'Management'],
 		viewsCount: 889,
 		baseRoute: BLOG_BASE_ROUTE,
 	},

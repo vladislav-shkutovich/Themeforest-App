@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ServicesSingleContentStyled = styled.div`
+export const BlogSingleContentStyled = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -13,7 +13,12 @@ export const ContentStyled = styled.div`
 	flex-direction: column;
 	max-width: 63.5rem;
 	gap: 6rem;
-	margin: 12rem 0;
+	margin: 8rem 0;
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.blogSingleFirst}) {
+		margin-top: 6rem;
+		margin-bottom: 3rem;
+	}
 `
 
 export const NavigationStyled = styled.div`
@@ -22,19 +27,20 @@ export const NavigationStyled = styled.div`
 	width: max-content;
 	max-width: 44.5rem;
 	gap: 2rem;
-	margin: 12rem 0;
+	margin: 8rem 0;
 
 	& > h4 {
 		${({ theme }) => theme.headlines.headline4};
-		margin: 0 2rem;
+		margin: 1rem 2rem;
 	}
 
-	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleFirst}) {
-		margin: 0 0 12rem 0;
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.blogSingleFirst}) {
+		margin-top: 3rem;
+		margin-bottom: 6rem;
 	}
 
-	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesSingleSecond}) {
-		margin: 6rem 0;
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.blogSingleWrap}) {
+		margin-top: 0rem;
 	}
 `
 

@@ -35,6 +35,10 @@ export const HeadingStyled = styled.p`
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.subscribeThird}) {
 		${({ theme }) => theme.headlines.headline3}
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+		${({ theme }) => theme.headlines.headline3}
+	}
 `
 
 export const ParagraphStyled = styled.p`

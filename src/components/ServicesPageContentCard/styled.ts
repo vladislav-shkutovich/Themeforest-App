@@ -18,6 +18,10 @@ export const ContentCardStyled = styled.div`
 		${({ theme }) => theme.headlines.headline4}
 		width: minmax(min-content, 20rem);
 		margin-bottom: 1.6rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.headlines.headline5}
+		}
 	}
 
 	& > p {
@@ -25,6 +29,10 @@ export const ContentCardStyled = styled.div`
 		color: ${({ theme }) => theme.colors.grey};
 		width: minmax(min-content, 47rem);
 		margin-bottom: 2rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.paragraphs.paragraph3}
+		}
 	}
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesFirst}) {

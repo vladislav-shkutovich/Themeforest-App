@@ -42,6 +42,10 @@ export const RelatedPostsStyled = styled.ul`
 				& > h5 {
 					${({ theme }) => theme.paragraphs.paragraph3}
 					color: ${({ theme }) => theme.colors.grey};
+
+					@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+						font-size: ${({ theme }) => theme.fontSizes.small};
+					}
 				}
 
 				& > h6 {
@@ -54,6 +58,10 @@ export const RelatedPostsStyled = styled.ul`
 
 					@media only screen and (max-width: ${({ theme }) => theme.breakpoints.blogSingleFirst}) {
 						display: none;
+					}
+
+					@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+						${({ theme }) => theme.paragraphs.paragraph3}
 					}
 				}
 			}

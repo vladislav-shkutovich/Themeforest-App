@@ -26,6 +26,10 @@ export const CategoriesListStyled = styled.ul`
 			&:visited {
 				color: ${({ theme }) => theme.colors.black};
 			}
+
+			@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+				${({ theme }) => theme.paragraphs.paragraph2}
+			}
 		}
 	}
 

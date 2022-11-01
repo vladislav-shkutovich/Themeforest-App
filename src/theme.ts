@@ -22,6 +22,7 @@ const breakpoints = {
 	contactUsFirst: '540px',
 	aboutUsFirst: '1400px',
 	aboutUsSecond: '750px',
+	blogSingleWrap: '1450px',
 	blogSingleFirst: '680px',
 }
 

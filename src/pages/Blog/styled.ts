@@ -17,6 +17,10 @@ export const IntroductionStyled = styled.div`
 		color: ${({ theme }) => theme.colors.primary};
 		margin: 0 2rem;
 		text-align: center;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.headlines.headline3}
+		}
 	}
 
 	& > h6 {

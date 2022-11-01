@@ -9,7 +9,7 @@ import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
 import { ButtonWithTag } from '@components/ButtonWithTag'
 import { IBlogPost } from '@interfaces/index'
 import {
-	ServicesSingleContentStyled,
+	BlogSingleContentStyled,
 	NavigationStyled,
 	ContentStyled,
 	TagsContainerStyled,
@@ -28,7 +28,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 	}
 
 	return (
-		<ServicesSingleContentStyled>
+		<BlogSingleContentStyled>
 			<ContentStyled>
 				<BlogSingleItem currentPost={currentPost} />
 				{/* // todo добавить в логику */}
@@ -50,6 +50,6 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 					))}
 				</TagsContainerStyled>
 			</NavigationStyled>
-		</ServicesSingleContentStyled>
+		</BlogSingleContentStyled>
 	)
 }

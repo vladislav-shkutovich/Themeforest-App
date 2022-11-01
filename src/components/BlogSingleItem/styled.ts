@@ -15,12 +15,20 @@ export const BlogItemStyled = styled.div`
 	& > h3 {
 		${({ theme }) => theme.headlines.headline3}
 		margin: 0 2rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.headlines.headline4}
+		}
 	}
 
 	& > p {
 		${({ theme }) => theme.paragraphs.paragraph2}
 		color: ${({ theme }) => theme.colors.grey};
 		margin: 0 1rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.paragraphs.paragraph3}
+		}
 	}
 `
 

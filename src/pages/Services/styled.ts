@@ -22,10 +22,19 @@ export const IntroductionStyled = styled.div`
 
 	& > h1 {
 		${({ theme }) => theme.headlines.headline1}
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.headlines.headline3}
+		}
 	}
 
 	& > p {
 		${({ theme }) => theme.paragraphs.paragraph1}
 		color: ${({ theme }) => theme.colors.grey};
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			max-width: 60rem;
+			${({ theme }) => theme.paragraphs.paragraph3}
+		}
 	}
 `

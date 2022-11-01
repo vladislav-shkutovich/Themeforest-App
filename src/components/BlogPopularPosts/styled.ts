@@ -8,7 +8,7 @@ export const PopularPostsStyled = styled.ul`
 
 	& > h4 {
 		${({ theme }) => theme.headlines.headline4}
-		margin: 0 2rem;
+		margin: 3rem 0 0 2rem;
 	}
 
 	& > ul {
@@ -36,6 +36,10 @@ export const PopularPostsStyled = styled.ul`
 				& > p {
 					${({ theme }) => theme.paragraphs.paragraph3}
 					color: ${({ theme }) => theme.colors.grey};
+
+					@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+						font-size: ${({ theme }) => theme.fontSizes.small};
+					}
 				}
 
 				& > h6 {

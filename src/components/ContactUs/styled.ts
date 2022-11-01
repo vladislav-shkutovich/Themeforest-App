@@ -28,7 +28,7 @@ export const ContactsStyled = styled.div`
 		max-width: 54rem;
 		margin-bottom: 2.4rem;
 
-		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 			${({ theme }) => theme.headlines.headline3}
 		}
 	}
@@ -40,7 +40,7 @@ export const ContactsStyled = styled.div`
 		max-width: 54rem;
 		margin-bottom: 6rem;
 
-		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 			${({ theme }) => theme.paragraphs.paragraph3}
 		}
 	}
@@ -79,6 +79,10 @@ export const FormStyled = styled.form`
 	& > h3 {
 		${({ theme }) => theme.headlines.headline3}
 		margin-bottom: 3rem;
+
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			${({ theme }) => theme.headlines.headline4}
+		}
 	}
 
 	& > label {
