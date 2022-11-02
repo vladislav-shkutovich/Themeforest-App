@@ -1,15 +1,10 @@
-import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api'
-import {
-	centerCoords,
-	firstMarkerCoords,
-	secondMarkerCoords,
-	thirdMarkerCoords,
-} from '@config/googleMapConfig'
+import { GoogleMap, MarkerF, useLoadScript } from '@react-google-maps/api'
+import { centerCoords, markersCoords, mapOptions } from '@config/googleMapConfig'
 import { WrapperStyled } from './styled'
 
 export const GoogleMapItem: React.FC = () => {
 	const { isLoaded } = useLoadScript({
-		googleMapsApiKey: process.env.REACT_GOOGLE_MAPS_API_KEY as string,
+		googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string,
 	})
 
 	if (!isLoaded)
@@ -21,10 +16,10 @@ export const GoogleMapItem: React.FC = () => {
 
 	return (
 		<WrapperStyled>
-			<GoogleMap zoom={6} center={centerCoords}>
-				<Marker position={firstMarkerCoords} title="Our office in Brest" />
-				<Marker position={secondMarkerCoords} title="Our office in Warszawa" />
-				<Marker position={thirdMarkerCoords} title="Our office in Praha" />
+			<GoogleMap zoom={6} center={centerCoords} options={mapOptions}>
+				{markersCoords.map((item) => (
+					<MarkerF position={item} title="Our office" key={`${item.lat}${item.lng}`} />
+				))}
 			</GoogleMap>
 		</WrapperStyled>
 	)
