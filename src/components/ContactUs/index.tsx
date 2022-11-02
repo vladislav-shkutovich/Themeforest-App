@@ -21,16 +21,16 @@ export const ContactUs: React.FC = () => {
 			<FormStyled>
 				<h3>Contact Us</h3>
 
-				<label htmlFor="Name">Name</label>
+				<label htmlFor="Name">Your Name</label>
 				<input type="text" name="name" id="name" />
 
-				<label htmlFor="Email">Email</label>
+				<label htmlFor="Email">Your Email</label>
 				<input type="text" name="Email" id="Email" />
 
 				<label htmlFor="Theme">Theme</label>
 				<input type="text" name="Theme" id="Theme" />
 
-				<label htmlFor="Message">Message</label>
+				<label htmlFor="Message">Your Message</label>
 				<input type="text" name="Message" id="Message" />
 
 				<ButtonDefault text="Send" />

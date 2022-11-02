@@ -7,6 +7,7 @@ module.exports = {
 		alias: {
 			'@components': resolve('src/components'),
 			'@interfaces': resolve('src/interfaces/'),
+			'@config': resolve('src/config/'),
 			'@constants': resolve('src/constants/'),
 			'@store': resolve('src/store'),
 			'@utils': resolve('src/utils'),

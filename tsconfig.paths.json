@@ -8,6 +8,9 @@
 			"@interfaces/*": [
 				"interfaces/*"
 			],
+			"@config/*": [
+				"config/*"
+			],
 			"@constants/*": [
 				"constants/*"
 			],
