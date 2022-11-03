@@ -74,3 +74,15 @@ export interface IBlogPost {
 	viewsCount: number
 	baseRoute: string
 }
+
+export interface IOurTeamContentCard {
+	id: string
+	firstName: string
+	lastName: string
+	email: string
+	role: string
+	photo: string
+	description: string
+	links: string[]
+	baseRoute: string
+}

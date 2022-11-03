@@ -1,5 +1,6 @@
 import { MainLayout } from '@layouts/MainLayout'
 import outTeamImage1 from '@assets/images/our_team_1.png'
+import { OurTeamContent } from '@components/OurTeamContent'
 import { IntroductionStyled } from './styled'
 
 export const OurTeamPage: React.FC = () => (
@@ -22,5 +23,7 @@ export const OurTeamPage: React.FC = () => (
 				dolores et quas. Nulla rhoncus consectetur eros non iaculis.
 			</p>
 		</IntroductionStyled>
+
+		<OurTeamContent />
 	</MainLayout>
 )
