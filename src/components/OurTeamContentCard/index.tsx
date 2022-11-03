@@ -8,11 +8,10 @@ export const OurTeamContentCard: React.FC<IOurTeamContentCard> = ({
 	lastName,
 	role,
 	photo,
-	baseRoute,
 }) => {
 	return (
 		<ContentCardStyled>
-			<Link to={`${baseRoute}/${id}`} key={id}>
+			<Link to={id} key={id}>
 				<img src={photo} alt="Services Icon" />
 			</Link>
 			<h5>
