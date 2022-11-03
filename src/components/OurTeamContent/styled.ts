@@ -11,4 +11,9 @@ export const ContentStyled = styled.div`
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 		margin-bottom: 6rem;
 	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.ourTeamThird}) {
+		column-gap: 1.5rem;
+		row-gap: 3rem;
+	}
 `

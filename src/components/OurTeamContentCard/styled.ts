@@ -13,8 +13,27 @@ export const ContentCardStyled = styled.div`
 			height: 100%;
 			max-width: 54rem;
 			max-height: 72rem;
-			height: 100%;
 			border-radius: 0.6rem;
+
+			@media only screen and (max-width: ${({ theme }) => theme.breakpoints.ourTeamFirst}) {
+				max-width: 37.8rem;
+				max-height: 50.4rem;
+			}
+
+			@media only screen and (max-width: ${({ theme }) => theme.breakpoints.ourTeamSecond}) {
+				max-width: 30.24rem;
+				max-height: 40.32rem;
+			}
+
+			@media only screen and (max-width: ${({ theme }) => theme.breakpoints.ourTeamThird}) {
+				max-width: 24.192rem;
+				max-height: 32.256rem;
+			}
+
+			@media only screen and (max-width: ${({ theme }) => theme.breakpoints.ourTeamThird}) {
+				max-width: 19.353rem;
+				max-height: 25.805rem;
+			}
 		}
 	}
 
