@@ -11,6 +11,7 @@ module.exports = {
 			'@constants': resolve('src/constants/'),
 			'@store': resolve('src/store'),
 			'@utils': resolve('src/utils'),
+			'@helpers': resolve('src/helpers'),
 			'@hooks': resolve('src/hooks'),
 			'@hoc': resolve('src/hoc'),
 			'@sagas': resolve('src/sagas'),

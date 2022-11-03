@@ -20,6 +20,9 @@
 			"@utils/*": [
 				"utils/*"
 			],
+			"@helpers/*": [
+				"helpers/*"
+			],
 			"@hooks/*": [
 				"hooks/*"
 			],
