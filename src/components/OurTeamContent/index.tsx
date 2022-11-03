@@ -1,12 +1,12 @@
-import { ServicesPageContentCard } from '@components/ServicesPageContentCard'
-import { SERVICES_PAGE_CONTENT_CARDS } from '@constants/servicesPageContentCards'
+import { OurTeamContentCard } from '@components/OurTeamContentCard'
+import { OUR_TEAM_CONTENT_CARDS } from '@constants/ourTeamContentCards'
 import { ContentStyled } from './styled'
 
 export const OurTeamContent: React.FC = () => {
 	return (
 		<ContentStyled>
-			{SERVICES_PAGE_CONTENT_CARDS.map((item) => (
-				<ServicesPageContentCard {...item} key={item.key} />
+			{OUR_TEAM_CONTENT_CARDS.map((item) => (
+				<OurTeamContentCard {...item} key={item.id} />
 			))}
 		</ContentStyled>
 	)

@@ -1,14 +1,24 @@
-import { ButtonReadMore } from '@components/ButtonReadMore'
-import { IServicesContentCard } from '@interfaces/index'
+import { IOurTeamContentCard } from '@interfaces/index'
+import { Link } from 'react-router-dom'
 import { ContentCardStyled } from './styled'
 
-export const OurTeamContentCard: React.FC<IServicesContentCard> = ({ id, image, title, text }) => {
+export const OurTeamContentCard: React.FC<IOurTeamContentCard> = ({
+	id,
+	firstName,
+	lastName,
+	role,
+	photo,
+	baseRoute,
+}) => {
 	return (
 		<ContentCardStyled>
-			<img src={image} alt="Services Icon" />
-			<h4>{title}</h4>
-			<p>{text}</p>
-			<ButtonReadMore text="Read More" route={id} />
+			<Link to={`${baseRoute}/${id}`} key={id}>
+				<img src={photo} alt="Services Icon" />
+			</Link>
+			<h5>
+				{firstName} {lastName}
+			</h5>
+			<p>{role}</p>
 		</ContentCardStyled>
 	)
 }

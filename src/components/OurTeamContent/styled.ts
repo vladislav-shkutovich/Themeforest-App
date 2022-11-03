@@ -4,7 +4,8 @@ export const ContentStyled = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 10rem;
+	column-gap: 3rem;
+	row-gap: 6rem;
 	margin-bottom: 12rem;
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {

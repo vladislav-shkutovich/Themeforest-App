@@ -19,7 +19,7 @@ import team_member_bogdan from '@assets/portraits/team_member_bogdan.jpg'
 import { IOurTeamContentCard } from '@interfaces/index'
 import { OUR_TEAM_ROUTE } from './router'
 
-export const SERVICES_PAGE_CONTENT_CARDS: IOurTeamContentCard[] = [
+export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 	{
 		id: 'walter',
 		firstName: 'Walter',
@@ -245,38 +245,6 @@ export const SERVICES_PAGE_CONTENT_CARDS: IOurTeamContentCard[] = [
 		baseRoute: OUR_TEAM_ROUTE,
 	},
 	{
-		id: 'hovard',
-		firstName: 'Hovard',
-		lastName: 'Hamlin',
-		email: 'vladislav.shkutovich@gmail.com',
-		role: 'Developer',
-		photo: team_member_hovard,
-		description:
-			'Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto odio dignissimos ducimus.',
-		links: [
-			'https://breakingbad.fandom.com/ru/wiki/Говард_Хэмлин',
-			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
-		],
-		baseRoute: OUR_TEAM_ROUTE,
-	},
-	{
-		id: 'dohliy',
-		firstName: 'Peter',
-		lastName: 'Skinny',
-		email: 'vladislav.shkutovich@gmail.com',
-		role: 'Developer',
-		photo: team_member_dohliy,
-		description:
-			'Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto odio dignissimos ducimus.',
-		links: [
-			'https://breakingbad.fandom.com/ru/wiki/Тощий_Пит',
-			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
-		],
-		baseRoute: OUR_TEAM_ROUTE,
-	},
-	{
 		id: 'crazy8',
 		firstName: 'Domingo',
 		lastName: 'Gallardo Molina',
@@ -303,6 +271,38 @@ export const SERVICES_PAGE_CONTENT_CARDS: IOurTeamContentCard[] = [
 			'Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto odio dignissimos ducimus.',
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Богдан_Волынец',
+			'https://www.instagram.com/vlad.shkutovich/',
+			'www.linkedin.com/in/vladislav-shkutovich',
+		],
+		baseRoute: OUR_TEAM_ROUTE,
+	},
+	{
+		id: 'hovard',
+		firstName: 'Hovard',
+		lastName: 'Hamlin',
+		email: 'vladislav.shkutovich@gmail.com',
+		role: 'Developer',
+		photo: team_member_hovard,
+		description:
+			'Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto odio dignissimos ducimus.',
+		links: [
+			'https://breakingbad.fandom.com/ru/wiki/Говард_Хэмлин',
+			'https://www.instagram.com/vlad.shkutovich/',
+			'www.linkedin.com/in/vladislav-shkutovich',
+		],
+		baseRoute: OUR_TEAM_ROUTE,
+	},
+	{
+		id: 'dohliy',
+		firstName: 'Peter',
+		lastName: 'Skinny',
+		email: 'vladislav.shkutovich@gmail.com',
+		role: 'Developer',
+		photo: team_member_dohliy,
+		description:
+			'Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto odio dignissimos ducimus.',
+		links: [
+			'https://breakingbad.fandom.com/ru/wiki/Тощий_Пит',
 			'https://www.instagram.com/vlad.shkutovich/',
 			'www.linkedin.com/in/vladislav-shkutovich',
 		],

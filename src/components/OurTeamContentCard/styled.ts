@@ -4,42 +4,44 @@ export const ContentCardStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: minmax(min-content, 47rem);
-	max-width: 47rem;
-	height: minmax(min-content, 37rem);
+	width: minmax(min-content, 54rem);
+	max-width: 54rem;
 
-	& > img {
-		width: 8.4rem;
-		height: 7rem;
-		margin-bottom: 2.5rem;
+	& > a {
+		margin-bottom: 2rem;
+		& > img {
+			height: 100%;
+			max-width: 54rem;
+			max-height: 72rem;
+			height: 100%;
+			border-radius: 0.6rem;
+		}
 	}
 
-	& > h4 {
-		${({ theme }) => theme.headlines.headline4}
+	& > h5 {
+		${({ theme }) => theme.headlines.headline5}
 		width: minmax(min-content, 20rem);
-		margin-bottom: 1.6rem;
+		margin-bottom: 0.7rem;
 
 		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
-			${({ theme }) => theme.headlines.headline5}
+			${({ theme }) => theme.headlines.headline6}
 		}
 	}
 
 	& > p {
 		${({ theme }) => theme.paragraphs.paragraph2}
 		color: ${({ theme }) => theme.colors.grey};
-		width: minmax(min-content, 47rem);
-		margin-bottom: 2rem;
 
 		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 			${({ theme }) => theme.paragraphs.paragraph3}
 		}
 	}
 
-	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesFirst}) {
+	/* @media only screen and (max-width: ${({ theme }) => theme.breakpoints.servicesFirst}) {
 		align-items: center;
 
 		& > * {
 			text-align: center;
 		}
-	}
+	} */
 `
