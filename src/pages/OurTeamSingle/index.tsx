@@ -11,10 +11,11 @@ export const OurTeamSinglePage: React.FC = () => {
 	const { id: ourTeamSingleId } = useParams()
 
 	const teamMemberCard = OUR_TEAM_CONTENT_CARDS.find((item) => item.id === ourTeamSingleId)
-
 	if (!teamMemberCard) return <NotFoundPage />
 
 	const { firstName, lastName } = teamMemberCard
+
+	const emailFormText = `Want ${firstName} to share his expertise with you?`
 
 	return (
 		<MainLayout>
@@ -31,7 +32,7 @@ export const OurTeamSinglePage: React.FC = () => {
 				</div>
 			</IntroductionStyled>
 			<TeamMemberCard teamMemberCard={teamMemberCard} />
-			<ContactUs />
+			<ContactUs headingText={emailFormText} text=" " />
 		</MainLayout>
 	)
 }

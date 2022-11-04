@@ -84,7 +84,7 @@ export const TeamMemberCardStyled = styled.div`
 
 			& > a {
 				width: max-content;
-				padding: 1rem;
+				padding: 1rem 1.5rem;
 				margin: 0.5rem 0;
 				border-radius: 0.6rem;
 				${({ theme }) => theme.headlines.headline6}
