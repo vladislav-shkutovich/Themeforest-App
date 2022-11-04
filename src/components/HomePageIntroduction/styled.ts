@@ -181,4 +181,8 @@ export const BackgroundWrapperSolutions = styled.div`
 	margin: 0 -10vw;
 	z-index: -1;
 	background-color: ${({ theme }) => theme.colors.background};
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+		margin: 0 -3vw;
+	}
 `

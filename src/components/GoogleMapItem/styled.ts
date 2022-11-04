@@ -16,6 +16,10 @@ export const WrapperStyled = styled.div`
 			max-width: 25rem;
 		}
 
+		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+			margin: 0 -3vw;
+		}
+
 		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.homeThird}) {
 			${({ theme }) => theme.headlines.headline5}
 		}
