@@ -32,7 +32,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Уолтер_Уайт',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -48,7 +48,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Густаво_Фринг',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -64,7 +64,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Джесси_Пинкман',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -80,7 +80,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Джейн_Марголис',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -96,7 +96,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Джимми_МакГилл',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -112,7 +112,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Хэнк_Шрейдер',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -128,7 +128,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Начо_Варга',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -144,7 +144,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Майк_Эрмантраут',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -160,7 +160,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Лало_Саламанка',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -176,7 +176,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Ким_Уэкслер',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -192,7 +192,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Скайлер_Уайт',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -208,7 +208,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Лидия_Родарт-Куэйл',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -224,7 +224,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Уолтер_Уайт-младший',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -240,7 +240,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Мари_Шрейдер',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -256,7 +256,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Крейзи-8',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -272,7 +272,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Богдан_Волынец',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -288,7 +288,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Говард_Хэмлин',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},
@@ -304,7 +304,7 @@ export const OUR_TEAM_CONTENT_CARDS: IOurTeamContentCard[] = [
 		links: [
 			'https://breakingbad.fandom.com/ru/wiki/Тощий_Пит',
 			'https://www.instagram.com/vlad.shkutovich/',
-			'www.linkedin.com/in/vladislav-shkutovich',
+			'https://www.linkedin.com/in/vladislav-shkutovich',
 		],
 		baseRoute: OUR_TEAM_ROUTE,
 	},

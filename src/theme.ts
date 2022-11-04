@@ -28,6 +28,9 @@ const breakpoints = {
 	ourTeamSecond: '1000px',
 	ourTeamThird: '680px',
 	ourTeamFourth: '540px',
+	ourTeamSingleFirst: '1200px',
+	ourTeamSingleSec: '1030px',
+	ourTeamSingleThird: '450px',
 }
 
 const shadows = {

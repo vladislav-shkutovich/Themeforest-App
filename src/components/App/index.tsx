@@ -22,8 +22,10 @@ import {
 	SOLUTIONS_ROUTE,
 	SERVICES_SINGLE_ROUTE,
 	NOT_FOUND_ROUTE,
+	OUR_TEAM_SINGLE_ROUTE,
 } from '@constants/router'
 import { ScrollToTop } from '@components/ScrollToTop'
+import { OurTeamSinglePage } from '@pages/OurTeamSingle'
 
 // todo рендерить массив с роутами
 export const App: React.FC = () => (
@@ -36,6 +38,7 @@ export const App: React.FC = () => (
 			<Route path={CONTACTS_ROUTE} element={<ContactsPage />} />
 			<Route path={FAQS_ROUTE} element={<FAQsPage />} />
 			<Route path={OUR_TEAM_ROUTE} element={<OurTeamPage />} />
+			<Route path={OUR_TEAM_SINGLE_ROUTE} element={<OurTeamSinglePage />} />
 			<Route path={SERVICES_ROUTE} element={<ServicesPage />} />
 			<Route path={SERVICES_SINGLE_ROUTE} element={<ServicesPageSingle />} />
 			<Route path={SOLUTIONS_ROUTE} element={<SolutionsPage />} />
