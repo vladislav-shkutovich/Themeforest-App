@@ -30,6 +30,7 @@ export const ContactsStyled = styled.div`
 
 		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 			${({ theme }) => theme.headlines.headline3}
+			text-align: center;
 		}
 	}
 
@@ -42,6 +43,7 @@ export const ContactsStyled = styled.div`
 
 		@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
 			${({ theme }) => theme.paragraphs.paragraph3}
+			text-align: center;
 		}
 	}
 
@@ -56,6 +58,10 @@ export const ContactsStyled = styled.div`
 			color: ${({ theme }) => theme.colors.black};
 			margin-bottom: 2.4rem;
 		}
+	}
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.layoutFirst}) {
+		text-align: center;
 	}
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.contactUsFirst}) {

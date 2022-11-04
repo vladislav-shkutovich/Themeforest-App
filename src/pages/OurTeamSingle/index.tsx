@@ -4,6 +4,7 @@ import { NotFoundPage } from '@pages/NotFound'
 import { OUR_TEAM_CONTENT_CARDS } from '@constants/ourTeamContentCards'
 import { HOME_PAGE_ROUTE, OUR_TEAM_ROUTE } from '@constants/router'
 import { TeamMemberCard } from '@components/TeamMebmerCard'
+import { ContactUs } from '@components/ContactUs'
 import { IntroductionStyled } from './styled'
 
 export const OurTeamSinglePage: React.FC = () => {
@@ -30,6 +31,7 @@ export const OurTeamSinglePage: React.FC = () => {
 				</div>
 			</IntroductionStyled>
 			<TeamMemberCard teamMemberCard={teamMemberCard} />
+			<ContactUs />
 		</MainLayout>
 	)
 }
