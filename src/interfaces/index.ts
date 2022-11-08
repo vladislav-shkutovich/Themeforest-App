@@ -86,3 +86,10 @@ export interface IOurTeamContentCard {
 	links: string[]
 	baseRoute: string
 }
+
+export interface IFAQsContentCard {
+	id: string
+	title: string
+	text: string
+	isOpen: boolean
+}
