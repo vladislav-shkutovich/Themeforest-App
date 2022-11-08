@@ -93,3 +93,10 @@ export interface IFAQsContentCard {
 	text: string
 	isOpen: boolean
 }
+
+export interface ISolutionsContentCard {
+	id: string
+	image: string
+	title: string
+	text: string
+}

@@ -1,7 +1,7 @@
 import solutionsImage1 from '@assets/images/solutions_1.png'
 import checkMark from '@assets/icons/check_mark.svg'
 import { HelpSection } from '@components/HelpSection'
-import { ServicesPageContent } from '@components/ServicesPageContent'
+import { SolutionsPageContent } from '@components/SolutionsPageContent'
 import { Testimonials } from '@components/Testimonials'
 import { MainLayout } from '@layouts/MainLayout'
 import { IntroductionStyled, DummyContentStyled, TestimonialsWrapper } from './styled'
@@ -14,7 +14,7 @@ export const SolutionsPage: React.FC = () => (
 			<p>Getting ready for your success, we provide truly outstanding IT solutions.</p>
 		</IntroductionStyled>
 
-		<ServicesPageContent />
+		<SolutionsPageContent />
 
 		<DummyContentStyled>
 			<img src={solutionsImage1} alt="About Us 1" />

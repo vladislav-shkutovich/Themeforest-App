@@ -11,7 +11,6 @@ export const TestimonialsCardStyled = styled.div`
 	padding: 3.5rem;
 	gap: 2.5rem;
 	background-color: ${({ theme }) => theme.colors.white};
-	/* ${({ theme }) => theme.shadows.shadowCard3} */
 
 	& > div {
 		display: flex;
