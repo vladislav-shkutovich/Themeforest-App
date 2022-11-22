@@ -6,9 +6,11 @@ import {
 	ContactsPage,
 	FAQsPage,
 	OurTeamPage,
+	OurTeamSinglePage,
 	ServicesPage,
 	ServicesPageSingle,
 	SolutionsPage,
+	SolutionsSinglePage,
 	NotFoundPage,
 } from '@pages/index'
 import {
@@ -23,9 +25,9 @@ import {
 	SERVICES_SINGLE_ROUTE,
 	NOT_FOUND_ROUTE,
 	OUR_TEAM_SINGLE_ROUTE,
+	SOLUTIONS_SINGLE_ROUTE,
 } from '@constants/router'
 import { ScrollToTop } from '@components/ScrollToTop'
-import { OurTeamSinglePage } from '@pages/OurTeamSingle'
 
 // todo рендерить массив с роутами
 export const App: React.FC = () => (
@@ -42,6 +44,7 @@ export const App: React.FC = () => (
 			<Route path={SERVICES_ROUTE} element={<ServicesPage />} />
 			<Route path={SERVICES_SINGLE_ROUTE} element={<ServicesPageSingle />} />
 			<Route path={SOLUTIONS_ROUTE} element={<SolutionsPage />} />
+			<Route path={SOLUTIONS_SINGLE_ROUTE} element={<SolutionsSinglePage />} />
 			<Route path={NOT_FOUND_ROUTE} element={<NotFoundPage />} />
 		</Routes>
 	</BrowserRouter>

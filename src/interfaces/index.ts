@@ -100,3 +100,18 @@ export interface ISolutionsContentCard {
 	title: string
 	text: string
 }
+
+interface ISolutionsSingleItemContent {
+	href: string
+	heading: string
+	image?: string
+	text: string
+	list?: string[]
+}
+
+export interface ISolutionsSingleItem {
+	id: string
+	baseRoute: string
+	title: string
+	content: ISolutionsSingleItemContent[]
+}

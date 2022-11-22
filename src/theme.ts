@@ -33,6 +33,7 @@ const breakpoints = {
 	ourTeamSingleThird: '450px',
 	solutionsFirst: '1430px',
 	solutionsSecond: '700px',
+	solutionsSingleFirst: '1170px',
 }
 
 const shadows = {
