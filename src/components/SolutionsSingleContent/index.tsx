@@ -1,35 +1,58 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { createRef, useState } from 'react'
 import { ISolutionsSingleItem } from '@interfaces/index'
-import { SolutionsSingleContentStyled, NavigationStyled, ContentStyled } from './styled'
+import { SolutionsSingleArticle } from '@components/SolutionsSingleArticle'
+import {
+	SolutionsSingleContentStyled,
+	NavigationStyled,
+	ContentStyled,
+	NavigationButton,
+} from './styled'
 
 export const SolutionsSingleContent: React.FC<{ solutionsSingleItem: ISolutionsSingleItem }> = ({
 	solutionsSingleItem,
 }) => {
 	const { content } = solutionsSingleItem
+	const [activeHeading, setActiveHeading] = useState(content[0].name)
+	const contentRefs = content.reduce((refsObj: any, { name }) => {
+		refsObj[name] = createRef()
+		return refsObj
+	}, {})
+
+	const moveToHeading = (name: string) => (): void => {
+		contentRefs[name].current.scrollIntoView({ behavior: 'smooth' })
+	}
 
 	return (
 		<SolutionsSingleContentStyled>
 			<NavigationStyled>
-				{content.map(({ href, heading }) => (
-					<a href={href} key={href}>
+				{content.map(({ name, heading }) => (
+					<NavigationButton
+						type="button"
+						key={name}
+						name={name}
+						activeHeading={activeHeading}
+						onClick={moveToHeading(name)}
+					>
 						{heading}
-					</a>
+					</NavigationButton>
 				))}
 			</NavigationStyled>
 
 			<ContentStyled>
-				{content.map(({ href, heading, image, text, list }) => (
-					<section id={href} key={href}>
-						<h2>{heading}</h2>
-						{image && <img src={image} alt="Solution" />}
-						<p>{text}</p>
-						{list && (
-							<ul>
-								{list.map((item) => (
-									<li key={item}>{item}</li>
-								))}
-							</ul>
-						)}
-					</section>
+				{content.map(({ name, heading, image, text, list }) => (
+					<SolutionsSingleArticle
+						key={name}
+						ref={contentRefs[name]}
+						name={name}
+						refs={contentRefs}
+						heading={heading}
+						image={image}
+						text={text}
+						list={list}
+						activeHeading={activeHeading}
+						callback={setActiveHeading}
+					/>
 				))}
 			</ContentStyled>
 		</SolutionsSingleContentStyled>

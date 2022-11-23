@@ -101,8 +101,8 @@ export interface ISolutionsContentCard {
 	text: string
 }
 
-interface ISolutionsSingleItemContent {
-	href: string
+export interface ISolutionsSingleItemContent {
+	name: string
 	heading: string
 	image?: string
 	text: string
@@ -114,4 +114,16 @@ export interface ISolutionsSingleItem {
 	baseRoute: string
 	title: string
 	content: ISolutionsSingleItemContent[]
+}
+
+export interface ISolutionsSingleArticle {
+	name: string
+	heading: string
+	image?: string
+	text: string
+	list?: string[]
+	ref?: any
+	refs?: any
+	activeHeading?: string
+	callback?: any
 }
