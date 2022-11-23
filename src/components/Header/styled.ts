@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.div`
+	position: sticky;
+	top: 0;
+	z-index: 10;
 	min-width: 100vw;
 	height: 10vh;
 	max-height: 12.6rem;
