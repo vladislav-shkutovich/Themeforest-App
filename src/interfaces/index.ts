@@ -127,3 +127,8 @@ export interface ISolutionsSingleArticle {
 	activeHeading?: string
 	callback?: any
 }
+
+export interface IAppSliceState {
+	currentState: string
+	isLoggedIn?: boolean
+}

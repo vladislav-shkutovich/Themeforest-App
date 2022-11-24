@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 // import { PersistGate } from 'redux-persist/integration/react'
 import { ThemeProvider } from 'styled-components'
 import { App } from '@components/App'
-import { store } from '@store/index'
+import store from '@store/index'
 // import { store, persistor } from '@store/index'
 import GlobalStyles from './globalStyles'
 import theme from './theme'
@@ -21,7 +21,6 @@ root.render(
 			</ThemeProvider>
 			{/* </PersistGate> */}
 		</Provider>
-		,
 	</React.StrictMode>,
 )
 reportWebVitals()

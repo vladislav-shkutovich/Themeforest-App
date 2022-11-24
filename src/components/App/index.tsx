@@ -28,9 +28,18 @@ import {
 	SOLUTIONS_SINGLE_ROUTE,
 } from '@constants/router'
 import { ScrollToTop } from '@components/ScrollToTop'
+// import { useAppDispatch, useAppSelector } from '@hooks/redux.hooks'
+// import { changeState } from '@store/slices/appSlice'
+// import { selectAppState } from '@store/selectors'
 
 // todo рендерить массив с роутами
 export const App: React.FC = () => {
+	// const dispatch = useAppDispatch()
+	// dispatch(changeState('new state'))
+
+	// const appState = useAppSelector(selectAppState)
+	// console.log(appState)
+
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
