@@ -43,3 +43,8 @@ export interface ISolutionsSingleArticle {
 	activeHeading?: string
 	callback?: any
 }
+
+export interface IYouTubeModal {
+	isOpen: boolean
+	handleOpening: () => void
+}
