@@ -1,11 +1,9 @@
+import { SubscribeForm } from '@forms/SubscribeForm'
 import {
 	SubscribeSectionStyled,
 	TextContainerStyled,
 	HeadingStyled,
 	ParagraphStyled,
-	InputContainerStyled,
-	InputStyled,
-	ButtonStyled,
 } from './styled'
 
 export const SubscribeSection: React.FC = () => {
@@ -18,10 +16,7 @@ export const SubscribeSection: React.FC = () => {
 					laudantium.
 				</ParagraphStyled>
 			</TextContainerStyled>
-			<InputContainerStyled>
-				<InputStyled placeholder="Your email" />
-				<ButtonStyled>Send</ButtonStyled>
-			</InputContainerStyled>
+			<SubscribeForm />
 		</SubscribeSectionStyled>
 	)
 }

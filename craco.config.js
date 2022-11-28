@@ -18,6 +18,7 @@ module.exports = {
 			'@pages': resolve('src/pages'),
 			'@layouts': resolve('src/layouts'),
 			'@assets': resolve('src/assets'),
+			'@forms': resolve('src/forms'),
 		},
 	},
 }
