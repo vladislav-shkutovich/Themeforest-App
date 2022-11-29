@@ -57,7 +57,7 @@ const colors = {
 	white: '#ffffff',
 	grey: '#9497A1',
 	background: '#F1F6FA',
-	red: '#C14040',
+	error: '#C14040',
 }
 
 const fontSizes = {

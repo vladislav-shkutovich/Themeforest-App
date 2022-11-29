@@ -19,7 +19,8 @@ export const SubscribeFormStyled = styled.form`
 	}
 `
 
-export const InputStyled = styled.input`
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const InputStyled = styled.input<any>`
 	display: flex;
 	align-items: center;
 	outline: none;
@@ -35,6 +36,22 @@ export const InputStyled = styled.input`
 
 	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.subscribeThird}) {
 		${({ theme }) => theme.headlines.headline4}
+	}
+`
+
+export const ErrorMessage = styled.p`
+	position: absolute;
+	padding: 0.5rem 1rem;
+	margin-top: 6rem;
+	margin-left: 0rem;
+	border-radius: 1rem;
+	display: flex;
+	${({ theme }) => theme.paragraphs.paragraph3}
+	color: ${({ theme }) => theme.colors.white};
+	background-color: ${({ theme }) => theme.colors.error};
+
+	@media only screen and (max-width: ${({ theme }) => theme.breakpoints.subscribeThird}) {
+		${({ theme }) => theme.paragraphs.paragraph1}
 	}
 `
 
