@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const FormStyled = styled.form`
 	display: flex;
 	flex-direction: column;
@@ -20,18 +21,13 @@ export const FormStyled = styled.form`
 		}
 	}
 
-	& > label {
-		${({ theme }) => theme.headlines.headline8}
-		color: ${({ theme }) => theme.colors.grey};
-	}
+	& > div {
+		display: flex;
 
-	& > input {
-		${({ theme }) => theme.paragraphs.paragraph3Bold}
-		border: none;
-		border-bottom: 0.1rem solid ${({ theme }) => theme.colors.grey};
-		padding: 0.25rem 0;
-		margin-bottom: 2rem;
-		outline: none;
+		& > label {
+			${({ theme }) => theme.headlines.headline8}
+			color: ${({ theme }) => theme.colors.grey};
+		}
 	}
 
 	& > button {
@@ -44,4 +40,20 @@ export const FormStyled = styled.form`
 			${({ theme }) => theme.headlines.headline7}
 		}
 	}
+`
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const InputStyled = styled.input<any>`
+	${({ theme }) => theme.paragraphs.paragraph3Bold}
+	border: none;
+	border-bottom: 0.1rem solid ${({ theme }) => theme.colors.grey};
+	padding: 0.25rem 0;
+	margin-bottom: 2rem;
+	outline: none;
+`
+
+export const ErrorMessage = styled.p`
+	margin-left: auto;
+	${({ theme }) => theme.paragraphs.paragraph3}
+	color: ${({ theme }) => theme.colors.error};
 `

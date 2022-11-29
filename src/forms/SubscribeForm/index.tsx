@@ -5,12 +5,13 @@ import emailjs, { init } from '@emailjs/browser'
 import { sendEmailSchema } from '@forms/validationSchema'
 import { SubscribeFormStyled, InputStyled, ErrorMessage, ButtonStyled } from './styled'
 
+init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+
 export const SubscribeForm: React.FC = () => {
-	init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
 	const [disabled, setDisabled] = useState(false)
 	const subscribeRef = useRef<HTMLFormElement>(null)
 
-	const formik = useFormik({
+	const { handleSubmit, handleChange, values, touched, errors } = useFormik({
 		initialValues: {
 			email: '',
 		},
@@ -35,17 +36,17 @@ export const SubscribeForm: React.FC = () => {
 	})
 
 	return (
-		<SubscribeFormStyled ref={subscribeRef} onSubmit={formik.handleSubmit}>
+		<SubscribeFormStyled ref={subscribeRef} onSubmit={handleSubmit}>
 			<>
 				<InputStyled
 					placeholder="Your email"
 					name="email"
-					onChange={formik.handleChange}
-					value={formik.values.email}
-					error={formik.touched.email && Boolean(formik.errors.email)}
-					message={formik.errors.email}
+					onChange={handleChange}
+					value={values.email}
+					error={touched.email && Boolean(errors.email)}
+					message={errors.email}
 				/>
-				{formik.errors.email && <ErrorMessage>{formik.errors.email}</ErrorMessage>}
+				{errors.email && <ErrorMessage>{errors.email}</ErrorMessage>}
 			</>
 			<ButtonStyled type="submit" disabled={disabled}>
 				Send

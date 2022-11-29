@@ -1,5 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
-import { EmailForm } from '@components/EmailForm'
+import { ContactUsForm } from '@forms/ContactUsForm'
 import { ContactUsStyled, ContactsStyled } from './styled'
 
 export const ContactUs: React.FC<{ headingText?: string; text?: string }> = ({
@@ -24,7 +24,7 @@ export const ContactUs: React.FC<{ headingText?: string; text?: string }> = ({
 				</div>
 			</ContactsStyled>
 
-			<EmailForm />
+			<ContactUsForm />
 		</ContactUsStyled>
 	)
 }
