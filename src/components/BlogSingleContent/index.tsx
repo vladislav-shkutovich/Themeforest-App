@@ -20,6 +20,8 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()
+
+		// todo: заменить на dispatch для blogSlice
 		return setFilteredList(
 			BLOG_PAGE_POSTS.filter((item) =>
 				item.title.toLowerCase().includes(e.target.value.toLowerCase()),
@@ -32,16 +34,17 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 			<ContentStyled>
 				<BlogSingleItem currentPost={currentPost} />
 				{/* // todo добавить в логику */}
-				<BlogRelatedPosts list={BLOG_PAGE_POSTS} />
+				<BlogRelatedPosts />
 			</ContentStyled>
 
 			<NavigationStyled>
 				<SearchBar callback={handleSearch} data={filteredList[0]} />
-				{/* // todo убрать slice в логику */}
-				<BlogPopularPosts list={BLOG_PAGE_POSTS.slice(0, 4)} />
 
 				<h4>All posts</h4>
 				<CategoriesList list={filteredList} />
+
+				{/* // todo убрать slice в логику */}
+				<BlogPopularPosts list={BLOG_PAGE_POSTS.slice(0, 4)} />
 
 				<h4>Tags</h4>
 				<TagsContainerStyled>

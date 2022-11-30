@@ -1,3 +1,5 @@
 import { RootState } from 'types'
 
-export const selectAppState = ({ appState }: RootState) => appState
+export const selectRelatedPosts = ({ blogState }: RootState) => blogState.relatedPosts
+
+export const selectPostsAreOver = ({ blogState }: RootState) => blogState.postsAreOver

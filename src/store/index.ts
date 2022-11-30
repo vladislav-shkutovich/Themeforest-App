@@ -11,10 +11,10 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit'
 // } from 'redux-persist'
 // import storage from 'redux-persist/lib/storage'
 
-import appSliceReducer from '@store/slices/appSlice'
+import blogSliceReducer from '@store/slices/blogSlice'
 
 const rootReducer = combineReducers({
-	appState: appSliceReducer,
+	blogState: blogSliceReducer,
 })
 
 // const persistConfig = {
