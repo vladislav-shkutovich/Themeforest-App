@@ -81,3 +81,7 @@ export interface ISolutionsSingleItem {
 	title: string
 	content: ISolutionsSingleItemContent[]
 }
+
+export interface IInitialFormValues {
+	[key: string]: string
+}

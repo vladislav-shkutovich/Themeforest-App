@@ -1,38 +1,16 @@
-/* eslint-disable no-alert */
-import { useFormik } from 'formik'
-import { useState, useRef } from 'react'
-import emailjs, { init } from '@emailjs/browser'
 import { sendEmailSchema } from '@forms/validationSchema'
+import { useForm } from '@hooks/useForm'
 import { SubscribeFormStyled, InputStyled, ErrorMessage, ButtonStyled } from './styled'
 
-init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-
 export const SubscribeForm: React.FC = () => {
-	const [disabled, setDisabled] = useState(false)
-	const subscribeRef = useRef<HTMLFormElement>(null)
-
-	const { handleSubmit, handleChange, values, touched, errors } = useFormik({
+	// todo: вынести логику в кастомный хук, а различия конфигурации в константы
+	const { subscribeRef, disabled, handleSubmit, handleChange, values, touched, errors } = useForm({
 		initialValues: {
 			email: '',
 		},
 		validationSchema: sendEmailSchema,
-		validateOnChange: true,
-		validateOnBlur: true,
-		onSubmit: () => {
-			setDisabled(true)
-			emailjs
-				.sendForm(
-					process.env.REACT_APP_EMAILJS_SERVICE_ID,
-					process.env.REACT_APP_EMAILJS_TEMPLATE_TO_ID,
-					subscribeRef.current as HTMLFormElement,
-					process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-				)
-				.then(
-					() => alert('Check your mail!'),
-					() => alert('Something went wrong...'),
-				)
-				.finally(() => setDisabled(false))
-		},
+		template: process.env.REACT_APP_EMAILJS_TEMPLATE_TO_ID,
+		alertMessage: 'Check your mail!',
 	})
 
 	return (
