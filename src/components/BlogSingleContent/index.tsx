@@ -1,4 +1,4 @@
-import { useState, ChangeEventHandler } from 'react'
+import { ChangeEventHandler } from 'react'
 import { BLOG_PAGE_POSTS } from '@constants/blogPagePosts'
 import { BLOG_PAGE_TAGS } from '@constants/blogPageTags'
 import { CategoriesList } from '@components/CategoriesList'
@@ -8,6 +8,10 @@ import { BlogPopularPosts } from '@components/BlogPopularPosts'
 import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
 import { ButtonWithTag } from '@components/ButtonWithTag'
 import { IBlogPost } from '@interfaces/index'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectSearchedPosts } from '@store/selectors'
+import { searchPosts } from '@store/slices/blogSlice'
+
 import {
 	BlogSingleContentStyled,
 	NavigationStyled,
@@ -16,38 +20,34 @@ import {
 } from './styled'
 
 export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
-	const [filteredList, setFilteredList] = useState(BLOG_PAGE_POSTS)
+	const searchedPosts = useSelector(selectSearchedPosts)
+	const dispatch = useDispatch()
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()
 
-		// todo: заменить на dispatch для blogSlice
-		return setFilteredList(
-			BLOG_PAGE_POSTS.filter((item) =>
-				item.title.toLowerCase().includes(e.target.value.toLowerCase()),
-			),
-		)
+		dispatch(searchPosts(e.target.value.toLowerCase()))
 	}
 
 	return (
 		<BlogSingleContentStyled>
 			<ContentStyled>
 				<BlogSingleItem currentPost={currentPost} />
-				{/* // todo добавить в логику */}
 				<BlogRelatedPosts />
 			</ContentStyled>
 
 			<NavigationStyled>
-				<SearchBar callback={handleSearch} data={filteredList[0]} />
+				<SearchBar callback={handleSearch} data={searchedPosts[0]} />
 
 				<h4>All posts</h4>
-				<CategoriesList list={filteredList} />
+				<CategoriesList list={searchedPosts} />
 
-				{/* // todo убрать slice в логику */}
+				{/* // todo убрать в store */}
 				<BlogPopularPosts list={BLOG_PAGE_POSTS.slice(0, 4)} />
 
 				<h4>Tags</h4>
 				<TagsContainerStyled>
+					{/* // todo убрать в store */}
 					{BLOG_PAGE_TAGS.map((item) => (
 						<ButtonWithTag key={item} text={item} isSelected={false} />
 					))}

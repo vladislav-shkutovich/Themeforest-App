@@ -7,6 +7,7 @@ export interface IAppSliceState {
 
 export interface IBlogSliceState {
 	allPosts: IBlogPost[]
+	searchedPosts: IBlogPost[]
 	popularPosts: IBlogPost[]
 	relatedPosts: IBlogPost[]
 	relatedPostsCount: number

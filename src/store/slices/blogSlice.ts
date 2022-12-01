@@ -5,6 +5,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 // ? использую "магические числа", чтобы не засорять константы
 const initialState: IBlogSliceState = {
 	allPosts: BLOG_PAGE_POSTS,
+	searchedPosts: BLOG_PAGE_POSTS,
 	popularPosts: BLOG_PAGE_POSTS.sort((prev, next) => next.viewsCount - prev.viewsCount),
 	relatedPosts: BLOG_PAGE_POSTS.sort(
 		(prev, next) => new Date(prev.date).getTime() - new Date(next.date).getTime(),
@@ -27,8 +28,13 @@ const blogSlice = createSlice({
 				state.relatedPosts = state.allPosts
 			}
 		},
+		searchPosts(state, action: PayloadAction<string>) {
+			state.searchedPosts = state.allPosts.filter((item) =>
+				item.title.toLowerCase().includes(action.payload),
+			)
+		},
 	},
 })
 
-export const { showMorePosts } = blogSlice.actions
+export const { showMorePosts, searchPosts } = blogSlice.actions
 export default blogSlice.reducer

@@ -11,7 +11,7 @@ export const BlogRelatedPosts: React.FC = () => {
 	const dispatch = useDispatch()
 
 	const handleShowMore = () => {
-		dispatch(showMorePosts(3))
+		dispatch(showMorePosts(2))
 	}
 
 	return (
