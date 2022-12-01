@@ -1,14 +1,15 @@
 import { MainLayout } from '@layouts/MainLayout'
 import { useParams } from 'react-router-dom'
 import { NotFoundPage } from '@pages/NotFound'
-import { BLOG_PAGE_POSTS } from '@constants/blogPagePosts'
 import { BlogSingleContent } from '@components/BlogSingleContent'
+import { useSelector } from 'react-redux'
+import { selectAllPosts } from '@store/selectors'
 import { IntroductionStyled } from './styled'
 
 export const BlogPage: React.FC = () => {
+	const allPosts = useSelector(selectAllPosts)
 	const { id: blogSingleId } = useParams()
-
-	const blogSingleItem = BLOG_PAGE_POSTS.find((item) => item.id === blogSingleId)
+	const blogSingleItem = allPosts.find((item) => item.id === blogSingleId)
 	if (!blogSingleItem) return <NotFoundPage />
 	const { title, category } = blogSingleItem
 

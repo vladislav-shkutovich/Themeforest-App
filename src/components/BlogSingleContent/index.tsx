@@ -1,5 +1,4 @@
-import { ChangeEventHandler } from 'react'
-import { BLOG_PAGE_TAGS } from '@constants/blogPageTags'
+import { useEffect, ChangeEventHandler } from 'react'
 import { CategoriesList } from '@components/CategoriesList'
 import { SearchBar } from '@components/SearchBar'
 import { BlogSingleItem } from '@components/BlogSingleItem'
@@ -8,9 +7,8 @@ import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
 import { ButtonWithTag } from '@components/ButtonWithTag'
 import { IBlogPost } from '@interfaces/index'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectSearchedPosts } from '@store/selectors'
-import { searchPosts } from '@store/slices/blogSlice'
-
+import { selectAllTags, selectSearchedPosts } from '@store/selectors'
+import { searchPosts, setCurrentPost, setRelatedPosts } from '@store/slices/blogSlice'
 import {
 	BlogSingleContentStyled,
 	NavigationStyled,
@@ -20,11 +18,16 @@ import {
 
 export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
 	const searchedPosts = useSelector(selectSearchedPosts)
+	const allTags = useSelector(selectAllTags)
 	const dispatch = useDispatch()
+
+	useEffect(() => {
+		dispatch(setCurrentPost(currentPost))
+		dispatch(setRelatedPosts())
+	}, [dispatch, currentPost])
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()
-
 		dispatch(searchPosts(e.target.value.toLowerCase()))
 	}
 
@@ -45,8 +48,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 
 				<h4>Tags</h4>
 				<TagsContainerStyled>
-					{/* // todo убрать в store */}
-					{BLOG_PAGE_TAGS.map((item) => (
+					{allTags.map((item) => (
 						<ButtonWithTag key={item} text={item} isSelected={false} />
 					))}
 				</TagsContainerStyled>

@@ -1,5 +1,9 @@
 import { RootState } from 'types'
 
+export const selectCurrentPost = ({ blogState }: RootState) => blogState.currentPost
+
+export const selectAllPosts = ({ blogState }: RootState) => blogState.allPosts
+
 export const selectRelatedPosts = ({ blogState }: RootState) => blogState.relatedPosts
 
 export const selectPostsAreOver = ({ blogState }: RootState) => blogState.postsAreOver
@@ -7,3 +11,7 @@ export const selectPostsAreOver = ({ blogState }: RootState) => blogState.postsA
 export const selectSearchedPosts = ({ blogState }: RootState) => blogState.searchedPosts
 
 export const selectPopularPosts = ({ blogState }: RootState) => blogState.popularPosts
+
+export const selectAllTags = ({ blogState }: RootState) => blogState.allTags
+
+export const selectCurrentTag = ({ blogState }: RootState) => blogState.currentTag

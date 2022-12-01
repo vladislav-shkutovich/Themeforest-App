@@ -6,7 +6,10 @@ export interface IAppSliceState {
 }
 
 export interface IBlogSliceState {
+	currentPost: IBlogPost
 	allPosts: IBlogPost[]
+	allTags: string[]
+	currentTag: string
 	searchedPosts: IBlogPost[]
 	popularPosts: IBlogPost[]
 	relatedPosts: IBlogPost[]
