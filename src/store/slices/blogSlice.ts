@@ -6,7 +6,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 const initialState: IBlogSliceState = {
 	allPosts: BLOG_PAGE_POSTS,
 	searchedPosts: BLOG_PAGE_POSTS,
-	popularPosts: BLOG_PAGE_POSTS.sort((prev, next) => next.viewsCount - prev.viewsCount),
+	popularPosts: BLOG_PAGE_POSTS.sort((prev, next) => next.viewsCount - prev.viewsCount).slice(0, 4),
 	relatedPosts: BLOG_PAGE_POSTS.sort(
 		(prev, next) => new Date(prev.date).getTime() - new Date(next.date).getTime(),
 	).slice(0, 3),

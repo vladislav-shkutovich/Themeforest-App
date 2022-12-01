@@ -5,3 +5,5 @@ export const selectRelatedPosts = ({ blogState }: RootState) => blogState.relate
 export const selectPostsAreOver = ({ blogState }: RootState) => blogState.postsAreOver
 
 export const selectSearchedPosts = ({ blogState }: RootState) => blogState.searchedPosts
+
+export const selectPopularPosts = ({ blogState }: RootState) => blogState.popularPosts

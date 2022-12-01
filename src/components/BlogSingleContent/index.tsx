@@ -1,5 +1,4 @@
 import { ChangeEventHandler } from 'react'
-import { BLOG_PAGE_POSTS } from '@constants/blogPagePosts'
 import { BLOG_PAGE_TAGS } from '@constants/blogPageTags'
 import { CategoriesList } from '@components/CategoriesList'
 import { SearchBar } from '@components/SearchBar'
@@ -42,8 +41,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 				<h4>All posts</h4>
 				<CategoriesList list={searchedPosts} />
 
-				{/* // todo убрать в store */}
-				<BlogPopularPosts list={BLOG_PAGE_POSTS.slice(0, 4)} />
+				<BlogPopularPosts />
 
 				<h4>Tags</h4>
 				<TagsContainerStyled>
