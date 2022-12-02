@@ -1,18 +1,26 @@
 import iconArrowRight from '@assets/icons/arrow_right.svg'
-import { selectPopularPosts } from '@store/selectors'
-import { useSelector } from 'react-redux'
+import { ButtonDefault } from '@components/ButtonDefault'
+import { selectPopularPosts, selectPopularPostsCount, selectPostsAreOver } from '@store/selectors'
+import { useDispatch, useSelector } from 'react-redux'
+import { showMorePosts } from '@store/slices/blogSlice'
 import { Link } from 'react-router-dom'
 import { PopularPostsStyled } from './styled'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const BlogPopularPosts: React.FC = () => {
+	const dispatch = useDispatch()
 	const popularPosts = useSelector(selectPopularPosts)
+	const popularPostsCount = useSelector(selectPopularPostsCount)
+	const postsAreOver = useSelector(selectPostsAreOver)
+
+	const handleShowMore = () => {
+		dispatch(showMorePosts(3))
+	}
 
 	return (
 		<PopularPostsStyled>
 			<h4>Popular posts</h4>
 			<ul>
-				{popularPosts.map((item) => (
+				{popularPosts.slice(0, popularPostsCount).map((item) => (
 					<li key={item.id}>
 						<img src={item.image} alt="Post" />
 						<div>
@@ -25,6 +33,7 @@ export const BlogPopularPosts: React.FC = () => {
 					</li>
 				))}
 			</ul>
+			{!postsAreOver && <ButtonDefault text="More articles..." callback={handleShowMore} />}
 		</PopularPostsStyled>
 	)
 }

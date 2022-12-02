@@ -55,4 +55,9 @@ export const PopularPostsStyled = styled.ul`
 			}
 		}
 	}
+
+	& > button {
+		transform: scale(0.8);
+		margin: 0;
+	}
 `

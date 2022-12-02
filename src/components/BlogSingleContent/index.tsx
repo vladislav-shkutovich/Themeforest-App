@@ -7,8 +7,18 @@ import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
 import { ButtonWithTag } from '@components/ButtonWithTag'
 import { IBlogPost } from '@interfaces/index'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectAllTags, selectSearchedPosts } from '@store/selectors'
-import { searchPosts, setCurrentPost, setRelatedPosts } from '@store/slices/blogSlice'
+import {
+	selectAllTags,
+	selectSearchedPosts,
+	selectRelatedPosts,
+	selectPopularPosts,
+} from '@store/selectors'
+import {
+	searchPosts,
+	setCurrentPost,
+	setPopularPosts,
+	setRelatedPosts,
+} from '@store/slices/blogSlice'
 import {
 	BlogSingleContentStyled,
 	NavigationStyled,
@@ -18,13 +28,20 @@ import {
 
 export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
 	const searchedPosts = useSelector(selectSearchedPosts)
+	const relatedPosts = useSelector(selectRelatedPosts)
+	const popularPosts = useSelector(selectPopularPosts)
 	const allTags = useSelector(selectAllTags)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
 		dispatch(setCurrentPost(currentPost))
-		dispatch(setRelatedPosts())
-	}, [dispatch, currentPost])
+		if (relatedPosts.length === 0) {
+			dispatch(setRelatedPosts())
+		}
+		if (popularPosts.length === 0) {
+			dispatch(setPopularPosts())
+		}
+	}, [dispatch, currentPost, relatedPosts, popularPosts])
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()

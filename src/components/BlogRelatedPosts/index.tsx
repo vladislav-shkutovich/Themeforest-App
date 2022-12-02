@@ -1,21 +1,11 @@
 // import { useEffect } from 'react'
-import { ButtonDefault } from '@components/ButtonDefault'
-import { selectPostsAreOver, selectRelatedPosts } from '@store/selectors'
-import { showMorePosts } from '@store/slices/blogSlice'
-import { useDispatch, useSelector } from 'react-redux'
+import { selectRelatedPosts } from '@store/selectors'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { RelatedPostsStyled } from './styled'
 
 export const BlogRelatedPosts: React.FC = () => {
-	const dispatch = useDispatch()
 	const relatedPosts = useSelector(selectRelatedPosts)
-	// todo перенос в PopularPosts
-	const postsAreOver = useSelector(selectPostsAreOver)
-
-	// todo перенос в PopularPosts
-	const handleShowMore = () => {
-		dispatch(showMorePosts(2))
-	}
 
 	return (
 		<RelatedPostsStyled>
@@ -32,8 +22,6 @@ export const BlogRelatedPosts: React.FC = () => {
 					</Link>
 				))}
 			</ul>
-			{/* // todo перенос в PopularPosts */}
-			{!postsAreOver && <ButtonDefault text="Show more..." callback={handleShowMore} />}
 		</RelatedPostsStyled>
 	)
 }

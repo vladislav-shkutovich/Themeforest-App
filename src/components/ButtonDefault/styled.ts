@@ -11,7 +11,7 @@ export const ButtonDefaultStyled = styled.button`
 	height: 5.4rem;
 	border-radius: 0.6rem;
 	border: none;
-	padding: 15px 0;
+	padding: 1.5rem 0;
 	margin: 3rem 0;
 	cursor: pointer;
 

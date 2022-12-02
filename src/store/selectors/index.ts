@@ -12,6 +12,8 @@ export const selectSearchedPosts = ({ blogState }: RootState) => blogState.searc
 
 export const selectPopularPosts = ({ blogState }: RootState) => blogState.popularPosts
 
+export const selectPopularPostsCount = ({ blogState }: RootState) => blogState.popularPostsCount
+
 export const selectAllTags = ({ blogState }: RootState) => blogState.allTags
 
 export const selectCurrentTag = ({ blogState }: RootState) => blogState.currentTag

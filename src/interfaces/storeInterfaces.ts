@@ -13,6 +13,6 @@ export interface IBlogSliceState {
 	searchedPosts: IBlogPost[]
 	popularPosts: IBlogPost[]
 	relatedPosts: IBlogPost[]
-	relatedPostsCount: number
+	popularPostsCount: number
 	postsAreOver: boolean
 }

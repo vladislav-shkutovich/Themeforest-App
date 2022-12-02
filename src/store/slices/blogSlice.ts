@@ -9,9 +9,9 @@ const initialState: IBlogSliceState = {
 	allTags: BLOG_PAGE_TAGS,
 	currentTag: 'All topics',
 	searchedPosts: BLOG_PAGE_POSTS,
-	popularPosts: BLOG_PAGE_POSTS.sort((prev, next) => next.viewsCount - prev.viewsCount).slice(0, 4),
+	popularPosts: [],
 	relatedPosts: [],
-	relatedPostsCount: 3,
+	popularPostsCount: 3,
 	postsAreOver: false,
 }
 
@@ -31,14 +31,16 @@ const blogSlice = createSlice({
 				)
 				.slice(0, 3)
 		},
+		setPopularPosts(state) {
+			state.popularPosts = state.allPosts.sort((prev, next) => next.viewsCount - prev.viewsCount)
+		},
 		showMorePosts(state, action: PayloadAction<number>) {
-			const nextCount = state.relatedPostsCount + action.payload
-			if (nextCount < state.allPosts.length) {
-				state.relatedPosts = state.allPosts.slice(0, nextCount)
-				state.relatedPostsCount += action.payload
+			const nextCount = state.popularPostsCount + action.payload
+			if (nextCount < state.popularPosts.length) {
+				state.popularPostsCount += action.payload
 			} else {
+				state.popularPostsCount += action.payload
 				state.postsAreOver = true
-				state.relatedPosts = state.allPosts
 			}
 		},
 		searchPosts(state, action: PayloadAction<string>) {
@@ -49,5 +51,6 @@ const blogSlice = createSlice({
 	},
 })
 
-export const { setCurrentPost, setRelatedPosts, showMorePosts, searchPosts } = blogSlice.actions
+export const { setCurrentPost, setRelatedPosts, setPopularPosts, showMorePosts, searchPosts } =
+	blogSlice.actions
 export default blogSlice.reducer
