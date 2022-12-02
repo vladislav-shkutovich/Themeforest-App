@@ -4,33 +4,22 @@ import { SearchBar } from '@components/SearchBar'
 import { BlogSingleItem } from '@components/BlogSingleItem'
 import { BlogPopularPosts } from '@components/BlogPopularPosts'
 import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
-import { ButtonWithTag } from '@components/ButtonWithTag'
+import { BlogTags } from '@components/BlogTags'
 import { IBlogPost } from '@interfaces/index'
 import { useDispatch, useSelector } from 'react-redux'
-import {
-	selectAllTags,
-	selectSearchedPosts,
-	selectRelatedPosts,
-	selectPopularPosts,
-} from '@store/selectors'
+import { selectSearchedPosts, selectRelatedPosts, selectPopularPosts } from '@store/selectors'
 import {
 	searchPosts,
 	setCurrentPost,
 	setPopularPosts,
 	setRelatedPosts,
 } from '@store/slices/blogSlice'
-import {
-	BlogSingleContentStyled,
-	NavigationStyled,
-	ContentStyled,
-	TagsContainerStyled,
-} from './styled'
+import { BlogSingleContentStyled, NavigationStyled, ContentStyled } from './styled'
 
 export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
 	const searchedPosts = useSelector(selectSearchedPosts)
 	const relatedPosts = useSelector(selectRelatedPosts)
 	const popularPosts = useSelector(selectPopularPosts)
-	const allTags = useSelector(selectAllTags)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
@@ -64,11 +53,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 				<BlogPopularPosts />
 
 				<h4>Tags</h4>
-				<TagsContainerStyled>
-					{allTags.map((item) => (
-						<ButtonWithTag key={item} text={item} isSelected={false} />
-					))}
-				</TagsContainerStyled>
+				<BlogTags />
 			</NavigationStyled>
 		</BlogSingleContentStyled>
 	)

@@ -7,7 +7,7 @@ const initialState: IBlogSliceState = {
 	currentPost: BLOG_PAGE_POSTS[0],
 	allPosts: BLOG_PAGE_POSTS,
 	allTags: BLOG_PAGE_TAGS,
-	currentTag: 'All topics',
+	currentTags: [BLOG_PAGE_TAGS[0]],
 	searchedPosts: BLOG_PAGE_POSTS,
 	popularPosts: [],
 	relatedPosts: [],
@@ -34,6 +34,16 @@ const blogSlice = createSlice({
 		setPopularPosts(state) {
 			state.popularPosts = state.allPosts.sort((prev, next) => next.viewsCount - prev.viewsCount)
 		},
+		updateCurrentTags(state) {
+			const allTopicsTag = state.allTags.find((item) => item.title === 'All topics')
+			if (allTopicsTag)
+				allTopicsTag.isActive = !state.allTags.slice(1).some((item) => item.isActive)
+			state.currentTags = state.allTags.filter((item) => item.isActive)
+		},
+		toggleTag(state, action) {
+			const clickedTag = state.allTags.find((item) => item.title === action.payload)
+			if (clickedTag) clickedTag.isActive = !clickedTag.isActive
+		},
 		showMorePosts(state, action: PayloadAction<number>) {
 			const nextCount = state.popularPostsCount + action.payload
 			if (nextCount < state.popularPosts.length) {
@@ -51,6 +61,13 @@ const blogSlice = createSlice({
 	},
 })
 
-export const { setCurrentPost, setRelatedPosts, setPopularPosts, showMorePosts, searchPosts } =
-	blogSlice.actions
+export const {
+	setCurrentPost,
+	setRelatedPosts,
+	setPopularPosts,
+	updateCurrentTags,
+	toggleTag,
+	showMorePosts,
+	searchPosts,
+} = blogSlice.actions
 export default blogSlice.reducer

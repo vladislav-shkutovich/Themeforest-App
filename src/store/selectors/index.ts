@@ -16,4 +16,4 @@ export const selectPopularPostsCount = ({ blogState }: RootState) => blogState.p
 
 export const selectAllTags = ({ blogState }: RootState) => blogState.allTags
 
-export const selectCurrentTag = ({ blogState }: RootState) => blogState.currentTag
+export const selectCurrentTags = ({ blogState }: RootState) => blogState.currentTags

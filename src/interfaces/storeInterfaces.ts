@@ -5,11 +5,16 @@ export interface IAppSliceState {
 	isLoggedIn?: boolean
 }
 
+export interface IBlogTag {
+	title: string
+	isActive: boolean
+}
+
 export interface IBlogSliceState {
 	currentPost: IBlogPost
 	allPosts: IBlogPost[]
-	allTags: string[]
-	currentTag: string
+	allTags: IBlogTag[]
+	currentTags: IBlogTag[]
 	searchedPosts: IBlogPost[]
 	popularPosts: IBlogPost[]
 	relatedPosts: IBlogPost[]

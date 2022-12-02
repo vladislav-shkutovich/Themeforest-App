@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonWithTagStyled } from './styled'
 
 export const ButtonWithTag: React.FC<{
 	text: string
-	isSelected?: boolean
-	callback?: () => void
-}> = ({ text, isSelected, callback }) => {
+	isActive: boolean
+	callback?: any
+}> = ({ text, isActive, callback }) => {
 	return (
-		<ButtonWithTagStyled onClick={callback} isSelected={isSelected || false}>
+		<ButtonWithTagStyled onClick={callback} isActive={isActive}>
 			{text}
 		</ButtonWithTagStyled>
 	)

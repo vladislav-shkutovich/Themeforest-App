@@ -44,3 +44,9 @@ export const NavigationStyled = styled.div`
 		margin-top: 0rem;
 	}
 `
+
+export const TagsContainerStyled = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+`

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ButtonWithTagStyled = styled.div<{ isSelected?: boolean }>`
+export const ButtonWithTagStyled = styled.div<{ isActive?: boolean }>`
 	display: flex;
 	align-items: center;
 	justify-items: center;
@@ -18,8 +18,8 @@ export const ButtonWithTagStyled = styled.div<{ isSelected?: boolean }>`
 		background-color: ${({ theme }) => theme.colors.background};
 	}
 
-	${({ isSelected, theme }) =>
-		isSelected &&
+	${({ isActive, theme }) =>
+		isActive &&
 		`
 		color: ${theme.colors.white};
 		font-weight: 600;
