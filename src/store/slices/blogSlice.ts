@@ -7,7 +7,7 @@ const initialState: IBlogSliceState = {
 	currentPost: BLOG_PAGE_POSTS[0],
 	allPosts: BLOG_PAGE_POSTS,
 	allTags: BLOG_PAGE_TAGS,
-	currentTags: [BLOG_PAGE_TAGS[0]],
+	currentTags: [],
 	searchedPosts: BLOG_PAGE_POSTS,
 	popularPosts: [],
 	relatedPosts: [],
@@ -29,7 +29,8 @@ const blogSlice = createSlice({
 						item.tags.some((tag) => state.currentPost.tags.includes(tag)) &&
 						item.id !== state.currentPost.id,
 				)
-				.slice(0, 3)
+				.slice(0, 4)
+				.sort((prev, next) => next.viewsCount - prev.viewsCount)
 		},
 		setPopularPosts(state) {
 			state.popularPosts = state.allPosts.sort((prev, next) => next.viewsCount - prev.viewsCount)

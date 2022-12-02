@@ -7,7 +7,7 @@ import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
 import { BlogTags } from '@components/BlogTags'
 import { IBlogPost } from '@interfaces/index'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectSearchedPosts, selectRelatedPosts, selectPopularPosts } from '@store/selectors'
+import { selectAllPosts, selectSearchedPosts } from '@store/selectors'
 import {
 	searchPosts,
 	setCurrentPost,
@@ -18,19 +18,17 @@ import { BlogSingleContentStyled, NavigationStyled, ContentStyled } from './styl
 
 export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
 	const searchedPosts = useSelector(selectSearchedPosts)
-	const relatedPosts = useSelector(selectRelatedPosts)
-	const popularPosts = useSelector(selectPopularPosts)
+	const allPosts = useSelector(selectAllPosts)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
 		dispatch(setCurrentPost(currentPost))
-		if (relatedPosts.length === 0) {
-			dispatch(setRelatedPosts())
-		}
-		if (popularPosts.length === 0) {
-			dispatch(setPopularPosts())
-		}
-	}, [dispatch, currentPost, relatedPosts, popularPosts])
+	}, [dispatch, currentPost])
+
+	useEffect(() => {
+		dispatch(setRelatedPosts())
+		dispatch(setPopularPosts())
+	}, [dispatch, currentPost, allPosts])
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()
