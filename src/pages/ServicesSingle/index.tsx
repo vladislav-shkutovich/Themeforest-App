@@ -1,7 +1,8 @@
+import { memo } from 'react'
 import { MainLayout } from '@layouts/MainLayout'
 import { useParams } from 'react-router-dom'
 import { SERVICES_SINGLE_ITEMS } from '@constants/servicesSingleItems'
-import { NotFoundPage } from '@pages/NotFound'
+import NotFoundPage from '@pages/NotFound'
 import { ServicesSingleContent } from '@components/ServicesSingleContent'
 import { ContactUs } from '@components/ContactUs'
 import { IntroductionStyled } from './styled'
@@ -23,3 +24,5 @@ export const ServicesPageSingle: React.FC = () => {
 		</MainLayout>
 	)
 }
+
+export default memo(ServicesPageSingle)

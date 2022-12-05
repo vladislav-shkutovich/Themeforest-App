@@ -1,13 +1,15 @@
+/* eslint-disable import/no-cycle */
+import { memo } from 'react'
 import { MainLayout } from '@layouts/MainLayout'
 import { Link, useParams } from 'react-router-dom'
-import { NotFoundPage } from '@pages/NotFound'
+import NotFoundPage from '@pages/NotFound'
 import { SOLUTIONS_SINGLE_ITEMS } from '@constants/solutionsSingleItems'
 import { HOME_PAGE_ROUTE, SOLUTIONS_ROUTE } from '@constants/router'
 import { SolutionsSingleContent } from '@components/SolutionsSingleContent'
 import { HelpSection } from '@components/HelpSection'
 import { IntroductionStyled } from './styled'
 
-export const SolutionsSinglePage: React.FC = () => {
+const SolutionsSinglePage: React.FC = () => {
 	const { id: solutionsSingleId } = useParams()
 
 	const solutionsSingleItem = SOLUTIONS_SINGLE_ITEMS.find((item) => item.id === solutionsSingleId)
@@ -30,3 +32,5 @@ export const SolutionsSinglePage: React.FC = () => {
 		</MainLayout>
 	)
 }
+
+export default memo(SolutionsSinglePage)

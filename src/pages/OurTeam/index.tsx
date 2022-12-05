@@ -1,9 +1,10 @@
+import { memo } from 'react'
 import { MainLayout } from '@layouts/MainLayout'
 import outTeamImage1 from '@assets/images/our_team_1.png'
 import { OurTeamContent } from '@components/OurTeamContent'
 import { IntroductionStyled } from './styled'
 
-export const OurTeamPage: React.FC = () => (
+const OurTeamPage: React.FC = () => (
 	<MainLayout>
 		<IntroductionStyled>
 			<div>
@@ -27,3 +28,5 @@ export const OurTeamPage: React.FC = () => (
 		<OurTeamContent />
 	</MainLayout>
 )
+
+export default memo(OurTeamPage)

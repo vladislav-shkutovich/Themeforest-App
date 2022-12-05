@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import solutionsImage1 from '@assets/images/solutions_1.png'
 import checkMark from '@assets/icons/check_mark.svg'
 import { HelpSection } from '@components/HelpSection'
@@ -6,7 +7,7 @@ import { Testimonials } from '@components/Testimonials'
 import { MainLayout } from '@layouts/MainLayout'
 import { IntroductionStyled, DummyContentStyled, TestimonialsWrapper } from './styled'
 
-export const SolutionsPage: React.FC = () => (
+const SolutionsPage: React.FC = () => (
 	<MainLayout>
 		<IntroductionStyled>
 			<h6>Solutions</h6>
@@ -59,3 +60,5 @@ export const SolutionsPage: React.FC = () => (
 		<HelpSection />
 	</MainLayout>
 )
+
+export default memo(SolutionsPage)

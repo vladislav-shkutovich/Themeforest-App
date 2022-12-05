@@ -1,9 +1,10 @@
+import { memo } from 'react'
 import { FAQsPageContent } from '@components/FAQsPageContent'
 import { HelpSection } from '@components/HelpSection'
 import { MainLayout } from '@layouts/MainLayout'
 import { IntroductionStyled } from './styled'
 
-export const FAQsPage: React.FC = () => (
+const FAQsPage: React.FC = () => (
 	<MainLayout>
 		<IntroductionStyled>
 			<h6>FAQs</h6>
@@ -17,3 +18,5 @@ export const FAQsPage: React.FC = () => (
 		<HelpSection />
 	</MainLayout>
 )
+
+export default memo(FAQsPage)

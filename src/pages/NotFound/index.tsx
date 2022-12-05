@@ -1,9 +1,11 @@
+/* eslint-disable import/no-cycle */
+import { memo } from 'react'
 import { ButtonReadMore } from '@components/ButtonReadMore'
 import { HOME_PAGE_ROUTE } from '@constants/router'
 import { MainLayout } from '@layouts/MainLayout'
 import { MessageStyled } from './styles'
 
-export const NotFoundPage: React.FC = () => {
+const NotFoundPage: React.FC = () => {
 	return (
 		<MainLayout>
 			<MessageStyled>
@@ -14,3 +16,5 @@ export const NotFoundPage: React.FC = () => {
 		</MainLayout>
 	)
 }
+
+export default memo(NotFoundPage)

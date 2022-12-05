@@ -1,4 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
+import { memo } from 'react'
 import { MainLayout } from '@layouts/MainLayout'
 import { HomePageIntroduction } from '@components/HomePageIntroduction'
 import { CompanyOverview } from '@components/CompanyOverview'
@@ -9,7 +10,7 @@ import { OurBlog } from '@components/HomePageOurBlog'
 import { HelpSection } from '@components/HelpSection'
 import { SetcionIntroduction, SectionBenefits, SectionSliders } from './styled'
 
-export const HomePage: React.FC = () => (
+const HomePage: React.FC = () => (
 	<MainLayout>
 		<SetcionIntroduction>
 			<HomePageIntroduction />
@@ -30,3 +31,5 @@ export const HomePage: React.FC = () => (
 		<HelpSection />
 	</MainLayout>
 )
+
+export default memo(HomePage)

@@ -1,3 +1,9 @@
+export interface IPagesRoutes {
+	id: string
+	path: string
+	element: JSX.Element
+}
+
 export interface ILinkItems {
 	name: string
 	route: string

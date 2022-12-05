@@ -1,13 +1,15 @@
+import { memo } from 'react'
 import { MainLayout } from '@layouts/MainLayout'
 import { Link, useParams } from 'react-router-dom'
-import { NotFoundPage } from '@pages/NotFound'
+import NotFoundPage from '@pages/NotFound'
 import { OUR_TEAM_CONTENT_CARDS } from '@constants/ourTeamContentCards'
+// eslint-disable-next-line import/no-cycle
 import { HOME_PAGE_ROUTE, OUR_TEAM_ROUTE } from '@constants/router'
 import { TeamMemberCard } from '@components/TeamMebmerCard'
 import { ContactUs } from '@components/ContactUs'
 import { IntroductionStyled } from './styled'
 
-export const OurTeamSinglePage: React.FC = () => {
+const OurTeamSinglePage: React.FC = () => {
 	const { id: ourTeamSingleId } = useParams()
 
 	const teamMemberCard = OUR_TEAM_CONTENT_CARDS.find((item) => item.id === ourTeamSingleId)
@@ -36,3 +38,5 @@ export const OurTeamSinglePage: React.FC = () => {
 		</MainLayout>
 	)
 }
+
+export default memo(OurTeamSinglePage)

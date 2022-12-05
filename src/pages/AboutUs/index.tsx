@@ -1,10 +1,11 @@
+import { memo } from 'react'
 import { AboutUsPageContent } from '@components/AboutUsPageContent'
 import { Testimonials } from '@components/Testimonials'
 import { ContactUs } from '@components/ContactUs'
 import { MainLayout } from '@layouts/MainLayout'
 import { IntroductionStyled, TestimonialsWrapper } from './styled'
 
-export const AboutUsPage: React.FC = () => (
+const AboutUsPage: React.FC = () => (
 	<MainLayout>
 		<IntroductionStyled>About Us</IntroductionStyled>
 		<AboutUsPageContent />
@@ -14,3 +15,5 @@ export const AboutUsPage: React.FC = () => (
 		<ContactUs />
 	</MainLayout>
 )
+
+export default memo(AboutUsPage)
