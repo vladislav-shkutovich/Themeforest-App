@@ -3,7 +3,6 @@ import { useForm } from '@hooks/useForm'
 import { SubscribeFormStyled, InputStyled, ErrorMessage, ButtonStyled } from './styled'
 
 export const SubscribeForm: React.FC = () => {
-	// todo: вынести логику в кастомный хук, а различия конфигурации в константы
 	const { subscribeRef, disabled, handleSubmit, handleChange, values, touched, errors } = useForm({
 		initialValues: {
 			email: '',

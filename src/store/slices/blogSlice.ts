@@ -1,6 +1,6 @@
 import { BLOG_PAGE_POSTS } from '@constants/blogPagePosts'
 import { BLOG_PAGE_ALL_TOPICS, BLOG_PAGE_TAGS } from '@constants/blogPageTags'
-import { IBlogPost, IBlogSliceState } from '@interfaces/index'
+import { IBlogPost, IBlogSliceState, IShowMorePosts } from '@interfaces/index'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 const initialState: IBlogSliceState = {
@@ -17,7 +17,9 @@ const initialState: IBlogSliceState = {
 	relatedPosts: [],
 
 	popularPostsCount: 3,
-	postsAreOver: false,
+	popularPostsAreOver: false,
+	relatedPostsCount: 3,
+	relatedPostsAreOver: false,
 }
 
 const blogSlice = createSlice({
@@ -27,6 +29,7 @@ const blogSlice = createSlice({
 		setCurrentPost(state, action: PayloadAction<IBlogPost>) {
 			state.currentPost = action.payload
 		},
+
 		updatePosts(state) {
 			state.relatedPosts = state.filteredPosts
 				.filter(
@@ -34,15 +37,13 @@ const blogSlice = createSlice({
 						item.tags.some((tag) => state.currentPost.tags.includes(tag)) &&
 						item.id !== state.currentPost.id,
 				)
-				.slice(0, 4)
 				.sort((prev, next) => next.viewsCount - prev.viewsCount)
-
 			state.popularPosts = state.filteredPosts.sort(
 				(prev, next) => next.viewsCount - prev.viewsCount,
 			)
-
 			state.searchedPosts = state.filteredPosts
 		},
+
 		resetTags(state) {
 			state.currentTags = state.restTags
 			state.allTopicsTag.isActive = !state.allTopicsTag.isActive
@@ -50,6 +51,7 @@ const blogSlice = createSlice({
 			// eslint-disable-next-line no-return-assign
 			state.restTags.forEach((item) => (item.isActive = false))
 		},
+
 		toggleTag(state, action) {
 			const clickedTag = state.restTags.find((item) => item.title === action.payload)
 			if (clickedTag) clickedTag.isActive = !clickedTag.isActive
@@ -67,15 +69,19 @@ const blogSlice = createSlice({
 								) && item.id !== state.currentPost.id,
 					  )
 		},
-		showMorePosts(state, action: PayloadAction<number>) {
-			const nextCount = state.popularPostsCount + action.payload
-			if (nextCount < state.popularPosts.length) {
-				state.popularPostsCount += action.payload
+
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		showMorePosts(state: any, action: PayloadAction<IShowMorePosts>) {
+			const { count, posts, postsCount, countAreOver } = action.payload
+			const nextCount = state[postsCount] + count
+			if (nextCount < state[posts].length) {
+				state[postsCount] += count
 			} else {
-				state.popularPostsCount += action.payload
-				state.postsAreOver = true
+				state[postsCount] += count
+				state[countAreOver] = true
 			}
 		},
+
 		searchPosts(state, action: PayloadAction<string>) {
 			state.searchedPosts = state.filteredPosts.filter((item) =>
 				item.title.toLowerCase().includes(action.payload),

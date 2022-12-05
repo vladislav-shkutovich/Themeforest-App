@@ -21,5 +21,14 @@ export interface IBlogSliceState {
 	popularPosts: IBlogPost[]
 	relatedPosts: IBlogPost[]
 	popularPostsCount: number
-	postsAreOver: boolean
+	popularPostsAreOver: boolean
+	relatedPostsCount: number
+	relatedPostsAreOver: boolean
+}
+
+export interface IShowMorePosts {
+	posts: string
+	count: number
+	postsCount: string
+	countAreOver: string
 }

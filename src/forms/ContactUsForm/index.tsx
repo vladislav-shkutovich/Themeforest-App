@@ -6,8 +6,6 @@ import { useForm } from '@hooks/useForm'
 import { FormStyled, ErrorMessage, InputStyled } from './styled'
 
 export const ContactUsForm: React.FC = () => {
-	// * вынести логику в кастомный хук, а различия конфигурации в константы
-
 	const { subscribeRef, disabled, handleSubmit, handleChange, values, touched, errors } = useForm({
 		initialValues: {
 			name: '',
@@ -20,7 +18,6 @@ export const ContactUsForm: React.FC = () => {
 		alertMessage: 'Thank you for your opinion!',
 	})
 
-	// * вынести в константы и замэпить их
 	return (
 		<FormStyled ref={subscribeRef} onSubmit={handleSubmit}>
 			<h3>Contact Us</h3>
