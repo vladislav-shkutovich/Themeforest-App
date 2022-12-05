@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ButtonWithTagStyled = styled.div<{ isActive?: boolean }>`
+export const ButtonWithTagStyled = styled.button<{ isActive?: boolean; disabled?: boolean }>`
 	display: flex;
 	align-items: center;
 	justify-items: center;
@@ -11,7 +11,7 @@ export const ButtonWithTagStyled = styled.div<{ isActive?: boolean }>`
 	color: ${({ theme }) => theme.colors.primary};
 	border: 0.1rem solid ${({ theme }) => theme.colors.background};
 	background-color: ${({ theme }) => theme.colors.white};
-	padding: 0.3rem 1.1rem;
+	padding: 0.6rem 1.5rem;
 	cursor: pointer;
 
 	&:hover {
@@ -22,7 +22,6 @@ export const ButtonWithTagStyled = styled.div<{ isActive?: boolean }>`
 		isActive &&
 		`
 		color: ${theme.colors.white};
-		font-weight: 600;
 		background-color: ${theme.colors.primary};
 
 		&:hover {

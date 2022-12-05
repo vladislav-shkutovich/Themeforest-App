@@ -20,13 +20,13 @@ export const BlogPopularPosts: React.FC = () => {
 		<PopularPostsStyled>
 			<h4>Popular posts</h4>
 			<ul>
-				{popularPosts.slice(0, popularPostsCount).map((item) => (
-					<li key={item.id}>
-						<img src={item.image} alt="Post" />
+				{popularPosts.slice(0, popularPostsCount).map(({ id, image, date, title, baseRoute }) => (
+					<li key={id}>
+						<img src={image} alt="Post" />
 						<div>
-							<p>{item.date}</p>
-							<h6>{item.title}</h6>
-							<Link to={`${item.baseRoute}/${item.id}`}>
+							<p>{date}</p>
+							<h6>{title}</h6>
+							<Link to={`${baseRoute}/${id}`}>
 								Read more <img src={iconArrowRight} alt="Arrow" />
 							</Link>
 						</div>

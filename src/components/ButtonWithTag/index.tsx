@@ -5,9 +5,10 @@ export const ButtonWithTag: React.FC<{
 	text: string
 	isActive: boolean
 	callback?: any
-}> = ({ text, isActive, callback }) => {
+	disabled?: boolean
+}> = ({ text, isActive, callback, disabled }) => {
 	return (
-		<ButtonWithTagStyled onClick={callback} isActive={isActive}>
+		<ButtonWithTagStyled disabled={disabled} onClick={callback} isActive={isActive}>
 			{text}
 		</ButtonWithTagStyled>
 	)

@@ -1,7 +1,8 @@
 import { IBlogTag } from '@interfaces/storeInterfaces'
 
+export const BLOG_PAGE_ALL_TOPICS: IBlogTag = { title: 'All topics', isActive: true }
+
 export const BLOG_PAGE_TAGS: IBlogTag[] = [
-	{ title: 'All topics', isActive: true },
 	{ title: 'App', isActive: false },
 	{ title: 'Management', isActive: false },
 	{ title: 'CMR', isActive: false },

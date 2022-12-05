@@ -28,7 +28,6 @@ export const NavigationStyled = styled.div`
 	max-width: 44.5rem;
 	gap: 2rem;
 	margin: 8rem 0;
-	padding: 8rem 0;
 
 	& > h4 {
 		${({ theme }) => theme.headlines.headline4};

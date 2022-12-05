@@ -5,30 +5,18 @@ import { BlogSingleItem } from '@components/BlogSingleItem'
 import { BlogPopularPosts } from '@components/BlogPopularPosts'
 import { BlogRelatedPosts } from '@components/BlogRelatedPosts'
 import { BlogTags } from '@components/BlogTags'
-import { IBlogPost } from '@interfaces/index'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectAllPosts, selectSearchedPosts } from '@store/selectors'
-import {
-	searchPosts,
-	setCurrentPost,
-	setPopularPosts,
-	setRelatedPosts,
-} from '@store/slices/blogSlice'
+import { selectSearchedPosts } from '@store/selectors'
+import { searchPosts, updatePosts } from '@store/slices/blogSlice'
 import { BlogSingleContentStyled, NavigationStyled, ContentStyled } from './styled'
 
-export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
+export const BlogSingleContent: React.FC = () => {
 	const searchedPosts = useSelector(selectSearchedPosts)
-	const allPosts = useSelector(selectAllPosts)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		dispatch(setCurrentPost(currentPost))
-	}, [dispatch, currentPost])
-
-	useEffect(() => {
-		dispatch(setRelatedPosts())
-		dispatch(setPopularPosts())
-	}, [dispatch, currentPost, allPosts])
+		dispatch(updatePosts())
+	}, [dispatch])
 
 	const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
 		e.preventDefault()
@@ -38,7 +26,7 @@ export const BlogSingleContent: React.FC<{ currentPost: IBlogPost }> = ({ curren
 	return (
 		<BlogSingleContentStyled>
 			<ContentStyled>
-				<BlogSingleItem currentPost={currentPost} />
+				<BlogSingleItem />
 				<BlogRelatedPosts />
 			</ContentStyled>
 

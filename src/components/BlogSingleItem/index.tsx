@@ -4,11 +4,12 @@ import person from '@assets/icons/blog_icon_person.svg'
 import share from '@assets/icons/blog_icon_share.svg'
 import tag from '@assets/icons/blog_icon_tag.svg'
 import { BLOG_ICONS } from '@constants/blogIcons'
-import { IBlogPost } from '@interfaces/index'
+import { selectCurrentPost } from '@store/selectors'
+import { useSelector } from 'react-redux'
 import { BlogItemStyled, IconsWrapper } from './styled'
 
-export const BlogSingleItem: React.FC<{ currentPost: IBlogPost }> = ({ currentPost }) => {
-	const { title, text, date, image, author, tags, viewsCount } = currentPost
+export const BlogSingleItem: React.FC = () => {
+	const { title, text, date, image, author, tags, viewsCount } = useSelector(selectCurrentPost)
 
 	return (
 		<BlogItemStyled>

@@ -13,7 +13,9 @@ export interface IBlogTag {
 export interface IBlogSliceState {
 	currentPost: IBlogPost
 	allPosts: IBlogPost[]
-	allTags: IBlogTag[]
+	filteredPosts: IBlogPost[]
+	allTopicsTag: IBlogTag
+	restTags: IBlogTag[]
 	currentTags: IBlogTag[]
 	searchedPosts: IBlogPost[]
 	popularPosts: IBlogPost[]
