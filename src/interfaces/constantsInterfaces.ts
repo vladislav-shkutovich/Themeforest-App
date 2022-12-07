@@ -27,7 +27,6 @@ export interface ITestimonials {
 export interface IOurPricingCard {
 	title: string
 	cost: string
-	paypalCost: string
 	description: string[]
 	key: string
 }
