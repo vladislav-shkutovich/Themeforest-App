@@ -2,7 +2,7 @@
 	"name": "themeforest-app",
 	"version": "0.1.0",
 	"private": false,
-	"homepage": "http://vladislavshkutovich.github.io/Themeforest-App",
+	"homepage": "http://vladislavshkutovich.github.io/Themeforest-App/",
 	"dependencies": {
 		"@craco/craco": "^6.4.5",
 		"@emailjs/browser": "^3.10.0",
