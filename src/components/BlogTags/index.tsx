@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState, useRef, useLayoutEffect } from 'react'
 import { ButtonWithTag } from '@components/ButtonWithTag'
 import { useDispatch, useSelector } from 'react-redux'
@@ -44,12 +45,7 @@ export const BlogTags: React.FC = () => {
 				disabled={allTopicsDisabled}
 			/>
 			{restTags.map(({ title, isActive }) => (
-				<ButtonWithTag
-					key={title}
-					text={title}
-					isActive={isActive}
-					callback={handleToggle(title)}
-				/>
+				<ButtonWithTag key={title} text={title} isActive={isActive} callback={handleToggle(title)} />
 			))}
 		</TagsContainerStyled>
 	)

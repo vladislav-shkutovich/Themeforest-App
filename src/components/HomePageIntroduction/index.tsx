@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-irregular-whitespace */
 import imageEnsome from '@assets/images/home1.png'
 import imageSolutions from '@assets/images/home2.png'
@@ -39,8 +40,8 @@ export const HomePageIntroduction: React.FC = () => {
 			</HeadingNewest>
 			<ParagraphNewest>
 				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-				architecto beatae vitae dicta sunt explicabo.
+				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+				beatae vitae dicta sunt explicabo.
 				<ButtonDefault text="Discover more" callback={handleNavigate(SOLUTIONS_ROUTE)} />
 			</ParagraphNewest>
 
@@ -48,8 +49,8 @@ export const HomePageIntroduction: React.FC = () => {
 				Radically new solutions for data
 				<span>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-					laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-					architecto beatae vitae dicta sunt explicabo.
+					laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+					beatae vitae dicta sunt explicabo.
 				</span>
 				<ButtonDefault text="Learn more" callback={handleNavigate(SOLUTIONS_ROUTE)} />
 			</HeadingSolutions>

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-irregular-whitespace */
 import { ButtonDefault } from '@components/ButtonDefault'
 import { CONTACTS_ROUTE } from '@constants/router'
@@ -13,8 +14,8 @@ export const HelpSection: React.FC = () => {
 		<HelpSectionStyled>
 			<h2>Do you need help?</h2>
 			<p>
-				Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-				nisi ut aliquid ex ea commodi.
+				Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+				ut aliquid ex ea commodi.
 			</p>
 			<ButtonDefault text="Contact Us" callback={handleNavigate} />
 		</HelpSectionStyled>

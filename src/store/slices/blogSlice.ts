@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { BLOG_PAGE_POSTS } from '@constants/blogPagePosts'
 import { BLOG_PAGE_ALL_TOPICS, BLOG_PAGE_TAGS } from '@constants/blogPageTags'
 import { IBlogPost, IBlogSliceState, IShowMorePosts } from '@interfaces/index'
@@ -38,9 +39,7 @@ const blogSlice = createSlice({
 						item.id !== state.currentPost.id,
 				)
 				.sort((prev, next) => next.viewsCount - prev.viewsCount)
-			state.popularPosts = state.filteredPosts.sort(
-				(prev, next) => next.viewsCount - prev.viewsCount,
-			)
+			state.popularPosts = state.filteredPosts.sort((prev, next) => next.viewsCount - prev.viewsCount)
 			state.searchedPosts = state.filteredPosts
 		},
 
@@ -64,9 +63,8 @@ const blogSlice = createSlice({
 					? state.allPosts
 					: state.allPosts.filter(
 							(item) =>
-								item.tags.some((postTag) =>
-									state.currentTags.map((tag) => tag.title).includes(postTag),
-								) && item.id !== state.currentPost.id,
+								item.tags.some((postTag) => state.currentTags.map((tag) => tag.title).includes(postTag)) &&
+								item.id !== state.currentPost.id,
 					  )
 		},
 

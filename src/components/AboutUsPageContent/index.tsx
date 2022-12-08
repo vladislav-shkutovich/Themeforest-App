@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import aboutUsImage1 from '@assets/images/about_us1.png'
 import aboutUsImage2 from '@assets/images/about_us2.png'
 import { HOMEPAGE_LOGOS } from '@constants/homePageLogos'
@@ -18,10 +19,9 @@ export const AboutUsPageContent: React.FC = () => {
 						<p>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-							architecto beatae vitae dicta sunt explicabo. Donec tincidunt tempor quam, non mollis
-							quam finibus nec. Quisque finibus consequat felis vel pretium. Aliquam gravida nisi
-							vel convallis ultricies. Integer ante sapien, consequat et dolor vel, cursus lacinia
-							lectus.
+							architecto beatae vitae dicta sunt explicabo. Donec tincidunt tempor quam, non mollis quam
+							finibus nec. Quisque finibus consequat felis vel pretium. Aliquam gravida nisi vel convallis
+							ultricies. Integer ante sapien, consequat et dolor vel, cursus lacinia lectus.
 						</p>
 					</div>
 					<img src={aboutUsImage1} alt="About Us 1" />
@@ -33,8 +33,8 @@ export const AboutUsPageContent: React.FC = () => {
 						<p>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-							architecto beatae vitae dicta sunt explicabo. Donec tincidunt tempor quam, non mollis
-							quam finibus nec. Quisque finibus consequat felis vel pretium.
+							architecto beatae vitae dicta sunt explicabo. Donec tincidunt tempor quam, non mollis quam
+							finibus nec. Quisque finibus consequat felis vel pretium.
 						</p>
 					</div>
 				</div>
@@ -65,8 +65,8 @@ export const AboutUsPageContent: React.FC = () => {
 			<OurCustomersStyled>
 				<h1>Our customers</h1>
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-					laudan, totam rem aperiam.
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan,
+					totam rem aperiam.
 				</p>
 				<div>
 					{HOMEPAGE_LOGOS.map((item) => (

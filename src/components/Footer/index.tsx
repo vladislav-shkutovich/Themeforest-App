@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-irregular-whitespace */
 import { Link, useNavigate } from 'react-router-dom'
 import { HOME_PAGE_ROUTE } from '@constants/router'
@@ -35,8 +36,8 @@ export const Footer: React.FC = () => {
 				<InfoContainerStyled>
 					<LogoStyled alt="Logo" src={logo} onClick={handleNavigateFromLogo} />
 					<ParagraphStyled>
-						Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-						laboriosam, nisi ut aliquid ex ea commodi.
+						Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+						ut aliquid ex ea commodi.
 					</ParagraphStyled>
 					<IconContainerStyled>
 						{FOOTER_ICONS.map(({ name, route }) => (

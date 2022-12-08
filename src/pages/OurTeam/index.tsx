@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { memo } from 'react'
 import { MainLayout } from '@layouts/MainLayout'
 import outTeamImage1 from '@assets/images/our_team_1.png'
@@ -17,11 +18,11 @@ const OurTeamPage: React.FC = () => (
 			</div>
 			<img src={outTeamImage1} alt="Our team" />
 			<p>
-				Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et,
-				euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor
-				orci. Sed quis lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto
-				odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
-				dolores et quas. Nulla rhoncus consectetur eros non iaculis.
+				Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod
+				vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis
+				lobortis eros. Fusce id commodo libero. At vero eos et accusamus et iusto odio dignissimos
+				ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+				Nulla rhoncus consectetur eros non iaculis.
 			</p>
 		</IntroductionStyled>
 
