@@ -1,5 +1,5 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable no-irregular-whitespace */
+/* eslint-disable prettier/prettier */
 import { ButtonDefault } from '@components/ButtonDefault'
 import { CONTACTS_ROUTE } from '@constants/router'
 import { useNavigate } from 'react-router-dom'

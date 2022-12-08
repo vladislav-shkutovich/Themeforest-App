@@ -36,9 +36,9 @@ export const ServicesSingleContent: React.FC<{ services: IServicesSingleItem[] }
 				<h3>Challenge</h3>
 				<p>
 					Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat felis vel
-					pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, consequat et dolor
-					vel. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit,
-					tincidunt aliquam ligula id, lacinia auctor orci.
+					vel vel vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien,
+					consequat et dolor vel. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.
+					Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci.
 				</p>
 
 				<h3>Solution</h3>
