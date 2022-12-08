@@ -91,3 +91,8 @@ export interface ISolutionsSingleItem {
 export interface IInitialFormValues {
 	[key: string]: string
 }
+
+export interface IItemLink {
+	name: string
+	route: string
+}

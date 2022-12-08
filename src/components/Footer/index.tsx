@@ -39,8 +39,10 @@ export const Footer: React.FC = () => {
 						laboriosam, nisi ut aliquid ex ea commodi.
 					</ParagraphStyled>
 					<IconContainerStyled>
-						{FOOTER_ICONS.map((item) => (
-							<IconStyled alt="icon" src={item} key={item} />
+						{FOOTER_ICONS.map(({ name, route }) => (
+							<a href={route} key={name}>
+								<IconStyled alt="icon" src={name} />
+							</a>
 						))}
 					</IconContainerStyled>
 				</InfoContainerStyled>

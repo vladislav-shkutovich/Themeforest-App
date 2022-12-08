@@ -6,7 +6,7 @@ import { TeamMemberCardStyled } from './styled'
 export const TeamMemberCard: React.FC<{ teamMemberCard: IOurTeamContentCard }> = ({
 	teamMemberCard,
 }) => {
-	const { firstName, lastName, email, role, photo, description, links } = teamMemberCard
+	const { firstName, lastName, role, photo, description, links } = teamMemberCard
 
 	return (
 		<TeamMemberCardStyled>

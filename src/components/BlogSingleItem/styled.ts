@@ -50,8 +50,10 @@ export const IconsWrapper = styled.div`
 			margin: 0 0.8rem;
 		}
 
-		& > img {
-			margin: 0 0.5rem;
+		& > a {
+			& > img {
+				margin: 0 0.5rem;
+			}
 		}
 
 		& > span {

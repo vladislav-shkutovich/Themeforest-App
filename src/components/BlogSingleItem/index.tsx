@@ -36,8 +36,10 @@ export const BlogSingleItem: React.FC = () => {
 				<div>
 					<img src={share} alt="Share" />
 					<p>Share: </p>
-					{BLOG_ICONS.map((item) => (
-						<img src={item} alt={item} key={item} />
+					{BLOG_ICONS.map(({ name, route }) => (
+						<a href={route} key={name}>
+							<img src={name} alt={name} />
+						</a>
 					))}
 				</div>
 				<div>
