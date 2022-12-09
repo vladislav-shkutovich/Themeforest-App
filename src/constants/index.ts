@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 export * from './router'
 export * from './pagesDropdownItems'
 export * from './footerIcons'
