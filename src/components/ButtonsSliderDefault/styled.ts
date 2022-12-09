@@ -9,6 +9,7 @@ export const ButtonSliderDefaultStyled = styled.button`
 	display: flex;
 	border: none;
 	background: none;
+	cursor: pointer;
 
 	& > * {
 		fill: ${({ theme }) => theme.colors.secondary};
@@ -18,6 +19,7 @@ export const ButtonSliderDefaultStyled = styled.button`
 		& > * {
 			fill: ${({ theme }) => theme.colors.helperBlue3};
 		}
+		cursor: default;
 	}
 
 	:hover:not([disabled]) {
