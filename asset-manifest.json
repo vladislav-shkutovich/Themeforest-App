@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Themeforest-App/static/js/main.21e79c2a.js",
+    "main.js": "/Themeforest-App/static/js/main.eb7bc48a.js",
     "static/css/73.c51d01f7.chunk.css": "/Themeforest-App/static/css/73.c51d01f7.chunk.css",
-    "static/js/73.c4256209.chunk.js": "/Themeforest-App/static/js/73.c4256209.chunk.js",
+    "static/js/73.e896c3f8.chunk.js": "/Themeforest-App/static/js/73.e896c3f8.chunk.js",
     "static/css/288.c51d01f7.chunk.css": "/Themeforest-App/static/css/288.c51d01f7.chunk.css",
-    "static/js/288.7388b8de.chunk.js": "/Themeforest-App/static/js/288.7388b8de.chunk.js",
+    "static/js/288.b2425a4d.chunk.js": "/Themeforest-App/static/js/288.b2425a4d.chunk.js",
     "static/css/831.c51d01f7.chunk.css": "/Themeforest-App/static/css/831.c51d01f7.chunk.css",
     "static/js/831.a31b2279.chunk.js": "/Themeforest-App/static/js/831.a31b2279.chunk.js",
     "static/css/859.c51d01f7.chunk.css": "/Themeforest-App/static/css/859.c51d01f7.chunk.css",
@@ -20,7 +20,7 @@
     "static/css/948.c51d01f7.chunk.css": "/Themeforest-App/static/css/948.c51d01f7.chunk.css",
     "static/js/948.bc6ee0c1.chunk.js": "/Themeforest-App/static/js/948.bc6ee0c1.chunk.js",
     "static/css/597.c51d01f7.chunk.css": "/Themeforest-App/static/css/597.c51d01f7.chunk.css",
-    "static/js/597.ce9e2e57.chunk.js": "/Themeforest-App/static/js/597.ce9e2e57.chunk.js",
+    "static/js/597.6750d5cc.chunk.js": "/Themeforest-App/static/js/597.6750d5cc.chunk.js",
     "static/css/427.c51d01f7.chunk.css": "/Themeforest-App/static/css/427.c51d01f7.chunk.css",
     "static/js/427.fa5d3d23.chunk.js": "/Themeforest-App/static/js/427.fa5d3d23.chunk.js",
     "static/css/583.c51d01f7.chunk.css": "/Themeforest-App/static/css/583.c51d01f7.chunk.css",
@@ -126,11 +126,11 @@
     "static/media/icon_youtube.svg": "/Themeforest-App/static/media/icon_youtube.c97621c07df839fea7ea011664566aa1.svg",
     "static/media/blog_icon_facebook.svg": "/Themeforest-App/static/media/blog_icon_facebook.9fe72fcf0db140e01be3e5af29467a1c.svg",
     "static/media/icon_minus.svg": "/Themeforest-App/static/media/icon_minus.d0610677939e8a5710331328c33ff872.svg",
-    "main.21e79c2a.js.map": "/Themeforest-App/static/js/main.21e79c2a.js.map",
+    "main.eb7bc48a.js.map": "/Themeforest-App/static/js/main.eb7bc48a.js.map",
     "73.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/73.c51d01f7.chunk.css.map",
-    "73.c4256209.chunk.js.map": "/Themeforest-App/static/js/73.c4256209.chunk.js.map",
+    "73.e896c3f8.chunk.js.map": "/Themeforest-App/static/js/73.e896c3f8.chunk.js.map",
     "288.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/288.c51d01f7.chunk.css.map",
-    "288.7388b8de.chunk.js.map": "/Themeforest-App/static/js/288.7388b8de.chunk.js.map",
+    "288.b2425a4d.chunk.js.map": "/Themeforest-App/static/js/288.b2425a4d.chunk.js.map",
     "831.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/831.c51d01f7.chunk.css.map",
     "831.a31b2279.chunk.js.map": "/Themeforest-App/static/js/831.a31b2279.chunk.js.map",
     "859.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/859.c51d01f7.chunk.css.map",
@@ -146,7 +146,7 @@
     "948.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/948.c51d01f7.chunk.css.map",
     "948.bc6ee0c1.chunk.js.map": "/Themeforest-App/static/js/948.bc6ee0c1.chunk.js.map",
     "597.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/597.c51d01f7.chunk.css.map",
-    "597.ce9e2e57.chunk.js.map": "/Themeforest-App/static/js/597.ce9e2e57.chunk.js.map",
+    "597.6750d5cc.chunk.js.map": "/Themeforest-App/static/js/597.6750d5cc.chunk.js.map",
     "427.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/427.c51d01f7.chunk.css.map",
     "427.fa5d3d23.chunk.js.map": "/Themeforest-App/static/js/427.fa5d3d23.chunk.js.map",
     "583.c51d01f7.chunk.css.map": "/Themeforest-App/static/css/583.c51d01f7.chunk.css.map",
@@ -158,6 +158,6 @@
     "174.cdec02cf.chunk.js.map": "/Themeforest-App/static/js/174.cdec02cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.21e79c2a.js"
+    "static/js/main.eb7bc48a.js"
   ]
 }
